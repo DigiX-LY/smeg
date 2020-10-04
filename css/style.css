@@ -1888,7 +1888,7 @@ form.newsletter .input-group-addon:hover{
 
 /* ------------------ Prallax Bacckgrounds  ------------------ */
 #parallax2{
-	background:url(../images/parallax2.jpg) no-repeat #d3e6eb;
+	background:url(../images/majorslider.jpg) no-repeat #d3e6eb;
 	background-attachment:fixed;
 	background-position:center center;
 	background-size:cover;
@@ -1945,7 +1945,7 @@ form.newsletter .input-group-addon:hover{
 .col-sm-7{float: right;
 }
 .header_layout2{
-	background:url(../images/newsler.jpg) no-repeat;
+	background:url(../images/majorslider.jpg) no-repeat;
 }
 .header_layout2, .header_layout3{
 	background-position:center center;
