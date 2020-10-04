@@ -2677,9 +2677,38 @@ footer.plain_footer{
 .headerProduct{
 	text-align: center;
 }
-
-
-
+.border{
+	border-top: 2px solid white;
+	width: 20%;
+	margin-top: 30px;
+}
+.flexHeader{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	
+}
+.firstPara{
+	direction: rtl;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 20px;
+	width: 50%;
+	color: white;
+	font-weight: lighter;
+	word-spacing :3px
+}
+.flexPictureHead{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 30px;
+}
+.flexPictureHead img{
+	padding: 1px;
+}
 
 
 
