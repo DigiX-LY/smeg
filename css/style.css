@@ -2717,7 +2717,22 @@ footer.plain_footer{
 .flexPictureHead img{
 	padding: 1px;
 }
-
+.descContainerBS{
+	margin-top: 130px;
+	margin-bottom: 30px;
+}
+.descContainer{
+	color: white;
+	direction: rtl;
+	font-size: 14px;
+}
+.descContaineralign{
+	text-align: center;
+	color: white;
+}
+.descContaineralign h4{
+	font-size: 30px;
+}
 
 
 
