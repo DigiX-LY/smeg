@@ -1,0 +1,13 @@
+Hello!
+
+I finished all tasks on the paper you gave me.
+and added some stuff here and there, though I was supposed to add 3 aesthetic lines I only made 2. and they're not perfect either.
+the one on the smeg website uses a customized Carousel image slider. I barely am controling the normal one so It was kinda hard.
+I tried my best to make one similar to theirs but I failed. It was just a bunch of rubbish thrown around and it wasn't dynamic, basically values of width and height and position set manually So I just got rid of it.
+I don't know if you want to add an image slider or not. but every page in the aesthtic lines in the original smeg has those image sliders with the indicators thrown on the right.
+
+
+I tried to add as much as I can to the pages and leave as little as possible for you so you could focus on your exam tomorrow.
+I hope you don't encounter any bugs that are uncalled for Haha 
+
+GOOD LUCK!
