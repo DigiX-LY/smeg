@@ -661,10 +661,52 @@ header nav.navbar.bootsnav ul.nav > li > a{
 header nav.navbar.bootsnav,
 header nav.navbar.bootsnav ul.nav > li > a:hover, header nav.navbar.bootsnav ul.nav > li > a:focus{
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 
 /*dropdown*/
+.dropdown-menu{
+	width: 500px;
+	text-align: right;
+	direction: rtl;
+}
+.flexDropDown{
+	display: flex;
+	flex-direction: row		;
+	justify-content: space-around;
+	background-color: black;
+}
+.appliances ul li{
+	padding: 10px;
+	margin-right: 50px;
+	padding-top: 0;
+	border-right: 1px solid white;
+}
+.appliances ul{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	column-count: 2;
+	direction: rtl;
+}
+.appliances{
+	width: 50%;
+	padding: 10px;
+	margin:30px;
+	border-right: 1px solid white;
+	padding-right: 50px;
+}
+.appliances ul a li:hover{color: #437c8a;
+}
+.appliances a span:hover{
+	color: rgb(0, 153, 180);
+}
+.productLabel{
+	font-weight: bolder;
+	font-size: 20px;
+	text-align: right;
+	direction: rtl;
+	
+}
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after{
 	display:none;
 }
@@ -676,7 +718,7 @@ header nav.bootsnav .megamenu-content .title{
 }
 header nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a,
 header nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a{
-  color:#606060;
+  color:white;
   font-size:14px;
   line-height:40px;
   border-bottom:1px solid #efefef;
@@ -752,7 +794,9 @@ nav.navbar.bootsnav .navbar-toggle {
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a {
   text-align: right;
 }
-
+.dropdown-menu li{
+	background-color: black;
+}
 /*Search*/
 .search{
 	margin-left:5px;
