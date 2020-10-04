@@ -228,12 +228,12 @@ p, .seller-slider .media-body .media-heading{
 	padding-left:15px;
 	border-left:2px solid #79b6c8;
 }
-.grid_box .uppercase{
+.grid_box .productsHeader{
 	font-size: 40px;
+	margin-top: 20%;
 }
 .uppercase{
 	text-transform:uppercase;
-	margin-top: 20%;
 }
 /*---------------------IMAGE SLIDER m.y------------------*/
 .carousel-indicators{
