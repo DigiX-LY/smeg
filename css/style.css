@@ -1945,10 +1945,10 @@ form.newsletter .input-group-addon:hover{
 .breadcrumb > li {
   display: inline-block;
   font-size: 18px;
-  color:rgb(184, 184, 184);
+  color:rgb(255, 255, 255);
 }
 .breadcrumb > .active {
-  color:black;
+	color:#437c8a;
 }
 .col-sm-7{float: right;
 }
