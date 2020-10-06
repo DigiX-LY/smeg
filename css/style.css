@@ -1953,7 +1953,6 @@ form.newsletter .input-group-addon:hover{
 .col-sm-7{float: right;
 }
 .header_layout2{
-	background:url(../images/majorslider.jpg) no-repeat;
 }
 .header_layout2, .header_layout3{
 	background-position:center center;
@@ -2749,8 +2748,33 @@ footer.plain_footer{
 	font-size: 30px;
 }
 
-
-
+/*image slider pictures for multiple pages xyz*/
+.majorBG{
+	/*picture here*/
+	background:url(../images/majorslider.jpg) no-repeat;
+	
+	/*duplicated*/
+}
+.smallBG{
+	/*picture here*/
+}
+.classicaBG{
+	/*picture here*/
+	
+}
+.victoriaBG{
+	/*picture here*/
+	
+}
+.colonialBG{
+	/*picture here*/
+	
+}
+/*all sharing the same property*/
+.majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG{
+	background-position:center center;
+	background-size:cover;
+}
 
 
 
