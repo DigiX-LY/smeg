@@ -2657,6 +2657,9 @@ footer.plain_footer{
 .copyright p > a{
 	color:#79b6c8;
 }
+.copyright p{
+	color: white;
+}
 
 .copyright ul.social{
 	margin:20px 0;
@@ -2666,19 +2669,31 @@ footer.plain_footer{
 	display:inline-block;
 }
 .copyright ul.social li:last-child a, .footer_panel ul.social li:last-child a{
-	border-right:1px dotted #8e8e8e;
+	border-right:1px dotted white;
 }
 .copyright ul.social li a, .footer_panel ul.social li a{
 	color:#8e8e8e;
 	display:block;
 	padding:0 15px;
-	border-left:1px dotted #8e8e8e;
+	border-left:1px dotted white;
 }
 .copyright ul.social li a:hover, .copyright ul.social li a:focus,
 .footer_panel ul.social li a:hover, .footer_panel ul.social li a:focus{
 	color:#437c8a;
 }
 
+.copyright .social .fbHover:hover{
+	color: #3B5998;
+}
+.copyright .social .twitterHover:hover{
+	color: #00B6F1;
+}
+.copyright .social .instaHover:hover{
+	color:#b40051;
+}
+.copyright .social .linkedHover:hover{
+	color: #04669A;
+}
 
 /*CLASSICA classes*/
 
