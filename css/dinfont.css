@@ -1,0 +1,20 @@
+@font-face{
+    font-family: 'dinFont';
+    src: url(../fonts/DINfont/DIN-Next-Arabic-BLACK.ttf);
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'dinFont';
+    src: url(../fonts/DINfont/DIN-Next-Arabic-BOLD.ttf);
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'dinFont';
+    src: url(../fonts/DINfont/DIN-Next-Arabic-HEAVY.ttf);
+    font-weight: bolder;
+}
+@font-face{
+    font-family: 'dinFont';
+    src: url(../fonts/DINfont/DIN-Next-Arabic-LIGHT.ttf);
+    font-weight:  lighter;
+}

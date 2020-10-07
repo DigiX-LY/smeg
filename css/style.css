@@ -74,7 +74,7 @@ body{
 	padding:0;
 	margin:0;
 	color:#201f1f;
-	font-family: 'Cairo';
+	font-family: 'dinFont';
 	overflow-x:hidden;
 }
 /*M.Yousef navbar*/
@@ -112,7 +112,7 @@ a, a:hover, a:focus{
 	color:inherit;
 }
 h1,h2, .footer_panel h4, #seller h3, .heading{
-	font-family: 'Cairo';
+	font-family: 'dinFont';
 	font-weight:bold;
 }
 .btn-common, .btn-white, .btn-dark, .btn-light, .readmor,
@@ -125,11 +125,11 @@ h1,h2, .footer_panel h4, #seller h3, .heading{
 .set > a, .widget h5,
 #cart .table-responsive > .table thead  tr > th, 
 .blog_item .blog_text h5,  .blog-reply h5{
-	font-family: 'Cairo';
+	font-family: 'dinFont';
 	font-weight:bold;
 }
 .topbar .top_link li a, header nav.navbar.bootsnav ul.nav > li > a{
-	font-family: 'Cairo';
+	font-family: 'dinFont';
 }
 .footer_panel .about_foot li, .footer_panel .account_foot li a, .price, .grid_box .grid_body h3{
   font-family: 'Lato', sans-serif;
@@ -633,13 +633,6 @@ header nav.navbar.bootsnav ul.nav > li > a:before,
 	flex-direction: column;
 	align-items: center;
 }
-svg{
-	height: 40.8px;
-	margin-top: 20px;
-}
-.copyright svg{
-	margin-left: 30%;
-}
 header{
 	width:100%;
 }
@@ -662,7 +655,7 @@ header nav.navbar.bootsnav ul.nav > li {
 }
 header nav.navbar.bootsnav ul.nav > li > a{
   color: #fff;
-  font-weight: normal;
+  font-weight: bolder;
   font-size:20px; /*m.yousf changed arabic font size for the navbar*/
   text-transform:uppercase;
   position:relative;
@@ -1084,7 +1077,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	font-size: 30px;
 }
 .design p{
-	font-family:'Cairo';
+	font-family:'dinFont';
 	direction: rtl;
 }
 .space-top{
