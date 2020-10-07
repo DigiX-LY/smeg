@@ -785,6 +785,7 @@ nav.navbar.bootsnav .navbar-toggle, nav.navbar.bootsnav .navbar-toggle:hover, na
 }
 nav.navbar.bootsnav li.dropdown.on > .dropdown-toggle{
 	color: #437c8a;
+	border-bottom: 1px solid white;
 }
 nav.navbar.bootsnav .navbar-toggle {
   color: #fff;
