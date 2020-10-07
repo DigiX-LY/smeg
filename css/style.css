@@ -637,6 +637,9 @@ svg{
 	height: 40.8px;
 	margin-top: 20px;
 }
+.copyright svg{
+	margin-left: 30%;
+}
 header{
 	width:100%;
 }
