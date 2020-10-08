@@ -1084,21 +1084,20 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	margin-top:10%;
 }
 .design .design_img {
-  height: 424px;
-  margin-bottom: 0;
   position: inline;
-  width: 100%;
   overflow:hidden;
-}
-.design .design_img > img {
-  width: 100%;
 }
 .descrp{
   padding:40px  40px 15px 0px;
   text-align: center;
 }
 .descrp p{
+	padding-left: 30px;
+	padding-right: 30px;
 	color: white;
+}
+.descrp img{
+	margin-top: 10%;
 }
 .design .descrp .review  > li{
 	display:inline-block;
@@ -1371,7 +1370,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 }
 .subheader{
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
 	color: white;
 	border-bottom: 1px white;
 	font-weight: bold;
@@ -1940,6 +1939,7 @@ form.newsletter .input-group-addon:hover{
 	padding-top:35px;
 }
 .breadcrumb{
+	font-weight: bolder;
 	border-bottom:1px solid #ebebeb;
 	background:transparent;
 	direction: rtl;
@@ -2969,7 +2969,4 @@ footer.plain_footer{
 		padding: 0;
 		padding-top: 30px;
 	}
-	.design .design_img {
-		height: 300px
-}
 }
