@@ -1374,6 +1374,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	font-size: 30px;
 	color: white;
 	border-bottom: 1px white;
+	font-weight: bold;
 }
 .contactFormFlex{
 	display: flex;
