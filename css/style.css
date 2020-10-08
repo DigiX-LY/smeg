@@ -689,7 +689,7 @@ header nav.navbar.bootsnav ul.nav > li > a:hover, header nav.navbar.bootsnav ul.
 .appliances ul{
 	margin-top: 30px;
 	margin-bottom: 20px;
-	column-count: 2;
+	column-count: 3;
 	direction: rtl;
 }
 .appliances{
