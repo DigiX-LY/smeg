@@ -1233,6 +1233,8 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 }
 .contactForm input,.contactForm textarea{
 	background-color: black;
+	font-weight: bold;
+	font-size: 15px;
 	resize: none;
 	direction: rtl;
 	color: white;
@@ -1245,6 +1247,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	background-color: black;
 	border: none;
 	color: white;
+	font-weight: bold;
 	padding: 12px;
 	width: 100%;
 	border: 1px solid white;
@@ -1401,9 +1404,12 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	word-wrap: 5px;
 	text-align: right;
 	color: white;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: lighter;
 	direction: rtl;
+}
+.descrp .sendMessage{
+	text-align: center;
 }
 /* ------------------  Products wrap in Box ------------------ */
 .product_wrap, .image, .image > img{
