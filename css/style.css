@@ -1249,6 +1249,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	color: white;
 	font-weight: bold;
 	padding: 12px;
+	font-size: 20px;
 	width: 100%;
 	border: 1px solid white;
 	border-radius: 360px;
