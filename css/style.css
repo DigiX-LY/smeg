@@ -2804,6 +2804,7 @@ footer.plain_footer{
 .majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG{
 	background-position:center center;
 	background-size:cover;
+	height: 650px;
 }
 
 
