@@ -2785,18 +2785,19 @@ footer.plain_footer{
 	/*duplicated*/
 }
 .smallBG{
-	/*picture here*/
-}
-.classicaBG{
-	/*picture here*/
+	background:url(../images/small_banner.gif) no-repeat;
 	
 }
+.classicaBG{
+	background:url(../images/classica_bcg.jpg) no-repeat;
+
+}
 .victoriaBG{
-	/*picture here*/
+	background:url(../images/victor_bcg.jpg) no-repeat;
 	
 }
 .colonialBG{
-	/*picture here*/
+	background:url(../images/col_bcg.jpg) no-repeat;
 	
 }
 /*all sharing the same property*/
