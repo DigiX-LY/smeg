@@ -1412,6 +1412,104 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 .descrp .sendMessage{
 	text-align: center;
 }
+
+/* ------------------  All Products list ------------------ */
+.breadcrumbPadding{
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.blackSection{
+	border-right: 3px solid white;
+	direction: rtl;
+	margin-bottom: 10px;
+}
+.blackSectionTitle{
+	font-weight: bold;
+	color: white;
+	font-size: 36px;
+	padding-right: 6%;
+	padding-bottom: 5%;
+}
+.blackSectionDesc{
+	padding-right: 6%;
+	color: white;
+	font-size: 18px;
+}
+.allProductsListBG{
+	background-color: white;
+	padding-top: 5%;
+	box-sizing: border-box;
+}
+.allProductsList{
+	margin-bottom: 70px;
+}
+.productsContent{
+	display: flex;
+	flex-direction: row;
+}
+.filters__item__content{
+	box-sizing: border-box;
+}
+.products-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+/*making the picture look like it's in a frame*/
+.product-preview__gallery{
+	padding: 25px;
+	background-color: white;
+	margin-bottom: 10px;
+}
+.product-preview__description ,.Productname
+{
+	text-align: center;
+}
+.listItem {
+	padding: 40px;
+}
+.listItem:hover {
+	background-color:#f8f8f8;
+	box-sizing: border-box;
+}
+.filterTitle{
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+.filters__item__header{
+	font-size: 18px;
+	font-weight: bold;
+}
+.filters__item__content{
+	padding-top: 10px;
+	border-right: 1px solid black;
+}
+.form-check-label{
+	cursor: pointer;
+}
+/*changing the check box appearance */
+input[type="checkbox"] {
+	visibility: hidden;
+  }
+  input[type="checkbox"] + label:before {
+	border: 1px solid #333;
+	content: "\00a0";
+	display: inline-block;
+	font: 16px/1em sans-serif;
+	height: 16px;
+	padding: 0;
+	margin: 4px;
+	vertical-align: top;
+	width: 16px;
+	border-radius: 360px;
+  }
+  input[type="checkbox"]:checked + label:before {
+	background:black;
+	color: white;
+	content: "\2713";
+	text-align: center;
+  }
+  
 /* ------------------  Products wrap in Box ------------------ */
 .product_wrap, .image, .image > img{
 	position:relative;
