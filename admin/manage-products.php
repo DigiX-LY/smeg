@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include("../include/DBconnection.php");
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -150,106 +154,31 @@
                             <thead>
                                 <tr>
                                     <th>رقم المنتج</th>
-                                    <th>صورة</th>
                                     <th>إسم المنتج</th>
-                                    <th>سعر</th>
-                                    <th>نوع</th>
-                                    <th>صنف</th>
-                                    <th>ملاحظات</th>
+                                    <th>الخط الجمالي</th>
+                                    <th>النوع</th>
+                                    <th>اللون</th>
                                     <th>تعديل/حذف</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>#22</td>
-                                    <td><img src="assets/images/product/list-product-1.jpg" alt="" class="product-image rounded-circle"></td>
-                                    <td><a href="#">Spro 4 Laptop</a></td>
-                                    <td>$600.00</td>
-                                    <td>Brand Name</td>
-                                    <td>Category Name</td>
-                                    <td>Notes</td>
+                                <?php
+                                    $sql = "SELECT * FROM `products` ";
+                                    foreach ($pdo->query($sql) as $row) { ?>
+                                    <tr>
+                                    <td><?php echo $row['product_id'];  ?></td>
+                                    <td><a href="#"><?php echo $row['product_name']; ?></a></td>
+                                    <td><?php echo $row['line_id'];  ?></td>
+                                    <td><?php echo $row['sub_cat_id'];  ?></td>
+                                    <td><?php echo $row['color'];  ?></td>
                                     <td>
-                                        <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#"><i class="zmdi zmdi-edit"></i></a>
-                                            <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
+                                    <div class="table-action-buttons">
+                                        <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
+                                        <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>#23</td>
-                                    <td><img src="assets/images/product/list-product-2.jpg" alt="" class="product-image rounded-circle"></td>
-                                    <td><a href="#">Spro 4 Laptop</a></td>
-                                    <td>$600.00</td>
-                                    <td>Brand Name</td>
-                                    <td>Category Name</td>
-                                    <td>Notes</td>
-                                    <td>
-                                        <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#"><i class="zmdi zmdi-edit"></i></a>
-                                            <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>#24</td>
-                                    <td><img src="assets/images/product/list-product-3.jpg" alt="" class="product-image rounded-circle"></td>
-                                    <td><a href="#">Spro 4 Laptop</a></td>
-                                    <td>$600.00</td>
-                                    <td>Brand Name</td>
-                                    <td>Category Name</td>
-                                    <td>Notes</td>
-                                    <td>
-                                        <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#"><i class="zmdi zmdi-edit"></i></a>
-                                            <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>#25</td>
-                                    <td><img src="assets/images/product/list-product-4.jpg" alt="" class="product-image rounded-circle"></td>
-                                    <td><a href="#">Spro 4 Laptop</a></td>
-                                    <td>$600.00</td>
-                                    <td>Brand Name</td>
-                                    <td>Category Name</td>
-                                    <td>Notes</td>
-                                    <td>
-                                        <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#"><i class="zmdi zmdi-edit"></i></a>
-                                            <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>#26</td>
-                                    <td><img src="assets/images/product/list-product-5.jpg" alt="" class="product-image rounded-circle"></td>
-                                    <td><a href="#">Spro 4 Laptop</a></td>
-                                    <td>$600.00</td>
-                                    <td>Brand Name</td>
-                                    <td>Category Name</td>
-                                    <td>Notes</td>
-                                    <td>
-                                        <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#"><i class="zmdi zmdi-edit"></i></a>
-                                            <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>#27</td>
-                                    <td><img src="assets/images/product/list-product-4.jpg" alt="" class="product-image rounded-circle"></td>
-                                    <td><a href="#">Spro 4 Laptop</a></td>
-                                    <td>$600.00</td>
-                                    <td>Brand Name</td>
-                                    <td>Category Name</td>
-                                    <td>Notes</td>
-                                    <td>
-                                        <div class="table-action-buttons">
-                                            <a class="edit button button-box button-xs button-info" href="#"><i class="zmdi zmdi-edit"></i></a>
-                                            <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>                                      
+                                        </tr>
+                                <?php }?>
                             </tbody>
                         </table>
                     </div>

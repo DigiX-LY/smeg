@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include("../include/DBconnection.php");
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -72,7 +76,7 @@
                                         <span>
                                             <img src="../logo/user.png" alt="">
                                             </span>
-                                            <span class="name"> محمد يوسف</span>
+                                            <span class="name"><?php echo $_SESSION["username"];?></span>
                                             </span>
                                         </a>
 
@@ -84,7 +88,7 @@
                                             </div>
                                             <div class="body">
                                                 <ul>
-                                                    <li><a href="login.html"><i class="zmdi zmdi-lock-open"></i>Sign out</a></li>
+                                                    <li><a href="logout.php"><i class="zmdi zmdi-lock-open"></i>Logout</a></li>
                                                 </ul>
                                               
                                             </div>
@@ -154,7 +158,11 @@
 
                         <!-- Content -->
                         <div class="content">
-                            <h2>100,560</h2>
+                            <h2>
+                                <?php $sql = "SELECT * FROM products";
+                                echo $pdo->query($sql)->rowCount();
+                                ?>
+                             </h2>
                         </div>
 
                         <!-- Footer -->
@@ -174,12 +182,16 @@
 
                         <!-- Head -->
                         <div class="head">
-                            <h4>جميع المنتجات</h4>
+                            <h4>جميع الأصناف</h4>
                         </div>
 
                         <!-- Content -->
                         <div class="content">
-                            <h2>85,000</h2>
+                            <h2>
+                                <?php $sql = "SELECT * FROM aes_lines";
+                                echo $pdo->query($sql)->rowCount();
+                                ?>
+                            </h2>
                         </div>
 
                         <!-- Footer -->
@@ -273,46 +285,21 @@
 
                                     <!-- Table Body Start -->
                                     <tbody>
-                                        <tr>
-                                            <td>22</td>
-                                            <td><a href="#">Microsoft surface pro 4</a></td>
-                                            <td>
-                                                <div class="table-action-buttons">
-                                                    <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
-                                                    <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                                </div>
-                                            </td>                                      
-                                         </tr>
-                                        <tr class="selected">
-                                            <td>23</td>
-                                            <td><a href="#">Microsoft surface pro 4</a></td>
-                                            <td>
-                                                <div class="table-action-buttons">
-                                                    <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
-                                                    <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                                </div>
-                                            </td>                                         
-                                        </tr>
-                                        <tr>
-                                            <td>24</td>
-                                            <td><a href="#">Microsoft surface pro 4</a></td>
-                                            <td>
-                                                <div class="table-action-buttons">
-                                                    <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
-                                                    <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                                </div>
-                                            </td>                                         
-                                        </tr>
-                                        <tr>
-                                            <td>25</td>
-                                            <td><a href="#">Microsoft surface pro 4</a></td>
-                                            <td>
-                                                <div class="table-action-buttons">
-                                                    <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
-                                                    <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                                </div>
-                                            </td>                                       
-                                          </tr>
+                                        <?php
+                                            $sql = "SELECT * FROM `aes_lines` ";
+                                            foreach ($pdo->query($sql) as $row) { ?>
+                                                <tr>
+                                                <td><?php echo $row['id'];  ?></td>
+                                                <td><a href="#"><?php echo $row['name']; ?></a></td>
+                                                <td>
+                                                    <div class="table-action-buttons">
+                                                        <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
+                                                        <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
+                                                    </div>
+                                                </td>                                      
+                                            </tr>
+                                        <?php }?>
+                                        
                                     </tbody><!-- Table Body End -->
 
                                 </table>
