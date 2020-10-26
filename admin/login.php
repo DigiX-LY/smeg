@@ -14,7 +14,7 @@
         //check if the username is empty
         if(empty(trim($_POST["username"])))
         {
-            $username_err = "Please enter your username";
+            $username_err = "من فضلك أدخل إسم المستخدم";
         }
         else
         {
@@ -23,7 +23,7 @@
         //check if the password is empty
         if(empty(trim($_POST["password"])))
         {
-            $password_err = "Please enter your password";
+            $password_err = "من فضلك أدخل كلمة المرور";
         }
         else
         {
@@ -65,14 +65,14 @@
                             }
                             else
                             {
-                                $password_err = "The password you entered was not valid.";
+                                $password_err = "كلمة السر التي أدخلتها غير صحيحة";
                             }
                             
                         }
                     }
                     else
                     {
-                        $username_err = "No account found with this username";
+                        $username_err = "إسم المستخدم غير موجود";
                     }
                 }
                 unset($stmt);
@@ -143,7 +143,7 @@
                                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                                     <div class="row loginBlock">
                                         <div class="col-12 mb-20">
-                                            <input class="form-control" name="username" type="text" placeholder="User ID / Email">
+                                            <input class="form-control" name="username" type="text" placeholder="Username">
                                             <span style="color: red;"><?php echo $username_err ?></span>
                                         </div>
                                         <div class="col-12 mb-20">

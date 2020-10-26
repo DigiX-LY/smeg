@@ -1,6 +1,18 @@
 <?php
     session_start();
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: login.php");
+        exit;
+    }
     include("../include/DBconnection.php");
+    
+    
+
+    if(isset($_POST["aes_line"]))
+    {
+        $sql = "INSERT INTO `aes_lines` (`id`, `name`) VALUES ('', '{$_POST['aes_line']}') ";
+        $pdo->query($sql);
+    }
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -241,22 +253,26 @@
                 <div class="col-4 mb-30">
                     <div class="box">
                         <div class="box-body"><br><br>
-                            <form>
+
+                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
+
                                 <div class="row mbn-20">
                                     <div class="col-12 mb-20"><br>
+                                    
                                         <h4 class="title"> إضافة صنف جديد</h4>
 
                                         <h6 for="formLayoutUsername1">
                                             
                                             * ملاحظة: سوف الفئات تساعدك على طلب المنتجات وتجعل من السهل على المستخدم للبحث.
-<br> الرجاء كتابة اسم الفئة أدناه:
+                                            <br> الرجاء كتابة اسم الفئة أدناه:
                                         </h6>
-                                        <input type="text" id="formLayoutUsername1" class="form-control" placeholder="إسم الصنف">
+
+                                        <input type="text" name="aes_line" id="formLayoutUsername1" class="form-control" placeholder="إسم الصنف">
                                     </div>
                                    
                                     <div class="col-12 mb-20">
-                                        <input type="submit" value="إضافة" class="button button-primary">
-                                        <input type="submit" value="إلغاء" class="button button-danger">
+                                            <input type="submit" value="إضافة" class="button button-primary">
+                                            <input type="reset" value="إلغاء" class="button button-danger">
                                     </div>
 
                                 </div>
@@ -294,7 +310,7 @@
                                                 <td>
                                                     <div class="table-action-buttons">
                                                         <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
-                                                        <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
+                                                        <a class="delete button button-box button-xs button-danger"><i class="zmdi zmdi-delete"></i></a>
                                                     </div>
                                                 </td>                                      
                                             </tr>
@@ -344,7 +360,7 @@
                                     
                                     <div class="col-12 mb-20">
                                         <input type="submit" value="تأكيد" class="button button-primary">
-                                        <input type="submit" value="إلغاء" class="button button-danger">
+                                        <input type="reset" value="إلغاء" class="button button-danger">
                                     </div>
 
                                 </div>

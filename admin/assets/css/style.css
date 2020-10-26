@@ -4630,14 +4630,14 @@ label.inline:last-child {
   margin-right: 0;
 }
 
-/*Form Coltrol*/
+/*Form Control*/
 .form-control, #toast-container .toast .toast-message input, .dataTables_wrapper .dataTables_length label input, .dataTables_wrapper .dataTables_filter label input, .dataTables_wrapper .dataTables_length label select, .dataTables_wrapper .dataTables_filter label select, .footable.table thead tr th .footable-filtering-search .input-group .form-control, .jsgrid-grid-header table tr th input, .jsgrid-grid-header table tr th select, .jsgrid-grid-header table tr td input, .jsgrid-grid-header table tr td select, body.skin-dark .footable.table thead tr th .footable-filtering-search .input-group .form-control, body.skin-dark .jsgrid-table tr th input:not(.jsgrid-button), body.skin-dark .jsgrid-table tr td input:not(.jsgrid-button), body.skin-dark .jsgrid-table tr th select, body.skin-dark .jsgrid-table tr td select {
   width: 100%;
   background-color: transparent;
   border: 1px solid black;
   border-radius: 4px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
+  font-family: 'dinfont';
+  font-size: 16px;
   line-height: 24px;
   padding: 10px 20px;
   color: #505050;
@@ -4651,6 +4651,16 @@ label.inline:last-child {
   background: transparent;
   color:white;
 }
+.form-control:focus{
+  color:black;
+}
+.loginBlock .form-control:focus{
+  color:white;
+}
+.loginBlock .form-control{
+  color:rgb(219, 219, 219);
+}
+
 
 .form-control[readonly], #toast-container .toast .toast-message input[readonly], .dataTables_wrapper .dataTables_length label input[readonly], .dataTables_wrapper .dataTables_filter label input[readonly], .dataTables_wrapper .dataTables_length label select[readonly], .dataTables_wrapper .dataTables_filter label select[readonly], .footable.table thead tr th .footable-filtering-search .input-group .form-control[readonly], .jsgrid-grid-header table tr th input[readonly], .jsgrid-grid-header table tr th select[readonly], .jsgrid-grid-header table tr td input[readonly], .jsgrid-grid-header table tr td select[readonly], body.skin-dark .footable.table thead tr th .footable-filtering-search .input-group .form-control[readonly], body.skin-dark .jsgrid-table tr th input[readonly]:not(.jsgrid-button), body.skin-dark .jsgrid-table tr td input[readonly]:not(.jsgrid-button), body.skin-dark .jsgrid-table tr th select[readonly], body.skin-dark .jsgrid-table tr td select[readonly] {
   background-color: transparent;
