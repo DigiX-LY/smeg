@@ -304,13 +304,13 @@
                                         <?php
                                             $sql = "SELECT * FROM `aes_lines` ";
                                             foreach ($pdo->query($sql) as $row) { ?>
-                                                <tr>
+                                                <tr id="<?php echo $row['id'];?>">
                                                 <td><?php echo $row['id'];  ?></td>
                                                 <td><a href="#"><?php echo $row['name']; ?></a></td>
                                                 <td>
                                                     <div class="table-action-buttons">
-                                                        <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
-                                                        <a class="delete button button-box button-xs button-danger"><i class="zmdi zmdi-delete"></i></a>
+                                                        <a id="<?php echo $row['id'];?>" class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
+                                                        <a id="<?php echo $row['id'];?>" onclick="archiveFunction(this.id)" class="delete button button-box button-xs button-danger"><i class="zmdi zmdi-delete"></i></a>
                                                     </div>
                                                 </td>                                      
                                             </tr>
@@ -447,6 +447,41 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
+
+        function archiveFunction(id){//this functions passes the php id from the database
+            event.preventDefault();
+            swal({
+                title: "هل أنت متأكد؟",
+                text: " بعدما تقوم بالمسح لن يمكنك إسترداد الملف!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                    if(willDelete)
+                    {
+                        $.ajax({
+                            method: 'POST',
+                            data: {'delete':true, 'id':id},
+                            url: '../admin/DBalt/delete.php',
+                            success: function(data)
+                            {
+                                
+                            }
+                        });
+                        //$().remove remove the element that has 
+                        $("tr[id ="+id+"]").remove();
+                        swal("تم مسح الملف!", {
+                                icon: "success",
+                                });
+                    }
+                    else 
+                    {
+                    swal("ملفك بإمان");
+                    }
+            });
+        }
+/*
         $('.delete ').on('click', function(){
             swal({
                 title: "هل أنت متأكد؟",
@@ -457,6 +492,14 @@
                 })
                 .then((willDelete) => {
                 if (willDelete) {
+                    $.ajax({
+                        method: 'POST',
+                        data: {'delete':true, 'id': id},
+                        url: 'delete.php',
+                        success: function(data){
+
+                        }
+                    })
                     swal("تم مسح الملف!", {
                     icon: "success",
                     });
@@ -464,7 +507,7 @@
                     swal("ملفك بإمان");
                 }
                 });
-                        }); 
+                        }); */
     </script>
 
 </body>
