@@ -94,7 +94,7 @@
                                             </div>
                                             <div class="body">
                                                 <ul>
-                                                    <li><a href="login.html"><i class="zmdi zmdi-lock-open"></i>Sign out</a></li>
+                                                    <li><a href="login.php"><i class="zmdi zmdi-lock-open"></i>Sign out</a></li>
                                                 </ul>
                                               
                                             </div>
@@ -120,11 +120,11 @@
 
                 <nav class="side-header-menu" id="side-header-menu">
                     <ul>
-                        <li><a href="index.html"><i class="ti-home"></i> <span>لوحة التحكم</span></a>
+                        <li><a href="index.php"><i class="ti-home"></i> <span>لوحة التحكم</span></a>
                         </li>                          
-                        <li><a href="manage-products.html"><i class="ti-shopping-cart"></i> <span>إدارة المنتجات</span></a>
+                        <li><a href="manage-products.php"><i class="ti-shopping-cart"></i> <span>إدارة المنتجات</span></a>
                         </li>
-                        <li><a href="manage-brands.html"><i class="ti-layers"></i> <span>إدارة الأصناف</span></a>
+                        <li><a href="manage-brands.php"><i class="ti-layers"></i> <span>إدارة الأصناف</span></a>
                         </li>
                         <li><a href="#"><i class="ti-stamp"></i> <span>ملفي الشخصي</span></a>
                         </li>

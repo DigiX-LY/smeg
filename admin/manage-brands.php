@@ -328,6 +328,7 @@
                 buttons: true,
                 dangerMode: true,
                 })
+
                 .then((willDelete) => {
                 if (willDelete) {
                     swal("تم مسح الملف!", {
@@ -337,7 +338,7 @@
                     swal("ملفك بإمان");
                 }
                 });
-                        }); 
+            }); 
     </script>
 
 

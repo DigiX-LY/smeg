@@ -126,11 +126,11 @@
 
                 <nav class="side-header-menu" id="side-header-menu">
                     <ul>
-                        <li><a href="index.html"><i class="ti-home"></i> <span>لوحة التحكم</span></a>
+                        <li><a href="index.php"><i class="ti-home"></i> <span>لوحة التحكم</span></a>
                         </li>                          
-                        <li><a href="manage-products.html"><i class="ti-shopping-cart"></i> <span>إدارة المنتجات</span></a>
+                        <li><a href="manage-products.php"><i class="ti-shopping-cart"></i> <span>إدارة المنتجات</span></a>
                         </li>
-                        <li><a href="manage-brands.html"><i class="ti-layers"></i> <span>إدارة الأصناف</span></a>
+                        <li><a href="manage-brands.php"><i class="ti-layers"></i> <span>إدارة الأصناف</span></a>
                         </li>
                         <li><a href="#"><i class="ti-stamp"></i> <span>ملفي الشخصي</span></a>
                         </li>
@@ -194,12 +194,12 @@
 
                         <!-- Head -->
                         <div class="head">
-                            <h4>جميع الأصناف</h4>
+                            <h4>جميع الخطوط الجمالية</h4>
                         </div>
 
                         <!-- Content -->
                         <div class="content">
-                            <h2>
+                            <h2 id="lines">
                                 <?php $sql = "SELECT * FROM aes_lines";
                                 echo $pdo->query($sql)->rowCount();
                                 ?>
@@ -259,7 +259,7 @@
                                 <div class="row mbn-20">
                                     <div class="col-12 mb-20"><br>
                                     
-                                        <h4 class="title"> إضافة صنف جديد</h4>
+                                        <h4 class="title"> إضافة خط جمالي جديد</h4>
 
                                         <h6 for="formLayoutUsername1">
                                             
@@ -267,7 +267,7 @@
                                             <br> الرجاء كتابة اسم الفئة أدناه:
                                         </h6>
 
-                                        <input type="text" name="aes_line" id="formLayoutUsername1" class="form-control" placeholder="إسم الصنف">
+                                        <input type="text" name="aes_line" id="formLayoutUsername1" class="form-control" placeholder="إسم الخط">
                                     </div>
                                    
                                     <div class="col-12 mb-20">
@@ -284,7 +284,7 @@
                 <div class="col-8 mb-30">
                     <div class="box">
                         <div class="box-head">
-                            <h4 class="title">إدارة الأصناف</h4>
+                            <h4 class="title">إدارة الخطوط الجمالية</h4>
                         </div>
                         <div class="box-body">
                             <div class="table-responsive">
@@ -306,11 +306,11 @@
                                             foreach ($pdo->query($sql) as $row) { ?>
                                                 <tr id="<?php echo $row['id'];?>">
                                                 <td><?php echo $row['id'];  ?></td>
-                                                <td><a href="#"><?php echo $row['name']; ?></a></td>
+                                                <td><a href="#" id="<?php echo $row['id'];?>name"><?php echo $row['name']; ?></a></td>
                                                 <td>
                                                     <div class="table-action-buttons">
-                                                        <a id="<?php echo $row['id'];?>" class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
-                                                        <a id="<?php echo $row['id'];?>" onclick="archiveFunction(this.id)" class="delete button button-box button-xs button-danger"><i class="zmdi zmdi-delete"></i></a>
+                                                        <a id="<?php echo $row['id'];?>" name="<?php echo $row['name'];?>" onclick="editFrom(this.id,this.name)" class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
+                                                        <a id="<?php echo $row['id'];?>" onclick="deleteFrom(this.id)" class="delete button button-box button-xs button-danger"><i class="zmdi zmdi-delete"></i></a>
                                                     </div>
                                                 </td>                                      
                                             </tr>
@@ -384,7 +384,8 @@
 
     </div>
 
-    <div class="modal fade" id="editModal">
+    <!-- EDITING MODAL  
+        <div class="modal fade" id="editModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -402,7 +403,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- JS
 ============================================ -->
@@ -448,7 +449,7 @@
 
     <script>
 
-        function archiveFunction(id){//this functions passes the php id from the database
+        function deleteFrom(id){//this functions passes the php id from the database
             event.preventDefault();
             swal({
                 title: "هل أنت متأكد؟",
@@ -466,7 +467,8 @@
                             url: '../admin/DBalt/delete.php',
                             success: function(data)
                             {
-                                
+                                $('#lines').text($('#lines').text() - 1) ;
+
                             }
                         });
                         //$().remove remove the element that has 
@@ -481,6 +483,61 @@
                     }
             });
         }
+
+
+        function editFrom(id,line_name)
+        {
+            var input;
+            swal({
+                
+                    content:{
+                        element:"input",
+                        attributes: {
+                            value: line_name
+                        }
+                    },
+                    title: 'قم بالتعديل:',
+                    button:{
+                        text: "تعديل",
+                        value: true,
+                        visible : true,
+                        closeModal: true
+                    }
+                }//,()=>{input = inputValue;}
+                )
+                .then(willEdit =>{
+                    if(willEdit)
+                    {
+                        $.ajax({
+                            method: 'POST',
+                            data: {'edit':true, 'id':id, 'linename':willEdit},
+                            url: '../admin/DBalt/edit.php',
+                            success: function(data){
+                                swal("تم تعديل الملف!", {
+                                icon: "success",
+                                });
+                                $("#"+id+"name").text(willEdit);
+                                
+                            }
+                        });
+                    }
+                    else
+                    {
+                        swal({
+                            title: 'تم إلغاء التعديل',
+                            icon:"warning",
+                            button:{
+                                text: "حسناً",
+                                value: true,
+                                visible : true,
+                                closeModal: true
+                            }
+                        });
+                    }
+                })
+        }
+
+
 /*
         $('.delete ').on('click', function(){
             swal({
