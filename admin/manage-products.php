@@ -59,7 +59,7 @@
 
                     <!-- Header Logo (Header Left) Start -->
                     <div class="header-logo col-8">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="../logo/Smeg-Logo-06.svg" alt="" width="185">
                         </a>
                     </div><!-- Header Logo (Header Left) End -->
