@@ -254,7 +254,7 @@
                     <div class="box">
                         <div class="box-body"><br><br>
 
-                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
+                            <form>
 
                                 <div class="row mbn-20">
                                     <div class="col-12 mb-20"><br>
@@ -271,7 +271,7 @@
                                     </div>
                                    
                                     <div class="col-12 mb-20">
-                                            <input type="submit" value="إضافة" class="button button-primary">
+                                            <input onclick="addItem($('#formLayoutUsername1').val())" type="reset" value="إضافة" class="button button-primary">
                                             <input type="reset" value="إلغاء" class="button button-danger">
                                     </div>
 
@@ -300,7 +300,7 @@
                                     </thead><!-- Table Head End -->
 
                                     <!-- Table Body Start -->
-                                    <tbody>
+                                    <tbody id="aes_lines_table">
                                         <?php
                                             $sql = "SELECT * FROM `aes_lines` ";
                                             foreach ($pdo->query($sql) as $row) { ?>
@@ -471,7 +471,6 @@
 
                             }
                         });
-                        //$().remove remove the element that has 
                         $("tr[id ="+id+"]").remove();
                         swal("تم مسح الملف!", {
                                 icon: "success",
@@ -535,6 +534,28 @@
                         });
                     }
                 })
+        }
+
+        function addItem(line_name)
+        {
+            $.ajax({
+                method: 'POST',
+                data:{'add':true, 'linename':line_name},
+                url: '../admin/DBalt/add.php',
+                success: function(data){
+                    swal("تمت الإضافة بنجاح!", {
+                                icon: "success",
+                        });
+
+                     $("#aes_lines_table").append("<tr id="+data+"><td>"+data+"</td><td><a href='#' id="+data+"name>"+line_name+"</a></td>"+
+                     "<td>"+
+                     "<div class='table-action-buttons'>"+
+                     "<a id="+data+" name="+line_name+" onclick='editFrom(this.id,this.name)' class='edit button button-box button-xs button-info' data-toggle='modal' data-target='#editModal'><i class='zmdi zmdi-edit'></i></a>"+
+                     "<a id="+data+" onclick='deleteFrom(this.id)' class='delete button button-box button-xs button-danger'><i class='zmdi zmdi-delete'></i></a>"+
+                     "</div></td></tr>");
+                    
+                }
+            });
         }
 
 
