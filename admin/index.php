@@ -517,6 +517,11 @@
                                 });
                                 $("#"+id+"name").text(willEdit);
                                 
+                            },
+                            error: function(data){
+                                swal("something went wrong!", {
+                                icon: "warning",
+                                });
                             }
                         });
                     }
@@ -546,6 +551,8 @@
                     swal("تمت الإضافة بنجاح!", {
                                 icon: "success",
                         });
+                    
+                    $('#lines').text(parseInt($('#lines').text())+1) ; //add one to the card when an item is added
 
                      $("#aes_lines_table").append("<tr id="+data+"><td>"+data+"</td><td><a href='#' id="+data+"name>"+line_name+"</a></td>"+
                      "<td>"+
