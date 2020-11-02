@@ -149,6 +149,66 @@
 
             </div><!-- Page Headings End -->
 
+
+            <!-- modal for adding products -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addingModal">
+            +إضافة منتج
+            </button>
+
+            <!-- Modal -->
+            <div class="modal" id="addingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">إضافة منتج</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding-top: 30px;">
+                    <form>
+                        <label>إسم المنتج</label>
+                        <input class="form-control" type="text" placeholder="إسم المنتج">
+                        <label>الخط الجمالي</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <?php
+                                $sql = "SELECT `name` from `aes_lines`";
+                                foreach ($pdo->query($sql) as $row) { ?>
+                                    <option><?php echo $row['name'];?></option>
+                            <?php }?>
+                        </select>
+                        <label>النوع</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <?php
+                                $sSQL = 'SET CHARACTER SET utf8'; 
+                                $pdo->query($sSQL);
+                                    $sql = "SELECT `name` from `sub_cat`";
+                                    foreach ($pdo->query($sql) as $row) { ?>
+                                    <option><?php echo ($row['name']);?></option>
+                                <?php }?>
+                        </select>
+                        <label>اللون</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option>أسود</option>
+                        <option>أبيض</option>
+                        <option>فضي</option>
+                        <option>أحمر</option>
+                        <option>أخضر</option>
+                        </select>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">صورة المنتج</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-primary">إضافة منتج</button>
+                </div>
+                </div>
+            </div>
+            </div>
             <div class="row">
 
                 <!--Manage Product List Start-->

@@ -61,6 +61,7 @@
     20. Footer CSS
     21. Dark Skin (Dark Version) CSS
     22. RTL Version CSS
+    23. Bootstrap Modal
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -14186,6 +14187,26 @@ body.skin-dark .cus-radio.light .icon {
 body.skin-dark .cus-radio.light .icon::before {
   background-color: #202334;
 }
+/*----------------------------------------*/
+/*  23. Header CSS
+/*----------------------------------------*/
+
+
+/* controlling the outer side of the moda */
+.modalOuter{
+  margin-top: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*----------------------------------------*/
 /*  22. RTL Version CSS
