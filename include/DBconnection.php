@@ -14,4 +14,6 @@ catch(PDOException $e)
     die("ERROR: Could not connect to ".DB_SERVER." ".$e->getMessage());
     
 }
+$sSQL = 'SET CHARACTER SET utf8'; 
+$pdo->query($sSQL);
 ?>

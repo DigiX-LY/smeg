@@ -1,6 +1,7 @@
 <?php
     include 'include/DBconnection.php';
-    
+    $sql = "SELECT name,cat_desc FROM sub_cat where en_name ='". trim($_GET['category'])."'"; 
+        foreach($pdo->query($sql) as $row){}
 ?>
 <!doctype html>
 <html lang="en">
@@ -8,7 +9,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Major appliances</title>
+<title>Smeg Libya | Major appliances | <?php echo $_GET['category'];?></title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -20,7 +21,6 @@
 <link rel="stylesheet" type="text/css" href="css/settings.css">
 <link rel="stylesheet" href="css/dinfont.css"> 
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
-<link rel="stylesheet" type="text/css" href="css/loader.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!--[if lt IE 9]>
@@ -55,7 +55,8 @@
             <ul class="breadcrumb">
               <li><a href="index.html">الرئيسية</a></li>
               <li>منتجات</li>
-              <li class="active">منتجات رئيسية</li>
+              <li>منتجات رئيسية</li>
+              <li class="active"><?php echo $row['name']; ?></li>
             </ul>
           </div>
         </div>
@@ -66,8 +67,11 @@
 <!-- black section -->
 <section>
     <div class="container blackSection">
-        <h1 class="blackSectionTitle">أفــــران</h1>
-        <h6 class="blackSectionDesc">تقدم Smeg مجموعة واسعة من الأفران المدمجة ، المصممة والمنتجة في إيطاليا ، مع العديد من الوظائف المثالية لأي نوع من المأكولات ، من البيتزا إلى الحلويات الأكثر دقة. تختلف في الحجم والتشطيب ، وهي متوفرة بثمانية أشكال جمالية حصرية يمكن تنسيقها مع أجهزة Smeg المدمجة الأخرى: المواقد ، والشفاطات ، وآلات القهوة ، والأدراج ، و المبردات.</h6>
+        <h1 class="blackSectionTitle">
+        <?php
+            echo $row['name'];
+         ?></h1>
+        <h6 class="blackSectionDesc"> <?php echo $row['cat_desc']; ?></h6>
     </div>
 </section>
 <!-- products section -->
@@ -145,84 +149,52 @@
                 </div>
                 <div class="col-sm-10 " id="product-list-container">
                     <div class="row products-list">
-                        <div id="SFP6604PNRE" class="listItem col-12 col-sm-6 col-lg-4   
-                                              product-preview  FAM_1162 CATEGORY_1 COOKING_TYPE1_3 ENERGY_INPUT_3 NEW_COLOR_19 NEW_AESTHETICS_6 COMP_FIN_11 RECIPES_PERS_1 FUN_CLEAN_3/1 SMARTC_1 MAT_CAVITY1_2 SHELVE_N1_5 CLEANING_INTEGRATED1_4 SOFT_CLOSE_SYSTEM_1 N_CAVITY_1 ENERGY_CLASS1_EU_3 USE_VOL_CAVITY1_27 GROSS_VOL_CAVITY1_5 VOLTAGE_220-240
-                                            ">
-                            <div class="product-content">
-                                <a href="https://www.smeg.com/products/SFP6604PNRE">
-                                    <div class="product-preview__gallery">
-                                        <img src="images/ovens/oven1.jpg" alt="SFP6604PNRE" style="width:100%">
-                                    </div>
-                                    <div class="Productname">SFP6604PNRE</div>
-                                    <div class="product-preview__description">Oven | Dolce Stil Novo | Black</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="SFP6604PNRE" class="listItem col-12 col-sm-6 col-lg-4   
-                                              product-preview  FAM_1162 CATEGORY_1 COOKING_TYPE1_3 ENERGY_INPUT_3 NEW_COLOR_19 NEW_AESTHETICS_6 COMP_FIN_11 RECIPES_PERS_1 FUN_CLEAN_3/1 SMARTC_1 MAT_CAVITY1_2 SHELVE_N1_5 CLEANING_INTEGRATED1_4 SOFT_CLOSE_SYSTEM_1 N_CAVITY_1 ENERGY_CLASS1_EU_3 USE_VOL_CAVITY1_27 GROSS_VOL_CAVITY1_5 VOLTAGE_220-240
-                                            ">
-                            <div class="product-content">
-                                <a href="https://www.smeg.com/products/SFP6604PNRE">
-                                    <div class="product-preview__gallery">
-                                        <img src="images/ovens/oven2.jpg" alt="SFP6604PNRE" style="width:100%">
-                                    </div>
-                                    <div class="Productname">SFP6604PNRE</div>
-                                    <div class="product-preview__description">Oven | Dolce Stil Novo | Silver</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="SFP6604PNRE" class="listItem col-12 col-sm-6 col-lg-4   
-                                              product-preview  FAM_1162 CATEGORY_1 COOKING_TYPE1_3 ENERGY_INPUT_3 NEW_COLOR_19 NEW_AESTHETICS_6 COMP_FIN_11 RECIPES_PERS_1 FUN_CLEAN_3/1 SMARTC_1 MAT_CAVITY1_2 SHELVE_N1_5 CLEANING_INTEGRATED1_4 SOFT_CLOSE_SYSTEM_1 N_CAVITY_1 ENERGY_CLASS1_EU_3 USE_VOL_CAVITY1_27 GROSS_VOL_CAVITY1_5 VOLTAGE_220-240
-                                            ">
-                            <div class="product-content">
-                                <a href="https://www.smeg.com/products/SFP6604PNRE">
-                                    <div class="product-preview__gallery">
-                                        <img src="images/ovens/oven3.jpg" alt="SFP6604PNRE" style="width:100%">
-                                    </div>
-                                    <div class="Productname">SFP6604PNRE</div>
-                                    <div class="product-preview__description">Oven | Dolce Stil Novo | White</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="SFP6604PNRE" class="listItem col-12 col-sm-6 col-lg-4   
-                                              product-preview  FAM_1162 CATEGORY_1 COOKING_TYPE1_3 ENERGY_INPUT_3 NEW_COLOR_19 NEW_AESTHETICS_6 COMP_FIN_11 RECIPES_PERS_1 FUN_CLEAN_3/1 SMARTC_1 MAT_CAVITY1_2 SHELVE_N1_5 CLEANING_INTEGRATED1_4 SOFT_CLOSE_SYSTEM_1 N_CAVITY_1 ENERGY_CLASS1_EU_3 USE_VOL_CAVITY1_27 GROSS_VOL_CAVITY1_5 VOLTAGE_220-240
-                                            ">
-                            <div class="product-content">
-                                <a href="https://www.smeg.com/products/SFP6604PNRE">
-                                    <div class="product-preview__gallery">
-                                        <img src="images/ovens/oven4.jpg" alt="SFP6604PNRE" style="width:100%">
-                                    </div>
-                                    <div class="Productname">SFP6604PNRE</div>
-                                    <div class="product-preview__description">Oven | Dolce Stil Novo | Light Black</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="SFP6604PNRE" class="listItem col-12 col-sm-6 col-lg-4   
-                                              product-preview  FAM_1162 CATEGORY_1 COOKING_TYPE1_3 ENERGY_INPUT_3 NEW_COLOR_19 NEW_AESTHETICS_6 COMP_FIN_11 RECIPES_PERS_1 FUN_CLEAN_3/1 SMARTC_1 MAT_CAVITY1_2 SHELVE_N1_5 CLEANING_INTEGRATED1_4 SOFT_CLOSE_SYSTEM_1 N_CAVITY_1 ENERGY_CLASS1_EU_3 USE_VOL_CAVITY1_27 GROSS_VOL_CAVITY1_5 VOLTAGE_220-240
-                                            ">
-                            <div class="product-content">
-                                <a href="https://www.smeg.com/products/SFP6604PNRE">
-                                    <div class="product-preview__gallery">
-                                        <img src="images/ovens/oven5.jpg" alt="SFP6604PNRE" style="width:100%">
-                                    </div>
-                                    <div class="Productname">SFP6604PNRE</div>
-                                    <div class="product-preview__description">Oven | Dolce Stil Novo | Dark Black</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="SFP6604PNRE" class="listItem col-12 col-sm-6 col-lg-4   
-                                              product-preview  FAM_1162 CATEGORY_1 COOKING_TYPE1_3 ENERGY_INPUT_3 NEW_COLOR_19 NEW_AESTHETICS_6 COMP_FIN_11 RECIPES_PERS_1 FUN_CLEAN_3/1 SMARTC_1 MAT_CAVITY1_2 SHELVE_N1_5 CLEANING_INTEGRATED1_4 SOFT_CLOSE_SYSTEM_1 N_CAVITY_1 ENERGY_CLASS1_EU_3 USE_VOL_CAVITY1_27 GROSS_VOL_CAVITY1_5 VOLTAGE_220-240
-                                            ">
-                            <div class="product-content">
-                                <a href="https://www.smeg.com/products/SFP6604PNRE">
-                                    <div class="product-preview__gallery">
-                                        <img src="images/ovens/oven6.jpg" alt="SFP6604PNRE" style="width:100%">
-                                    </div>
-                                    <div class="Productname">SFP6604PNRE</div>
-                                    <div class="product-preview__description">Oven | Dolce Stil Novo | White</div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php
+                            $sql = "SELECT products.img_url'url', products.name'prod_name', sub_cat.name'cat_name', aes_lines.name'aes_name', products.color'color'\n"
+
+                            . "FROM products\n"
+                        
+                            . "INNER JOIN sub_cat ON products.sub_cat_id = sub_cat.sub_cat_id\n"
+                        
+                            . "INNER JOIN aes_lines ON products.line_id = aes_lines.id\n"
+
+                            . "WHERE sub_cat.en_name = :subcat ";
+
+                            if($stmt = $pdo->prepare($sql))
+                            {
+                                $stmt->bindParam(":subcat",$subcat_param,PDO::PARAM_STR);
+                                $subcat_param = trim($_GET['category']);
+                                if($stmt->execute()){
+                                    if($row = $stmt->fetchAll()){
+                                        foreach($row as $product){?>
+                                        <div id="<?php echo $product['prod_name'];?>" class="listItem col-12 col-sm-6 col-lg-4 product-preview">
+                                            <div class="product-content">
+                                                <a href="https://www.smeg.com/products/SFP6604PNRE">
+                                                    <div class="product-preview__gallery">
+                                                        <img src="<?php echo $product['url'];?>" alt="product picture" style="width:100%">
+                                                    </div>
+                                                    <div class="Productname"><?php echo $product['prod_name'];?></div>
+                                                    <div class="product-preview__description">
+                                                    <?php echo $product['cat_name'];?> |
+                                                    <?php echo $product['aes_name'];?> |
+                                                    <?php echo $product['color'];?>
+                                                    
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                
+
+                                
+                        <?php           }
+                                    }
+                                }
+                            }
+                         ?>
+                            
+                            
+                            
                     </div>
                 </div>
             </div>

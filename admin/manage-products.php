@@ -188,14 +188,8 @@
                                     <option><?php echo ($row['name']);?></option>
                                 <?php }?>
                         </select>
-                        <label>اللون</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                        <option>أسود</option>
-                        <option>أبيض</option>
-                        <option>فضي</option>
-                        <option>أحمر</option>
-                        <option>أخضر</option>
-                        </select>
+                        <label>لون المنتج</label>
+                        <input class="form-control" type="text" placeholder="لون المنتج">
                         <div class="form-group">
                             <label for="exampleFormControlFile1">صورة المنتج</label>
                             <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -204,7 +198,7 @@
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
-                    <button type="button" class="btn btn-primary">إضافة منتج</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">إضافة منتج</button>
                 </div>
                 </div>
             </div>

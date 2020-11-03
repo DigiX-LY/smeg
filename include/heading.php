@@ -8,7 +8,7 @@
               <i class="fa fa-bars">
               </i>
             </button>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <div class="logohead">
                 <img src="logo/Smeg-Logo-06.svg" 
                 style="margin-top:20px;
@@ -20,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav navbar-right flexnav" data-in="fadeIn" data-out="fadeOut"> <!--m.yousef flexnav added to display menu in arabic-->
               <li class="dropdown active"> <!--m.yousef language changes-->
-                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"> الرئيسية
+                <a href="index.php" class="dropdown-toggle" data-toggle="dropdown"> الرئيسية
                 </a>
               </li>
               <li class="dropdown">
@@ -29,9 +29,10 @@
                 <ul class="dropdown-menu">
                   <div class="flexDropDown">
                     <div class="appliances">
-                      <a href="grid.html"><span class="productLabel">منتجات رئيسية</span></a>
+                      <a href="grid.php"><span class="productLabel">منتجات رئيسية</span></a>
                       <ul>
-                        <a href="#."><li>أفران</li></a>
+                        <!-- do fetching for categories from database with MAIN cats id and give the link to them here -->
+                        <a href="products.php?category=oven"><li>أفران</li></a>
                         <a href="#."><li>أفران الميكروويف</li></a>
                         <a href="#."><li>ماكينات القهوة</li></a>
                         <a href="#."><li>مغاسل</li></a>
@@ -40,7 +41,7 @@
                       </ul>
                     </div>
                     <div class="appliances">
-                      <a href="grid2.html"><span class="productLabel">منتجات صغيرة</span></a>
+                      <a href="grid2.php"><span class="productLabel">منتجات صغيرة</span></a>
                       <ul>
                         <a href="#."><li>الخلاطات</li></a>
                         <a href="#."><li>الخلاطات اليدوية</li></a>
@@ -59,9 +60,9 @@
                     <div class="appliances">
                       <span class="productLabel">إكتشف خطوط تصنيع سميج الجمالية</span>
                       <ul>
-                        <a href="classica.html"><li>كلاسيكا</li></a>
-                        <a href="colonial.html"><li>كولونيال</li></a>
-                        <a href="victoria.html"><li>فيكتوريا</li></a>
+                        <a href="classica.php"><li>كلاسيكا</li></a>
+                        <a href="colonial.php"><li>كولونيال</li></a>
+                        <a href="victoria.php"><li>فيكتوريا</li></a>
                         <a href="#."><li>كورتينا</li></a>
                         <a href="#."><li>لينيا</li></a>
                         <a href="#."><li>بورتوفينو</li></a>
@@ -73,7 +74,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="about.html" class="dropdown-toggle" data-toggle="dropdown"> عن الشركة
+                <a href="about.php" class="dropdown-toggle" data-toggle="dropdown"> عن الشركة
                 </a>
               </li>
             </ul>
