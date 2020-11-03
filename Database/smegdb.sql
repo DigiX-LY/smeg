@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2020 at 12:21 PM
+-- Generation Time: Nov 03, 2020 at 02:45 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -57,9 +57,7 @@ CREATE TABLE `aes_lines` (
 --
 
 INSERT INTO `aes_lines` (`id`, `name`) VALUES
-(1122, 'ÙƒÙˆØ±ØªÙŠÙ†Ø§'),
-(1127, 'editable'),
-(1130, 'ÙƒÙ„Ø§Ø³ÙŠÙƒØ§');
+(1212, 'كلاسيكا');
 
 -- --------------------------------------------------------
 
@@ -77,8 +75,8 @@ CREATE TABLE `main_cat` (
 --
 
 INSERT INTO `main_cat` (`id`, `name`) VALUES
-(1, 'رئيسية'),
-(2, 'صغيرة');
+(1, 'منتجات رئيسية'),
+(2, 'منتجات صغيرة');
 
 -- --------------------------------------------------------
 
@@ -91,8 +89,17 @@ CREATE TABLE `products` (
   `name` varchar(50) NOT NULL,
   `line_id` int(20) NOT NULL,
   `sub_cat_id` int(20) NOT NULL,
-  `color` varchar(50) NOT NULL
+  `color` varchar(50) NOT NULL,
+  `img_url` varchar(900) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`product_id`, `name`, `line_id`, `sub_cat_id`, `color`, `img_url`) VALUES
+(1, 'SFP6604PNRE', 1212, 1, 'أسود', 'http://localhost/smeg/images/ovens/oven1.jpg'),
+(2, 'SG4309JG', 1212, 2, 'أزرق', 'url');
 
 -- --------------------------------------------------------
 
@@ -103,8 +110,19 @@ CREATE TABLE `products` (
 CREATE TABLE `sub_cat` (
   `main_cat_id` int(20) NOT NULL,
   `name` varchar(50) NOT NULL,
+  `en_name` varchar(60) NOT NULL,
+  `cat_desc` varchar(600) NOT NULL,
   `sub_cat_id` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sub_cat`
+--
+
+INSERT INTO `sub_cat` (`main_cat_id`, `name`, `en_name`, `cat_desc`, `sub_cat_id`) VALUES
+(1, 'أفران', 'oven', 'تقدم Smeg مجموعة واسعة من الأفران المدمجة ، المصممة والمنتجة في إيطاليا ، مع العديد من الوظائف المثالية لأي نوع من المأكولات ، من البيتزا إلى الحلويات الأكثر دقة. تختلف في الحجم والتشطيب ، وهي متوفرة بثمانية أشكال جمالية حصرية يمكن تنسيقها مع أجهزة Smeg المدمجة الأخرى: المواقد ، والشفاطات ، وآلات القهوة ، والأدراج ، و المبردات.', 1),
+(1, 'مغسلة', 'washer', 'مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة ', 2),
+(2, 'الخلاطات', 'mixers', 'خلاط يقوم بالخلط خلاط يقوم بالخلط خلاط يقوم بالخلط خلاط يقوم بالخلط خلاط يقوم بالخلط ', 3);
 
 --
 -- Indexes for dumped tables
@@ -133,8 +151,8 @@ ALTER TABLE `main_cat`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`product_id`),
-  ADD KEY `line_id_fk` (`line_id`),
-  ADD KEY `sub_cat_id_fk` (`sub_cat_id`);
+  ADD KEY `sub_cat_id_fk` (`sub_cat_id`),
+  ADD KEY `line_id_fk` (`line_id`);
 
 --
 -- Indexes for table `sub_cat`
@@ -157,7 +175,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `aes_lines`
 --
 ALTER TABLE `aes_lines`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1131;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1213;
 
 --
 -- AUTO_INCREMENT for table `main_cat`
@@ -169,13 +187,13 @@ ALTER TABLE `main_cat`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `sub_cat`
 --
 ALTER TABLE `sub_cat`
-  MODIFY `sub_cat_id` int(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `sub_cat_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
@@ -185,6 +203,7 @@ ALTER TABLE `sub_cat`
 -- Constraints for table `products`
 --
 ALTER TABLE `products`
+  ADD CONSTRAINT `line_id_fk` FOREIGN KEY (`line_id`) REFERENCES `aes_lines` (`id`),
   ADD CONSTRAINT `sub_cat_id_fk` FOREIGN KEY (`sub_cat_id`) REFERENCES `sub_cat` (`sub_cat_id`);
 
 --

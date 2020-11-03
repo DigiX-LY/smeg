@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-sm-7">
             <ul class="breadcrumb">
-              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="index.php">الرئيسية</a></li>
               <li>منتجات</li>
               <li>منتجات رئيسية</li>
               <li class="active"><?php echo $row['name']; ?></li>
