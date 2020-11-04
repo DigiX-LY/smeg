@@ -169,36 +169,37 @@
                 <div class="modal-body" style="padding-top: 30px;">
                     <form>
                         <label>إسم المنتج</label>
-                        <input class="form-control" type="text" placeholder="إسم المنتج">
+                        <input id="prod_name" product_name="text" class="form-control" type="text" placeholder="إسم المنتج">
                         <label>الخط الجمالي</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="aesline">
                             <?php
-                                $sql = "SELECT `name` from `aes_lines`";
+                                $sql = "SELECT * from `aes_lines`";
                                 foreach ($pdo->query($sql) as $row) { ?>
-                                    <option><?php echo $row['name'];?></option>
+                                    <option id="<?php echo $row['id']; ?>"><?php echo $row['name'];?></option>
                             <?php }?>
                         </select>
                         <label>النوع</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="category">
                             <?php
-                                $sSQL = 'SET CHARACTER SET utf8'; 
-                                $pdo->query($sSQL);
-                                    $sql = "SELECT `name` from `sub_cat`";
+                                    $sql = "SELECT sub_cat.name, sub_cat.sub_cat_id'id' FROM sub_cat"; //giving each option a value id
                                     foreach ($pdo->query($sql) as $row) { ?>
-                                    <option><?php echo ($row['name']);?></option>
+                                    <option id="<?php echo $row['id']; ?>"><?php echo $row['name'];?></option>
                                 <?php }?>
                         </select>
                         <label>لون المنتج</label>
-                        <input class="form-control" type="text" placeholder="لون المنتج">
+                        <input id="color" class="form-control" type="text" placeholder="لون المنتج">
                         <div class="form-group">
                             <label for="exampleFormControlFile1">صورة المنتج</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <input id="img_url" type="file" class="form-control-file" id="exampleFormControlFile1">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">إضافة منتج</button>
+                     <!-- passing all form values into addItem function to handle the values and add them to the table -->
+                    <button type="submit" 
+                    onclick="addItem($('#prod_name').val() , $('#aesline').children('option:selected').attr('id') , $('#category').children('option:selected').attr('id'), $('#color').val(), $('#img_url').val(), $('#aesline').children('option:selected').val(),$('#category').children('option:selected').val());"
+                     class="btn btn-primary" data-dismiss="modal">إضافة منتج</button>
                 </div>
                 </div>
             </div>
@@ -214,28 +215,61 @@
                                     <th>رقم المنتج</th>
                                     <th>إسم المنتج</th>
                                     <th>الخط الجمالي</th>
-                                    <th>النوع</th>
+                                    <th>الصنف</th>
                                     <th>اللون</th>
                                     <th>تعديل/حذف</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="products_table">
                                 <?php
-                                    $sql = "SELECT * FROM `products` ";
+                                    $sql = "SELECT \n"
+
+                                    . "products.product_id'id',\n"
+                                
+                                    . "products.name'prod_name',\n"
+                                
+                                    . "aes_lines.name'aes_name',\n"
+                                
+                                    . "aes_lines.id'aes_id',\n"
+                                
+                                    . "\n"
+                                
+                                    . "sub_cat.sub_cat_id'cat_id',\n"
+                                
+                                    . "sub_cat.name'cat_name',\n"
+                                
+                                    . "\n"
+                                
+                                    . "products.color'color',\n"
+                                
+                                    . "products.img_url'img_url'\n"
+                                
+                                    . "\n"
+                                
+                                    . "FROM products\n"
+                                
+                                    . "\n"
+                                
+                                    . "INNER JOIN sub_cat ON products.sub_cat_id = sub_cat.sub_cat_id\n"
+                                
+                                    . "\n"
+                                
+                                    . "INNER JOIN aes_lines ON products.line_id = aes_lines.id";
+
                                     foreach ($pdo->query($sql) as $row) { ?>
-                                    <tr>
-                                    <td><?php echo $row['product_id'];  ?></td>
-                                    <td><a href="#"><?php echo $row['product_name']; ?></a></td>
-                                    <td><?php echo $row['line_id'];  ?></td>
-                                    <td><?php echo $row['sub_cat_id'];  ?></td>
-                                    <td><?php echo $row['color'];  ?></td>
-                                    <td>
-                                    <div class="table-action-buttons">
-                                        <a class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
-                                        <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
-                                        </div>
+                                    <tr id="<?php echo $row['id']; ?>">
+                                        <td><?php echo $row['id'];  ?></td>
+                                        <td><a href="#"><?php echo $row['prod_name']; ?></a></td>
+                                        <td><?php echo $row['aes_name'];  ?></td>
+                                        <td><?php echo $row['cat_name'];  ?></td>
+                                        <td><?php echo $row['color'];  ?></td>
+                                        <td>
+                                            <div class="table-action-buttons">
+                                                <a id="<?php echo $row['id'];?>" name="<?php echo $row['prod_name'];?>" onclick="editFrom(this.id,this.name)" class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
+                                                <a id="<?php echo $row['id'];?>" onclick="deleteFrom(this.id)" class="delete button button-box button-xs button-danger"><i class="zmdi zmdi-delete"></i></a>    
+                                            </div>
                                         </td>                                      
-                                        </tr>
+                                    </tr>
                                 <?php }?>
                             </tbody>
                         </table>
@@ -275,24 +309,71 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
-        $('.delete ').on('click', function(){
+        function deleteFrom(id){//this functions passes the php id from the database
+            event.preventDefault();
             swal({
                 title: "هل أنت متأكد؟",
                 text: " بعدما تقوم بالمسح لن يمكنك إسترداد الملف!",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
-                })
-                .then((willDelete) => {
-                if (willDelete) {
-                    swal("تم مسح الملف!", {
-                    icon: "success",
-                    });
-                } else {
+            })
+            .then((willDelete) => {
+                    if(willDelete)
+                    {
+                        $.ajax({
+                            method: 'POST',
+                            data: {'delete':true, 'id':id},
+                            url: '../admin/DBalt/deleteProduct.php',
+                            success: function(data)
+                            {
+
+                            }
+                        });
+                        $("tr[id ="+id+"]").remove();
+                        swal("تم مسح الملف!", {
+                                icon: "success",
+                        });
+                    }
+                    else 
+                    {
                     swal("ملفك بإمان");
+                    }
+            });
+        }
+        function addItem(product_name, line_id , cat_id, color, img_url, line_name, cat_name) //to add a product to the product list
+        {
+            $.ajax({
+                method: 'POST',
+                data:{'add':true,
+                 'prod_name':product_name,
+                  'line_id':line_id,
+                  'cat_id':cat_id,
+                  'color':color,
+                  'img_url':img_url
+                   },
+                url: '../admin/DBalt/addProduct.php',
+                success: function(data){
+                    swal("تمت الإضافة بنجاح!", {
+                                icon: "success",
+                        });
+                    
+                     $("#products_table").append("<tr id="+data+">"+
+                     "<td>"+data+"</td>"+
+                     "<td><a href='#'>"+product_name+"</a></td>"+
+                     "<td>"+line_name+"</td>"+
+                     "<td>"+cat_name+"</td>"+
+                     "<td>"+color+"</td>"+
+                     "<td>"+
+                     "<div class='table-action-buttons'>"+
+                     "<a id="+data+" name="+product_name+" onclick='editFrom(this.id,this.name)' class='edit button button-box button-xs button-info' data-toggle='modal' data-target='#editModal'><i class='zmdi zmdi-edit'></i></a>"+
+                     "<a id="+data+" onclick='deleteFrom(this.id)' class='delete button button-box button-xs button-danger'><i class='zmdi zmdi-delete'></i></a>"+
+                     "</div>"+
+                     "</td>"+
+                     "</tr>");
                 }
-                });
-                        }); 
+            });
+        }
     </script>
 
 

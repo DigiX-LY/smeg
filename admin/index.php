@@ -467,14 +467,24 @@
                             url: '../admin/DBalt/delete.php',
                             success: function(data)
                             {
-                                $('#lines').text($('#lines').text() - 1) ;
+                                if(data)
+                                {
+                                    swal(data,{
+                                    icon: "warning"
+                                    });
+                                }
+                                else{
+                                    $('#lines').text($('#lines').text() - 1) ;
+                                    $("tr[id ="+id+"]").remove();
+                                    swal("تم مسح الملف!", {
+                                            icon: "success",
+                                    });
 
+                                }
                             }
+                            
                         });
-                        $("tr[id ="+id+"]").remove();
-                        swal("تم مسح الملف!", {
-                                icon: "success",
-                                });
+                        
                     }
                     else 
                     {

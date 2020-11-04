@@ -169,7 +169,7 @@
                                         foreach($row as $product){?>
                                         <div id="<?php echo $product['prod_name'];?>" class="listItem col-12 col-sm-6 col-lg-4 product-preview">
                                             <div class="product-content">
-                                                <a href="https://www.smeg.com/products/SFP6604PNRE">
+                                                <a href="https://www.smeg.com/products/<?php echo $product['prod_name'];?>">
                                                     <div class="product-preview__gallery">
                                                         <img src="<?php echo $product['url'];?>" alt="product picture" style="width:100%">
                                                     </div>
