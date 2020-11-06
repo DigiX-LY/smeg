@@ -156,7 +156,7 @@
             +إضافة منتج
             </button>
 
-            <!-- Modal -->
+            <!-- Add Modal -->
             <div class="modal" id="addingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -265,7 +265,28 @@
                                         <td><?php echo $row['color'];  ?></td>
                                         <td>
                                             <div class="table-action-buttons">
-                                                <a id="<?php echo $row['id'];?>" name="<?php echo $row['prod_name'];?>" onclick="editFrom(this.id,this.name)" class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
+                                                <a id="<?php echo $row['id'];?>" prod_id="<?php echo $row['id']; ?>"
+                                                                                 prod_name="<?php echo $row['prod_name'];?>"
+                                                                                 aes_id="<?php echo $row['aes_id'];  ?>"
+                                                                                 cat_id="<?php echo $row['cat_id'];  ?>"
+                                                                                 color="<?php echo $row['color'];  ?>"
+                                                                                 img_url="<?php echo $row['img_url']; ?>"
+                                                                                 cat_name="<?php echo $row['cat_name']; ?>"
+                                                                                 line_name="<?php echo $row['aes_name']; ?>"
+                                                onclick=" idToBeEdited = 
+                                                                    editClicked(this.getAttribute('prod_id'),
+                                                                                this.getAttribute('prod_name'),
+                                                                                this.getAttribute('aes_id'),
+                                                                                this.getAttribute('cat_id'),
+                                                                                this.getAttribute('color'),
+                                                                                this.getAttribute('img_url'),
+                                                                                this.getAttribute('cat_name'),
+                                                                                this.getAttribute('line_name')
+                                                                            );"
+                                                data-toggle="modal" data-target="#editingModal" class="edit button button-box button-xs button-info" data-toggle="modal" data-target="#editModal"><i class="zmdi zmdi-edit"></i></a>
+                                                
+                                                
+                                                <!-- edit from -->
                                                 <a id="<?php echo $row['id'];?>" onclick="deleteFrom(this.id)" class="delete button button-box button-xs button-danger"><i class="zmdi zmdi-delete"></i></a>    
                                             </div>
                                         </td>                                      
@@ -276,6 +297,56 @@
                     </div>
                 </div>
                 <!--Manage Product List End-->
+
+                <!-- Edit Product Modal -->
+                <div class="modal" id="editingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">تعديل منتج</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding-top: 30px;">
+                    <form>
+                        <label>إسم المنتج</label>
+                        <input id="prod_name" value="" product_name="text" class="form-control" type="text" placeholder="إسم المنتج">
+                        <label>الخط الجمالي</label>
+                        <select class="form-control" id="aeslineEdit">
+                            <?php
+                                $sql = "SELECT * from `aes_lines`";
+                                foreach ($pdo->query($sql) as $row) { ?>
+                                    <option id="<?php echo $row['id']; ?>"><?php echo $row['name'];?></option>
+                            <?php }?>
+                        </select>
+                        <label>النوع</label>
+                        <select class="form-control" id="categoryEdit">
+                            <?php
+                                    $sql = "SELECT sub_cat.name, sub_cat.sub_cat_id'id' FROM sub_cat"; //giving each option a value id
+                                    foreach ($pdo->query($sql) as $row) { ?>
+                                    <option id="<?php echo $row['id']; ?>"><?php echo $row['name'];?></option>
+                                <?php }?>
+                        </select>
+                        <label>لون المنتج</label>
+                        <input id="color" class="form-control" type="text" placeholder="لون المنتج">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">صورة المنتج</label>
+                            <input id="img_urlEdit" type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                     <!-- passing all form values into addItem function to handle the values and add them to the table -->
+                    <button type="submit" 
+                    onclick="editFrom(idToBeEdited,$('#editingModal #prod_name').val() , $('#aeslineEdit').children('option:selected').attr('id') , $('#categoryEdit').children('option:selected').attr('id'), $('#editingModal #color').val(), $('#editingModal #img_url').val(), $('#aeslineEdit').children('option:selected').val(),$('#categoryEdit').children('option:selected').val());"
+                     class="btn btn-primary" data-dismiss="modal">تعديل منتج</button>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- MODAL END -->
 
             </div>
 
@@ -309,6 +380,8 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
+        let idToBeEdited; // a varaible that is a container for updating values 
+        
         function deleteFrom(id){//this functions passes the php id from the database
             event.preventDefault();
             swal({
@@ -366,7 +439,15 @@
                      "<td>"+color+"</td>"+
                      "<td>"+
                      "<div class='table-action-buttons'>"+
-                     "<a id="+data+" name="+product_name+" onclick='editFrom(this.id,this.name)' class='edit button button-box button-xs button-info' data-toggle='modal' data-target='#editModal'><i class='zmdi zmdi-edit'></i></a>"+
+                     "<a id="+data+" prod_id="+data+" prod_name="+product_name+" "+
+                     "aes_id="+line_id+" " +
+                     "cat_id="+cat_id+" " +
+                     "color="+color+" "+
+                     "img_url="+img_url+" "+
+                     "cat_name="+cat_name+" " +
+                     "line_name="+line_name+" "+
+                     "onclick=' idToBeEdited = editClicked(this.getAttribute(`prod_id`),this.getAttribute(`prod_name`),this.getAttribute(`aes_id`),this.getAttribute(`cat_id`),this.getAttribute(`color`),this.getAttribute(`img_url`),this.getAttribute(`cat_name`),this.getAttribute(`line_name`)); '"+
+                                                "data-toggle='modal' data-target='#editingModal' class='edit button button-box button-xs button-info' data-toggle='modal' data-target='#editModal'><i class='zmdi zmdi-edit'></i></a>"+" "+
                      "<a id="+data+" onclick='deleteFrom(this.id)' class='delete button button-box button-xs button-danger'><i class='zmdi zmdi-delete'></i></a>"+
                      "</div>"+
                      "</td>"+
@@ -374,6 +455,79 @@
                 }
             });
         }
+        //edit item but you have to
+        function editFrom(id, prod_name, line_id, cat_id, color, img_url, line_name, cat_name)
+        {
+            $.ajax({
+                            method: 'POST',
+                            data: {'edit':true,
+                             'id': id,
+                              'prod_name': prod_name,
+                              'line_id': line_id,
+                              'cat_id': cat_id,
+                              'color': color,
+                              'img_url':img_url
+                              },
+                            url: '../admin/DBalt/editProduct.php',
+                            success: function(data){
+                                swal("تم تعديل الملف!", {
+                                icon: "success",
+                                });
+                                //$("#"+id+"name").text();
+                                
+                            },
+                            error: function(data){
+                                swal("something went wrong!", {
+                                icon: "warning",
+                                });
+                            }
+                        });
+        }
+        //edit clicked function fills in the modal with the existing data
+        function editClicked(prod_id, product_name, line_id , cat_id, color, img_url, cat_name, line_name) //to edit a product fr0m the product list
+        {
+            console.log(prod_id, product_name, line_id , cat_id, color, img_url);
+            $('#editingModal #prod_name').val(product_name);
+            $('#editingModal #color').val(color);
+            $("#aeslineEdit").val(line_name);
+            $("#categoryEdit").val(cat_name);
+            return prod_id;
+            //work here !!!
+
+
+
+            /*$.ajax({
+                method: 'POST',
+                data:{'add':true,
+                 'prod_name':product_name,
+                  'line_id':line_id,
+                  'cat_id':cat_id,
+                  'color':color,
+                  'img_url':img_url
+                   },
+                url: '../admin/DBalt/addProduct.php',
+                success: function(data){
+                    swal("تمت الإضافة بنجاح!", {
+                                icon: "success",
+                        });
+                    
+                     $("#products_table").append("<tr id="+data+">"+
+                     "<td>"+data+"</td>"+
+                     "<td><a href='#'>"+product_name+"</a></td>"+
+                     "<td>"+line_name+"</td>"+
+                     "<td>"+cat_name+"</td>"+
+                     "<td>"+color+"</td>"+
+                     "<td>"+
+                     "<div class='table-action-buttons'>"+
+                     "<a id="+data+" name="+product_name+" onclick='editFrom(this.id,this.name)' class='edit button button-box button-xs button-info' data-toggle='modal' data-target='#editModal'><i class='zmdi zmdi-edit'></i></a>"+
+                     "<a id="+data+" onclick='deleteFrom(this.id)' class='delete button button-box button-xs button-danger'><i class='zmdi zmdi-delete'></i></a>"+
+                     "</div>"+
+                     "</td>"+
+                     "</tr>");
+                }
+            });*/
+        }
+
     </script>
 
 

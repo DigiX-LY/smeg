@@ -2894,12 +2894,17 @@ footer.plain_footer{
 	background:url(../images/victor_bcg.jpg) no-repeat;
 	
 }
+
 .colonialBG{
 	background:url(../images/col_bcg.jpg) no-repeat;
 	
 }
+.cortinaBG{
+	/*background url here*/
+}
+
 /*all sharing the same property*/
-.majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG{
+.majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG,.cortinaBG{
 	background-position:center center;
 	background-size:cover;
 	height: 650px;
