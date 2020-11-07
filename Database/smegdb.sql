@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 03, 2020 at 02:45 PM
+-- Generation Time: Nov 07, 2020 at 02:11 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -57,7 +57,10 @@ CREATE TABLE `aes_lines` (
 --
 
 INSERT INTO `aes_lines` (`id`, `name`) VALUES
-(1212, 'كلاسيكا');
+(1212, 'كلاسيكا'),
+(1213, 'كورتينا'),
+(1215, 'كولونيال'),
+(1221, 'لينيا');
 
 -- --------------------------------------------------------
 
@@ -99,7 +102,10 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`product_id`, `name`, `line_id`, `sub_cat_id`, `color`, `img_url`) VALUES
 (1, 'SFP6604PNRE', 1212, 1, 'أسود', 'http://localhost/smeg/images/ovens/oven1.jpg'),
-(2, 'SG4309JG', 1212, 2, 'أزرق', 'url');
+(2, 'SG4309JG', 1212, 2, 'أزرق', 'http://localhost/smeg/images/ovens/oven2.jpg'),
+(5, 'EGEM34M5', 1213, 1, 'أزرق', 'http://localhost/smeg/images/ovens/oven6.jpg'),
+(62, 'rexs1', 1215, 1, 'xczwfwe', ''),
+(64, 'foathers', 1221, 12, 'fancy blue', '');
 
 -- --------------------------------------------------------
 
@@ -121,8 +127,17 @@ CREATE TABLE `sub_cat` (
 
 INSERT INTO `sub_cat` (`main_cat_id`, `name`, `en_name`, `cat_desc`, `sub_cat_id`) VALUES
 (1, 'أفران', 'oven', 'تقدم Smeg مجموعة واسعة من الأفران المدمجة ، المصممة والمنتجة في إيطاليا ، مع العديد من الوظائف المثالية لأي نوع من المأكولات ، من البيتزا إلى الحلويات الأكثر دقة. تختلف في الحجم والتشطيب ، وهي متوفرة بثمانية أشكال جمالية حصرية يمكن تنسيقها مع أجهزة Smeg المدمجة الأخرى: المواقد ، والشفاطات ، وآلات القهوة ، والأدراج ، و المبردات.', 1),
-(1, 'مغسلة', 'washer', 'مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة مغسلة ', 2),
-(2, 'الخلاطات', 'mixers', 'خلاط يقوم بالخلط خلاط يقوم بالخلط خلاط يقوم بالخلط خلاط يقوم بالخلط خلاط يقوم بالخلط ', 3);
+(1, 'غسالات', 'washer', 'تقدم Smeg مجموعة واسعة من الغسالات القائمة بذاتها والمدمجة.', 2),
+(2, 'الخلاطات', 'blenders', 'تمزج خلاطات Smeg بشكل مثالي بين المكونات المختلفة القوام إلى الكمال لترافقك طوال اليوم.', 3),
+(1, 'أفران الميكروويف', 'microwave-oven', 'تتوفر أفران الميكروويف Smeg في عدد من التصميمات المختلفة التي تم إنشاؤها للحفاظ على المبادئ الجمالية لمجموعة المنتجات.', 4),
+(1, 'ماكينات صنع القهوة', 'coffee-machines', 'يمكن لآلة صنع القهوة المدمجة Smeg ، في الواقع ، استخدام كل من البن المطحون وأقراص القهوة ، مما يسمح لعشاق القهوة الإيطالية باختيار التحميص المفضل لديهم والحصول على طعم ورائحة شريط الإسبريسو الحقيقيين.', 5),
+(1, 'غسالات صحون', 'dishwashers', 'تعتبر غسالات الأطباق القائمة بذاتها أو المدمجة من Smeg الطريقة المثالية لإكمال مطبخك بأناقة.', 6),
+(1, 'ثلاجات', 'refrigerators', 'تقدم Smeg مجموعة مذهلة من الثلاجات ، مصممة لتبدو رائعة وتحافظ على طعامك طازجًا ومشروباتك باردة.', 7),
+(2, 'محمصات', 'toasters', 'تجمع محمصة Smeg بين بيئة العمل والوظائف والتوازن الجمالي. الإفطار أو الغداء أو الغداء أو الوجبة الخفيفة - عندما تقع في حب محمصة SMEG 50\'s Style ، ستجد كل الأعذار المتاحة لاستخدامها.', 8),
+(2, 'غلايات', 'kettles', 'تتميز غلايات Smeg بالسرعة والأمان والموثوقية ، وهي توفر هيكلًا من الفولاذ المقاوم للصدأ ، وسعة كبيرة تبلغ 1.7 لترًا وقاعدة لاسلكية مما يجعلها أكثر عملية وعملية حيث يمكن إعادة وضعها حسب الرغبة.', 9),
+(2, 'الخلاطات اليدوية', 'hand-blenders', 'صُمم الخلاط اليدوي Smeg ليكون متينًا وعمليًا ومفيدًا بمقبضه العملي المريح والمقاوم للانزلاق ، وهو جهاز منزلي لا غنى عنه للطهي بسرعة وذكاء', 10),
+(2, 'خلاطات بقاعدة', 'stand-mixers', 'خلاطات ستاند Smeg ، التي تتميز بخطوط منحنية وألوان نابضة بالحياة تعكس روحك الإبداعية وشغفك بالطهي ، هي حليفك المثالي في المطبخ.', 11),
+(2, 'آلات رغوة الحليب', 'milk-frothers', 'يعتبر جهاز إزباد الحليب Smeg\'s مثاليًا للكابتشينو واللاتيه ماكياتو والأبيض المسطح بالإضافة إلى تحضير المشروبات الفورية مثل الشوكولاتة الساخنة.', 12);
 
 --
 -- Indexes for dumped tables
@@ -175,7 +190,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `aes_lines`
 --
 ALTER TABLE `aes_lines`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1213;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1222;
 
 --
 -- AUTO_INCREMENT for table `main_cat`
@@ -187,13 +202,13 @@ ALTER TABLE `main_cat`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `sub_cat`
 --
 ALTER TABLE `sub_cat`
-  MODIFY `sub_cat_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `sub_cat_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
