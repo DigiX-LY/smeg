@@ -1,3 +1,4 @@
+<?php include 'include/DBconnection.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -92,7 +93,7 @@
             </a>
           </div>
           <div class="product_desc">
-           <p class="title"> أفران </p>
+           <a href="products.php?category=oven"><p class="title"> أفران </p></a>
            <div class="list_content">
                <h4 class="bottom30">Sacrificial Chair Design </h4>
            </div>
@@ -107,7 +108,7 @@
             </a>
           </div>
           <div class="product_desc">
-           <p class="title"> أفران مايكرويف </p>
+           <a href="products.php?category=microwave-oven"><p class="title"> أفران مايكرويف </p></a>
            <div class="list_content">
                <h4 class="bottom30">Sacrificial Chair Design </h4>
            </div>
@@ -137,7 +138,7 @@
             </a>
           </div>
           <div class="product_desc">
-           <p class="title"> ماكينات القهوة المدمجة </p>
+           <a href="products.php?category=coffee-machines"><p class="title"> ماكينات القهوة المدمجة </p></a>
            <div class="list_content">
                <h4 class="bottom30">Sacrificial Chair Design </h4>
            </div>

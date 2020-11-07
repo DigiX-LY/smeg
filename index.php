@@ -1,3 +1,5 @@
+<?php include 'include/DBconnection.php'; ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -71,7 +73,7 @@
       <div class="container-fluid blacksection" > <!--M.yousef changed container to container-fluid to get a fitscreen-->
         <div class="row">
           <div class="col-md-6">
-            <a class="grid_box clearfix" href="grid2.html">
+            <a class="grid_box clearfix" href="grid2.php">
               <div class="grid_body">
                 <h2 class="productsHeader">
                   منتجات صغيرة
@@ -83,7 +85,7 @@
             </a>
           </div>
           <div class="col-md-6">
-            <a class="grid_box clearfix" href="grid.html">
+            <a class="grid_box clearfix" href="grid.php">
               <div class="grid_body">
                 <h2 class="productsHeader"> 
                   منتجات رئيسية

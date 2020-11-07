@@ -32,21 +32,26 @@
                       <a href="grid.php"><span class="productLabel">منتجات رئيسية</span></a>
                       <ul>
                         <!-- do fetching for categories from database with MAIN cats id and give the link to them here -->
-                        <a href="products.php?category=oven"><li>أفران</li></a>
-                        <a href="#."><li>أفران الميكروويف</li></a>
-                        <a href="#."><li>ماكينات القهوة</li></a>
-                        <a href="#."><li>مغاسل</li></a>
-                        <a href="#."><li>غسالات الصحون</li></a>
-                        <a href="#."><li>الصنابير</li></a>
+                        <?php 
+                        $sql = "SELECT name ,en_name  FROM sub_cat where main_cat_id = 1"; 
+                        foreach($pdo->query($sql) as $grab){  ?>
+                        
+                        <a href="products.php?category=<?php echo $grab['en_name']; ?>"><li> <?php echo $grab['name']; ?> </li></a>
+
+                        <?php } ?>
                       </ul>
                     </div>
                     <div class="appliances">
                       <a href="grid2.php"><span class="productLabel">منتجات صغيرة</span></a>
                       <ul>
-                        <a href="#."><li>الخلاطات</li></a>
-                        <a href="#."><li>الخلاطات اليدوية</li></a>
-                        <a href="#."><li>مطاحن القهوة</li></a>
-                        <a href="#."><li> ماكينات رغوة الحليب</li></a>
+                        <!-- fetching small products -->
+                        <?php 
+                        $sql = "SELECT name ,en_name  FROM sub_cat where main_cat_id = 2"; 
+                        foreach($pdo->query($sql) as $grab){  ?>
+                        
+                        <a href="products.php?category=<?php echo $grab['en_name']; ?>"><li> <?php echo $grab['name']; ?> </li></a>
+
+                        <?php } ?>
                       </ul>
                     </div>
                   </div>
@@ -63,7 +68,7 @@
                         <a href="classica.php"><li>كلاسيكا</li></a>
                         <a href="colonial.php"><li>كولونيال</li></a>
                         <a href="victoria.php"><li>فيكتوريا</li></a>
-                        <a href="#."><li>كورتينا</li></a>
+                        <a href="cortina.php"><li>كورتينا</li></a>
                         <a href="#."><li>لينيا</li></a>
                         <a href="#."><li>بورتوفينو</li></a>
                         <a href="#."><li>تصميم البيانو</li></a>

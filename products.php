@@ -189,6 +189,9 @@
                                 
                         <?php           }
                                     }
+                                    else{
+                                        echo "<h1 style='font-size:50px;'> X لا يوجد منتجات حالياً  </h1>";
+                                    }
                                 }
                             }
                          ?>

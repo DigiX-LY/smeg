@@ -1,3 +1,5 @@
+<?php include 'include/DBconnection.php'; ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -120,7 +122,7 @@
             </a>
           </div>
           <div class="product_desc">
-           <p class="title"> خلاطات يدوية </p>
+           <a href="products.php?category=hand-blenders"><p class="title"> خلاطات يدوية </p></a>
            <div class="list_content">
                <h4 class="bottom30">Sacrificial Chair Design </h4>
            </div>
@@ -135,7 +137,7 @@
             </a>
           </div>
           <div class="product_desc">
-           <p class="title"> خلاطات </p>
+           <a href="products.php?category=blenders"><p class="title"> خلاطات </p></a>
            <div class="list_content">
                <h4 class="bottom30">Sacrificial Chair Design </h4>
            </div>
@@ -150,7 +152,7 @@
             </a>
           </div>
           <div class="product_desc">
-           <p class="title"> رغوة الحليب </p>
+           <a href="products.php?category=milk-frothers"><p class="title"> آلات رغوة الحليب  </p></a>
            <div class="list_content">
                <h4 class="bottom30">Sacrificial Chair Design </h4>
            </div>
@@ -165,7 +167,7 @@
             </a>
           </div>
           <div class="product_desc">
-           <p class="title"> محمصات </p>
+           <a href="products.php?category=toasters"><p class="title"> محمصات </p></a>
            <div class="list_content">
                <h4 class="bottom30">Sacrificial Chair Design </h4>
            </div>
