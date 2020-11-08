@@ -56,7 +56,7 @@
               <li><a href="index.php">الرئيسية</a></li>
               <li>منتجات</li>
               <li>منتجات رئيسية</li>
-              <li class="active"><?php echo $row['name']; ?></li>
+              <li class="active"><?php echo isset($row)?$row['name']:"خطاً"; ?></li>
             </ul>
           </div>
         </div>
@@ -69,9 +69,9 @@
     <div class="container blackSection">
         <h1 class="blackSectionTitle">
         <?php
-            echo $row['name'];
+            echo isset($row)?$row['name']:"المنتج غير متوفر";
          ?></h1>
-        <h6 class="blackSectionDesc"> <?php echo $row['cat_desc']; ?></h6>
+        <h6 class="blackSectionDesc"> <?php echo isset($row)?$row['cat_desc']:""; ?></h6>
     </div>
 </section>
 <!-- products section -->
@@ -190,7 +190,11 @@
                         <?php           }
                                     }
                                     else{
-                                        echo "<h1 style='font-size:50px;'> X لا يوجد منتجات حالياً  </h1>";
+                                        echo "<h1 style='font-size:30px;
+                                        margin-right:auto;
+                                        margin-left:auto;
+                                        margin-top:5%;
+                                        '> لا يوجد منتجات حالياً  </h1>";
                                     }
                                 }
                             }

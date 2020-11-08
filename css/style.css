@@ -2874,6 +2874,64 @@ footer.plain_footer{
 .descContaineralign h4{
 	font-size: 30px;
 }
+/*smeg video section */
+.smegVideoContainer{
+	position: relative;
+  overflow: hidden;
+  width: fit-content;
+  padding-top: 30.25%;
+}
+.smegVideo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.videoSubText{
+	padding-right: 50px;
+}
+.videoHeader{
+	padding-top: 25px;
+	padding-left: 90px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+.videoDesc{
+	margin-top: 30px;
+	padding-left: 90px;
+	font-weight: 100;
+	font-size: 14px;
+	color: white;
+}
+
+.videoDesc, .videoHeader,.prodLink{
+	direction: rtl!important;
+	text-align: right;
+}
+.prodLink{
+	display: block;
+	margin-top: 60px;
+	color:white;
+}
+.prodLink:before{
+	display: inline-block;
+	content: "";
+	margin-right: 20px;
+	border-top: 1px solid #fff;
+	width: 40px;
+	vertical-align: middle;
+	transition: all 1s ease-in-out;
+}
+.prodLink:hover:before{
+	width: 60px;
+}
+a.prodLink:hover{color: white;}
+
 
 /*image slider pictures for multiple pages xyz*/
 .majorBG{
