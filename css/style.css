@@ -2875,6 +2875,9 @@ footer.plain_footer{
 	font-size: 30px;
 }
 /*smeg video section */
+.videoContParent{
+	margin-top: 100px;
+}
 .smegVideoContainer{
 	position: relative;
   overflow: hidden;
@@ -2914,6 +2917,7 @@ footer.plain_footer{
 	text-align: right;
 }
 .prodLink{
+	margin-right: 30px;
 	display: block;
 	margin-top: 60px;
 	color:white;
@@ -2931,6 +2935,16 @@ footer.plain_footer{
 	width: 60px;
 }
 a.prodLink:hover{color: white;}
+
+/* fridge section*/
+.fridgeDesc{
+	padding-top: 100px;
+}
+
+.fridgeDesc .prodLink{
+	margin-right: 0;
+}
+
 
 
 /*image slider pictures for multiple pages xyz*/

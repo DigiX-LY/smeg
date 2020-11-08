@@ -130,10 +130,13 @@
       </div>
     </section>
   <!-- </div> -->
+
+
+
   <!-- Video section -->
   <section>
 
-    <div class="container-fluid descContainerBS">
+    <div class="container-fluid videoContParent">
       <div class="row" >
           <div class="col-md-8 smegVideoContainer">
             <iframe class="smegVideo" src="https://www.youtube.com/embed/GIdOlKh16Rc">
@@ -154,7 +157,34 @@
       </div>
     </div>
   </section>
+  <!-- video section end -->
 
+  <!-- fridges demo -->
+  <section>
+
+<div class="container videoContParent">
+  <div class="row" >
+      <div class="col-md-8">
+        <img  class = "img-responsive" width = "100%" src="images\fridgesBG.jpg" alt="">
+      </div>
+      <div class="col-md-4 fridgeDesc">
+        <h4 class="videoHeader">
+          إكتشف طرازك
+        </h4>
+        <h6 class="videoDesc">
+        أسلوب Smeg هو الطريقة التي يتواصل بها المنتج مع محيطه ويمكّن المستخدمين من التفاعل معه، وبالتالي إقامة علاقة مع المستخدم تتجاوز مجرد الاهتمامات العملية.
+
+بهذه الفكرة ، أجرى Smeg بحثًا مضنيًا في الجماليات والأسلوب.
+        </h6>
+        <a href="classica.php" class="prodLink">
+          إختر طرازك
+        </a>
+      </div>
+      
+  </div>
+</div>
+</section>
+<!-- fridge demo end -->
 
 
 
