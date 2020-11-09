@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
 <link rel="stylesheet" type="text/css" href="css/settings.css">
-<link rel="stylesheet" href="css/dinfont.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
 <link rel="stylesheet" type="text/css" href="css/loader.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -182,7 +182,7 @@
             </a>
           </div>
           <div class="product_desc">
-           <p class="title"> عجنات </p>
+           <p class="title"> عجانات </p>
            <div class="list_content">
                <h4 class="bottom30">Sacrificial Chair Design </h4>
            </div>

@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
 <link rel="stylesheet" type="text/css" href="css/settings.css">
-<link rel="stylesheet" href="css/dinfont.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
 <link rel="stylesheet" type="text/css" href="css/loader.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -61,7 +61,6 @@
     <div class="header_content padding">
       <div class="row">
         <div class="col-md-12 text-center">
-           <h2 class="heading_space uppercase">creative design<strong>lighting furniture</strong></h2>
            <h3 class="content_space">Typi non habent claritatem insitam.</h3>
         </div>
       </div>

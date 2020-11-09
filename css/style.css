@@ -74,7 +74,7 @@ body{
 	padding:0;
 	margin:0;
 	color:#201f1f;
-	font-family: 'dinFont';
+	font-family: 'Almarai', sans-serif;
 	overflow-x:hidden;
 }
 /*M.Yousef navbar*/
@@ -112,7 +112,7 @@ a, a:hover, a:focus{
 	color:inherit;
 }
 h1,h2, .footer_panel h4, #seller h3, .heading{
-	font-family: 'dinFont';
+	font-family: 'Almarai', sans-serif;
 	font-weight:bold;
 }
 .btn-common, .btn-white, .btn-dark, .btn-light, .readmor,
@@ -125,11 +125,11 @@ h1,h2, .footer_panel h4, #seller h3, .heading{
 .set > a, .widget h5,
 #cart .table-responsive > .table thead  tr > th, 
 .blog_item .blog_text h5,  .blog-reply h5{
-	font-family: 'dinFont';
+	font-family: 'Almarai', sans-serif;
 	font-weight:bold;
 }
 .topbar .top_link li a, header nav.navbar.bootsnav ul.nav > li > a{
-	font-family: 'dinFont';
+	font-family: 'Almarai', sans-serif;
 }
 .footer_panel .about_foot li, .footer_panel .account_foot li a, .price, .grid_box .grid_body h3{
   font-family: 'Lato', sans-serif;
@@ -1077,7 +1077,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	font-size: 30px;
 }
 .design p{
-	font-family:'dinFont';
+	font-family:'almarai';
 	direction: rtl;
 }
 .space-top{
@@ -1092,12 +1092,13 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
   text-align: center;
 }
 .descrp p{
+	margin-top: 30px;
 	padding-left: 30px;
 	padding-right: 30px;
 	color: white;
 }
 .descrp img{
-	margin-top: 10%;
+	margin-top: 4%;
 }
 .design .descrp .review  > li{
 	display:inline-block;
@@ -1184,7 +1185,6 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 }
 /* ------------------  CONTACT US m.y------------------ */
 #contact{
-	margin-top: 10%;
 	margin: 10% 10% 10% 10%;
 }
 .tm-contact-title{
@@ -1405,7 +1405,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	word-wrap: 5px;
 	text-align: right;
 	color: white;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: lighter;
 	direction: rtl;
 }
@@ -1433,7 +1433,9 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 .blackSectionDesc{
 	padding-right: 6%;
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 300;
 }
 .allProductsListBG{
 	background-color: white;
@@ -1558,6 +1560,7 @@ input[type="checkbox"] {
 	/*changing the pictures contents when hovered on in the grid system in grid.html*/
 }
 .product_wrap .product_desc{
+	text-align: center;
 	padding:20px 10px 20px 20px;
 	position:relative;
 }
@@ -2910,6 +2913,7 @@ footer.plain_footer{
 	font-weight: 100;
 	font-size: 14px;
 	color: white;
+	line-height: 20px;
 }
 
 .videoDesc, .videoHeader,.prodLink{
@@ -2931,6 +2935,10 @@ footer.plain_footer{
 	vertical-align: middle;
 	transition: all 1s ease-in-out;
 }
+
+.fridgeDemoHover:hover .prodLink:before{
+	width: 60px;
+}
 .prodLink:hover:before{
 	width: 60px;
 }
@@ -2944,7 +2952,21 @@ a.prodLink:hover{color: white;}
 .fridgeDesc .prodLink{
 	margin-right: 0;
 }
-
+/* container for image*/
+.img-hover-zoom {
+	height: 600px; /* [1.1] Set it as per your need */
+	overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+	transition: transform 1s ease-in-out;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+.fridgeDemoHover:hover .img-hover-zoom img {
+	transform: scale(1.04);
+  }
 
 
 /*image slider pictures for multiple pages xyz*/

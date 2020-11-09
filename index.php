@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/settings.css">
     <link rel="stylesheet" type="text/css" href="css/loader.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/dinfont.css"> <!--M.yousef din fonts here-->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">  <!--font's here-->
     <link rel="shortcut icon" href="logo/faviconsmeg.png">
     <!-- animation on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -100,39 +100,7 @@
       </div>
     </section>
     
-    <!--Services (Gurantee section)-->
-    
-  <div data-aos="fade-right" data-aos-easing="linear">
-    <section class="servicesSection">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-              <div class="design_img">
-                <img src="images/services.png" alt="desing Product" width="100%">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="descrp">
-                  <div data-aos="zoom-in" data-aos-duration="2000"><span class="subheader"> خدماتنا </span>
-                    <p>خدمات الصيانة مع الضمانة
-                      الصيانة الفورية لجميع منتجات سميج مع نخبة مختارة من الفنيين المتخصصين المدربين على الصيانة مع الخدمة المميزة التي تهدف لارضاء زبائننا، للإبلاغ عن أي أعطال إتصلوا بالقسم التقني.
-                      <br><br><br>
-                      Tel: 21 478 1861
-                      <br>
-                      tech@almotamiza.ly
-                    </p>
-                    <img src="logo/mechanical-gears-.png" alt="gears">
-                  </div>
-                </div>
-            </div>  
-           </div>
-        </div>
-      </div>
-    </section>
-  <!-- </div> -->
-
-
-
+  
   <!-- Video section -->
   <section>
 
@@ -162,10 +130,12 @@
   <!-- fridges demo -->
   <section>
 
-<div class="container videoContParent">
+<div class="container videoContParent fridgeDemoHover">
   <div class="row" >
-      <div class="col-md-8">
-        <img  class = "img-responsive" width = "100%" src="images\fridgesBG.jpg" alt="">
+      <div class="col-md-8 ">
+        <div class="img-hover-zoom">
+          <img  class = "img-responsive" width = "100%" src="images\fridgesBG.jpg" alt="">
+        </div>
       </div>
       <div class="col-md-4 fridgeDesc">
         <h4 class="videoHeader">
@@ -186,13 +156,40 @@
 </section>
 <!-- fridge demo end -->
 
-
+<!--Services (Gurantee section)-->
+    
+<div data-aos="fade-right" data-aos-easing="linear">
+    <section class="servicesSection">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+              <div class="design_img">
+                <img src="images/services.png" alt="desing Product" width="100%">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="descrp">
+                  <div data-aos="zoom-in" data-aos-duration="2000"><span class="subheader"> خدماتنا </span>
+                    <p>خدمات الصيانة مع الضمانة
+                      الصيانة الفورية لجميع منتجات سميج مع نخبة مختارة من الفنيين المتخصصين المدربين على الصيانة مع الخدمة المميزة التي تهدف لارضاء زبائننا، للإبلاغ عن أي أعطال إتصلوا بالقسم التقني.
+                      <br><br><br>
+                      Tel: 21 478 1861
+                      <br>
+                      tech@almotamiza.ly
+                    </p>
+                    <img src="logo/mechanical-gears-.png" alt="gears">
+                  </div>
+                </div>
+            </div>  
+           </div>
+        </div>
+      </div>
+    </section>
+  <!-- </div> -->
 
     <!--Contact us-->
       <section dir="rtl" id="contact" class="tm-bg-color-5 tm-mb-3 ">
-        <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
         <h2 dir="rtl" class="tm-text-white tm-contact-title" style="font-size: 40px; color: white;">تواصل معنا</h2>
-        </div>
         <div class="tm-bg-color-white tm-contact-main contactUS">
             <!-- cityX -->
               <div class="contactBorder">
