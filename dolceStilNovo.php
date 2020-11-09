@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Cortina </title>
+<title>Smeg Libya | Dolce Stil Novo </title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -46,7 +46,7 @@
 
 
 <!--Page Header-->
-<section class="header_layout2 padding cortinaBG">
+<section class="header_layout2 padding dolceBG">
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
@@ -73,7 +73,7 @@
         <div class="border">
         </div>
         <p class="firstPara">
-        يميز جماليات كورتينا التوازن الدقيق للميزات والجمع الدقيق للمواد. مستوحاة من أساتذة الحرفيين الذين صنعوا إبداعات راقية بمعرفة قديمة ، المجموعة الجديدة تبعث على سحر الحرف اليدوية المصنوعة من الحديد المطاوع في الأجهزة المنزلية.
+        يتميز دولتشي ستيل نوفو بتصميم بسيط بزجاج كسوف أسود ونحاس مصقول أو تفاصيل من الفولاذ المقاوم للصدأ لإضفاء لمسة جمالية أنيقة خالدة.
         </p>
     </div>
     <div class="flexPictureHead">
@@ -85,12 +85,12 @@
 <div class="container descContainerBS">
     <div class="row" >
         <div class="col-md-8 descContainer">
-        تتميز بتوازن متناغم بين الميزات ومجموعة مدروسة من المواد ، مستوحاة من أساتذة الحرفيين الذين يصوغون إبداعات راقية باستخدام المعرفة القديمة. تعكس المجموعة الجديدة من الأجهزة المنزلية الفريدة سحر الحرف اليدوية المصنوعة من الحديد المطاوع. يخلق الاختيار الواعي للمواد جنبًا إلى جنب مع التشطيبات اللامعة المختلفة تأثيرًا جماليًا غنيًا ومتطورًا. يمنح الاستخدام الواسع للألوان الحياة للمنتجات الأنيقة ذات الطراز الخالد.
-          
-          </div>
+        يتيح لك دولتشي ستيل نوفو الذي يدمج الذوق الإيطالي المميز لـ Smeg مع تقنية المطبخ الرائدة، تحقيق أي إبداع طهي بأناقة وسهولة. المظهر عبارة عن خطوط متواصلة ودقة وجودة لا يمكن إنكارها، مما يسمح لك بإضفاء الحيوية على أي تحفة طهي. مستوحاة من حركة شعر الحب الإيطالية في القرن الثالث عشر، تضع المجموعة معيارًا جديدًا للشكل والوظيفة في مطبخ المنزل الحديث.
+        </div>
         <div class="col-md-4 descContaineralign">
-          <h4>سلسلة كورتينا
-          </h4>
+          <h4>
+          مجموعة غنية ومنسقة
+        </h4>
         </div>
         
     </div>

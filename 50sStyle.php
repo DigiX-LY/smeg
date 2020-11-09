@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Cortina </title>
+<title>Smeg Libya | 50's Style </title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -46,7 +46,7 @@
 
 
 <!--Page Header-->
-<section class="header_layout2 padding cortinaBG">
+<section class="header_layout2 padding fifstyBG">
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
@@ -73,7 +73,7 @@
         <div class="border">
         </div>
         <p class="firstPara">
-        يميز جماليات كورتينا التوازن الدقيق للميزات والجمع الدقيق للمواد. مستوحاة من أساتذة الحرفيين الذين صنعوا إبداعات راقية بمعرفة قديمة ، المجموعة الجديدة تبعث على سحر الحرف اليدوية المصنوعة من الحديد المطاوع في الأجهزة المنزلية.
+        الأشكال الدائرية وتفاصيل الكروم والألوان الزاهية تجعل أي فضاء يتسم بالأناقة والشخصية، مما يجعل عشاق الأسلوب والتصميم ساحرين.
         </p>
     </div>
     <div class="flexPictureHead">
@@ -85,12 +85,15 @@
 <div class="container descContainerBS">
     <div class="row" >
         <div class="col-md-8 descContainer">
-        تتميز بتوازن متناغم بين الميزات ومجموعة مدروسة من المواد ، مستوحاة من أساتذة الحرفيين الذين يصوغون إبداعات راقية باستخدام المعرفة القديمة. تعكس المجموعة الجديدة من الأجهزة المنزلية الفريدة سحر الحرف اليدوية المصنوعة من الحديد المطاوع. يخلق الاختيار الواعي للمواد جنبًا إلى جنب مع التشطيبات اللامعة المختلفة تأثيرًا جماليًا غنيًا ومتطورًا. يمنح الاستخدام الواسع للألوان الحياة للمنتجات الأنيقة ذات الطراز الخالد.
-          
-          </div>
+        تتميز مجموعة طراز الخمسينيات بتصميمات عتيقة لا لبس فيها تتحد خطوطها الكلاسيكية الرشيقة والألوان النابضة بالحياة بشكل مثالي مع أحدث التقنيات.
+
+تعد الثلاجة الملونة الأصلية والأفضل FAB28 أكثر من مجرد ثلاجة. إنه يهيمن على المناطق المحيطة به ، تمامًا مثل الأريكة أو المصباح في غرفة المعيشة الخاصة بك. طور Smeg أيضًا مجموعة من الأجهزة الأخرى بنفس المظهر القديم تمامًا: ثلاجات بأحجام مختلفة وبسعات مختلفة، ومجمدات، وغسالات، وغسالات أطباق. دائمًا ما تكون مثيرة للذكريات وانتقائية، فهم حاملو معايير جودة التصميم "صنع في إيطاليا" المشهورة في جميع أنحاء العالم بمزيجها من الفن والوظائف.
+        </div>
         <div class="col-md-4 descContaineralign">
-          <h4>سلسلة كورتينا
-          </h4>
+          <h4>
+              
+          نطاق نمط الخمسينيات  
+        </h4>
         </div>
         
     </div>

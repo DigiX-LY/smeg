@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Cortina </title>
+<title>Smeg Libya | Portofino </title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -46,7 +46,7 @@
 
 
 <!--Page Header-->
-<section class="header_layout2 padding cortinaBG">
+<section class="header_layout2 padding portofinoBG">
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
@@ -73,7 +73,7 @@
         <div class="border">
         </div>
         <p class="firstPara">
-        يميز جماليات كورتينا التوازن الدقيق للميزات والجمع الدقيق للمواد. مستوحاة من أساتذة الحرفيين الذين صنعوا إبداعات راقية بمعرفة قديمة ، المجموعة الجديدة تبعث على سحر الحرف اليدوية المصنوعة من الحديد المطاوع في الأجهزة المنزلية.
+        بورتوفينو، المستوحاة من ألوان البحر الأبيض المتوسط لموانئها الليغورية ، تجلب الرومانسية والسعادة إلى المطبخ.
         </p>
     </div>
     <div class="flexPictureHead">
@@ -85,12 +85,12 @@
 <div class="container descContainerBS">
     <div class="row" >
         <div class="col-md-8 descContainer">
-        تتميز بتوازن متناغم بين الميزات ومجموعة مدروسة من المواد ، مستوحاة من أساتذة الحرفيين الذين يصوغون إبداعات راقية باستخدام المعرفة القديمة. تعكس المجموعة الجديدة من الأجهزة المنزلية الفريدة سحر الحرف اليدوية المصنوعة من الحديد المطاوع. يخلق الاختيار الواعي للمواد جنبًا إلى جنب مع التشطيبات اللامعة المختلفة تأثيرًا جماليًا غنيًا ومتطورًا. يمنح الاستخدام الواسع للألوان الحياة للمنتجات الأنيقة ذات الطراز الخالد.
-          
-          </div>
+        عندما شرع استوديو Smeg للتصميم في مشروعه الأحدث - لإنشاء أكثر مواقد الطهي كبيرة الحجم كفاءة في استخدام الطاقة في العالم ، تجسد بورتوفينو قمة البذخ الإيطالي، ولذلك تم تسمية المجموعة الجديدة. كان ذلك محظوظًا لأن بورتوفينو ألهمت أيضًا الألوان الفريدة للمجموعة، مستوحاة من ألوان الزيتون والبرتقالي والأصفر والأحمر للمباني التي تصطف على شواطئ  بورتوفينو، والتي تتناقض بسعادة مع المياه الزرقاء المتلألئة للبحر الأبيض المتوسط.
+    </div>
         <div class="col-md-4 descContaineralign">
-          <h4>سلسلة كورتينا
-          </h4>
+          <h4>
+          تصميم مناسب لكل مساحة
+        </h4>
         </div>
         
     </div>

@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Cortina </title>
+<title>Smeg Libya | Piano Design </title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -46,7 +46,7 @@
 
 
 <!--Page Header-->
-<section class="header_layout2 padding cortinaBG">
+<section class="header_layout2 padding pianoBG">
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
@@ -73,7 +73,7 @@
         <div class="border">
         </div>
         <p class="firstPara">
-        يميز جماليات كورتينا التوازن الدقيق للميزات والجمع الدقيق للمواد. مستوحاة من أساتذة الحرفيين الذين صنعوا إبداعات راقية بمعرفة قديمة ، المجموعة الجديدة تبعث على سحر الحرف اليدوية المصنوعة من الحديد المطاوع في الأجهزة المنزلية.
+        العمارة هي تسمية يمكن إعطاؤها للأشياء المنزلية والأجهزة المنزلية أيضًا.
         </p>
     </div>
     <div class="flexPictureHead">
@@ -85,12 +85,14 @@
 <div class="container descContainerBS">
     <div class="row" >
         <div class="col-md-8 descContainer">
-        تتميز بتوازن متناغم بين الميزات ومجموعة مدروسة من المواد ، مستوحاة من أساتذة الحرفيين الذين يصوغون إبداعات راقية باستخدام المعرفة القديمة. تعكس المجموعة الجديدة من الأجهزة المنزلية الفريدة سحر الحرف اليدوية المصنوعة من الحديد المطاوع. يخلق الاختيار الواعي للمواد جنبًا إلى جنب مع التشطيبات اللامعة المختلفة تأثيرًا جماليًا غنيًا ومتطورًا. يمنح الاستخدام الواسع للألوان الحياة للمنتجات الأنيقة ذات الطراز الخالد.
-          
-          </div>
+        العمارة هي تسمية يمكن إعطاؤها للأشياء المنزلية والأجهزة المنزلية أيضًا.
+أشياء صلبة وعملية وأساسية تجعل المطبخ مكانًا دافئًا وترحيبيًا. يعتبر دور الفولاذ والزجاج حاسمًا في التماسك العام وسطوع التصاميم والطريقة التي تعكس بها الضوء تعزز الأجهزة بشكل أكبر. تم تشطيبها بفرن بيانو عالي الجودة من الفولاذ المقاوم للصدأ والمواقد تجعل المطبخ مكانًا راقًا وحصريًا.
+
+    </div>
         <div class="col-md-4 descContaineralign">
-          <h4>سلسلة كورتينا
-          </h4>
+          <h4>
+          إعادة تعريف العمارة
+        </h4>
         </div>
         
     </div>

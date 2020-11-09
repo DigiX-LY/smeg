@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Cortina </title>
+<title>Smeg Libya | Contemporary </title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -46,7 +46,7 @@
 
 
 <!--Page Header-->
-<section class="header_layout2 padding cortinaBG">
+<section class="header_layout2 padding contempBG">
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
@@ -73,8 +73,7 @@
         <div class="border">
         </div>
         <p class="firstPara">
-        يميز جماليات كورتينا التوازن الدقيق للميزات والجمع الدقيق للمواد. مستوحاة من أساتذة الحرفيين الذين صنعوا إبداعات راقية بمعرفة قديمة ، المجموعة الجديدة تبعث على سحر الحرف اليدوية المصنوعة من الحديد المطاوع في الأجهزة المنزلية.
-        </p>
+        تتناغم الخطوط الناعمة والحواف الدائرية للخط المعاصر بشكل مثالي مع الاحتياجات الوظيفية والمريحة والعملية وتمكن الأجهزة من التوافق بسلاسة مع الإعدادات الداخلية المختلفة.        </p>
     </div>
     <div class="flexPictureHead">
         <img src="images/blog1.jpg" alt="">
@@ -85,12 +84,12 @@
 <div class="container descContainerBS">
     <div class="row" >
         <div class="col-md-8 descContainer">
-        تتميز بتوازن متناغم بين الميزات ومجموعة مدروسة من المواد ، مستوحاة من أساتذة الحرفيين الذين يصوغون إبداعات راقية باستخدام المعرفة القديمة. تعكس المجموعة الجديدة من الأجهزة المنزلية الفريدة سحر الحرف اليدوية المصنوعة من الحديد المطاوع. يخلق الاختيار الواعي للمواد جنبًا إلى جنب مع التشطيبات اللامعة المختلفة تأثيرًا جماليًا غنيًا ومتطورًا. يمنح الاستخدام الواسع للألوان الحياة للمنتجات الأنيقة ذات الطراز الخالد.
-          
-          </div>
+        أسلوب سيليزيوني هو طراز بسيط وعملي، حيث يشتمل على مقابض وزوايا تحكم في خطوط تصميمه الأنيقة. توفر هذه المجموعة المتواضعة من الأفران وأفران الميكروويف والمواقد الانسجام والتوازن في تصميم المطبخ الحديث ، حيث تجمع بين الأناقة والموثوقية.
+        </div>
         <div class="col-md-4 descContaineralign">
-          <h4>سلسلة كورتينا
-          </h4>
+          <h4>
+              مجموعة سيليزيوني
+        </h4>
         </div>
         
     </div>

@@ -2969,7 +2969,7 @@ a.prodLink:hover{color: white;}
   }
 
 
-/*image slider pictures for multiple pages xyz*/
+/*image slider pictures for multiple pages*/
 .majorBG{
 	/*picture here*/
 	background:url(../images/majorslider.jpg) no-repeat;
@@ -2996,8 +2996,31 @@ a.prodLink:hover{color: white;}
 .cortinaBG{
 	/*background url here*/
 }
+.lineaBG{
+	/*BGHERE*/
+}
+.dolceBG{
+	/*bghere*/
+}
+.fifstyBG{
+	/*bghere*/
+}
+.pianoBG{
+	/*bghere*/
+}
+.portofinoBG{
+	/* bghere */
+}
+.selezBG{
+	/* bghere */
+}
+.contempBG{
+	/* bghere */
+}
 
-/*all sharing the same property*/
+
+
+/*all sharing the same property*/ /*add all bg here later*/
 .majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG,.cortinaBG{
 	background-position:center center;
 	background-size:cover;
