@@ -107,7 +107,7 @@
     <div class="container-fluid videoContParent">
       <div class="row" >
           <div class="col-md-8 smegVideoContainer">
-            <iframe class="smegVideo" src="https://www.youtube.com/embed/GIdOlKh16Rc">
+            <iframe class="smegVideo" src="https://www.youtube.com/embed/GIdOlKh16Rc"> <!--?autoplay=1&mute=1 for autoplaying-->
             </iframe>
           </div>
           <div class="col-md-4 videoSubText">

@@ -76,10 +76,8 @@
         تحتفل مجموعة سميق لينيا بكونها العنصر الأول في التصميم. تتميز لينيا بالبساطة والتوازن والبساطة بلا خجل، فهي في المنزل في أكثر المطابخ حداثة.    
         </p>
     </div>
-    <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+    <div class="container">
+          <img width="100%" src="images/aeslines/linea/lineacover.jpg" alt="">
     </div>
     
 <div class="container descContainerBS">

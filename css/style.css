@@ -2994,34 +2994,34 @@ a.prodLink:hover{color: white;}
 	
 }
 .cortinaBG{
-	/*background url here*/
+	background: url(../images/cortina_bcg.jpg) no-repeat;
 }
 .lineaBG{
-	/*BGHERE*/
+	background: url(../images/linea_bgc.jpg) no-repeat;
 }
 .dolceBG{
-	/*bghere*/
+	background: url(../images/dolce_bgc.jpg) no-repeat;
 }
 .fifstyBG{
-	/*bghere*/
+	background: url(../images/50s_bgc.jpg) no-repeat;
 }
 .pianoBG{
-	/*bghere*/
+	background: url(../images/piano_bgc.jpg) no-repeat;
 }
 .portofinoBG{
-	/* bghere */
+	background: url(../images/portofino_bgc.gif) no-repeat;
 }
 .selezBG{
-	/* bghere */
+	background: url(../images/selezione_bgc.jpg) no-repeat;
 }
 .contempBG{
-	/* bghere */
+	background: url(../images/contemp_bgc.jpg) no-repeat;
 }
 
 
 
 /*all sharing the same property*/ /*add all bg here later*/
-.majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG,.cortinaBG{
+.majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG,.cortinaBG,.lineaBG,.dolceBG,.fifstyBG,.pianoBG,.portofinoBG,.selezBG,.contempBG{
 	background-position:center center;
 	background-size:cover;
 	height: 650px;

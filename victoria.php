@@ -74,10 +74,8 @@
             توفير جو من الحنين إلى الماضي ، حيث يبدو أن الوقت يتوقف ، حيث يُنظر إلى الشغف بالطعام الجيد من خلال الاهتمام الشديد بالتفاصيل.
         </p>
     </div>
-    <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+    <div class="container">
+          <img width="100%" src="images/aeslines/victoria/victoriacover.jpg" alt="">
     </div>
     
 <div class="container descContainerBS">

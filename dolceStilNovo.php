@@ -76,10 +76,8 @@
         يتميز دولتشي ستيل نوفو بتصميم بسيط بزجاج كسوف أسود ونحاس مصقول أو تفاصيل من الفولاذ المقاوم للصدأ لإضفاء لمسة جمالية أنيقة خالدة.
         </p>
     </div>
-    <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+    <div class="container">
+          <img width="100%" src="images/aeslines/dolce/dolcecover.png" alt="">
     </div>
     
 <div class="container descContainerBS">

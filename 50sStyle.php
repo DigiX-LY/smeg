@@ -76,10 +76,8 @@
         الأشكال الدائرية وتفاصيل الكروم والألوان الزاهية تجعل أي فضاء يتسم بالأناقة والشخصية، مما يجعل عشاق الأسلوب والتصميم ساحرين.
         </p>
     </div>
-    <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+    <div class="container">
+          <img width="100%" src="images/aeslines/50sstyle/50sstylecover.jpg" alt="">
     </div>
     
 <div class="container descContainerBS">

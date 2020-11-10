@@ -75,10 +75,8 @@
         <p class="firstPara">النطاق مميز للطريقة التي يستخدم بها الفولاذ المقاوم للصدأ بأقصى درجات الدقة الأسلوبية. يسلط كلاسيك الضوء على مقابض التحكم الفريدة والمقابض النظيفة والمكررة والمريحة التي تجمع بين العناصر التلميحية للتصميم الصناعي.
         </p>
     </div>
-    <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+    <div class="container">
+          <img width="100%" src="images/aeslines/classica/classicacover.jpg" alt="">
     </div>
     
 <div class="container descContainerBS">

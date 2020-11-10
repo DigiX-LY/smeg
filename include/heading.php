@@ -69,10 +69,13 @@
                         <a href="colonial.php"><li>كولونيال</li></a>
                         <a href="victoria.php"><li>فيكتوريا</li></a>
                         <a href="cortina.php"><li>كورتينا</li></a>
-                        <a href="#."><li>لينيا</li></a>
-                        <a href="#."><li>بورتوفينو</li></a>
-                        <a href="#."><li>تصميم البيانو</li></a>
-                        <a href="#."><li>سيليزيون</li></a>
+                        <a href="dolcestilnovo.php"><li>دولتشي ستيل نوفو</li></a>
+                        <a href="linea.php"><li>لينيا</li></a>
+                        <a href="portofino.php"><li>بورتوفينو</li></a>
+                        <a href="piano.php"><li>تصميم البيانو</li></a>
+                        <a href="selezione.php"><li>إختياري</li></a>
+                        <a href="50sStyle.php"><li>ستايل الـ50s</li></a>
+                        <a href="contemporary.php"><li>معاصر</li></a>
                       </ul>
                     </div>
                   </div>

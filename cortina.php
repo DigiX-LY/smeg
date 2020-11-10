@@ -76,10 +76,8 @@
         يميز جماليات كورتينا التوازن الدقيق للميزات والجمع الدقيق للمواد. مستوحاة من أساتذة الحرفيين الذين صنعوا إبداعات راقية بمعرفة قديمة ، المجموعة الجديدة تبعث على سحر الحرف اليدوية المصنوعة من الحديد المطاوع في الأجهزة المنزلية.
         </p>
     </div>
-    <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+    <div class="container-fluid">
+          <img width="100%" src="images/aeslines/cortina/cortinacover.jpg" alt="">
     </div>
     
 <div class="container descContainerBS">

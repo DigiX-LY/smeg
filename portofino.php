@@ -76,10 +76,8 @@
         بورتوفينو، المستوحاة من ألوان البحر الأبيض المتوسط لموانئها الليغورية ، تجلب الرومانسية والسعادة إلى المطبخ.
         </p>
     </div>
-    <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+    <div class="container">
+          <img width="100%" src="images/aeslines/portofino/portofinocover.jpg" alt="">
     </div>
     
 <div class="container descContainerBS">

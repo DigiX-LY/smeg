@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Colonial</title>
+<title>Smeg Libya | Coloniale</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -76,10 +76,8 @@
         </div>
         <p class="firstPara">تحفة على الطراز الكولونيلي لغرفة المعيشة ذات التصميم الكلاسيكي.</p>
     </div>
-    <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+    <div class="container">
+          <img width="100%" src="images/aeslines/colonial/colonialecover.jpg" alt="">
     </div>
     
 <div class="container descContainerBS">
