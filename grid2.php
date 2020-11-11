@@ -43,32 +43,33 @@
 <?php include('include/heading.php');?>
 <!-- header end -->
 
-
 <!--Page Header-->
-<section class="header_layout2 padding smallBG">
+<section class="header_layout2 padding smallBG inverter">
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
-        <div class="col-sm-7">
-          <ul class="breadcrumb">
-            <li><a href="index.html">الرئيسية</a></li>
+        <div class="col-sm-5">
+          <ul class="breadcrumbAes inverter">
+            <li><a href="index.php">الرئيسية</a></li>
             <li>منتجات</li>
             <li class="active">منتجات صغيرة</li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="header_content padding">
+    <div class="aesHeader padding">
       <div class="row">
-        <div class="col-md-12 text-center">
-           <h2 class="heading_space uppercase">creative design<strong>lighting furniture</strong></h2>
-           <h3 class="content_space">Typi non habent claritatem insitam.</h3>
+        <div class="col-md-5 inverter">
+          <h1>الأجهزة المنزلية الصغيرة</h1>
+          <h3>الرموز الجديدة للفضاء المنزلي
+
+          </h3>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<!-- Page header end -->
 
 <!--Page Nav-->
 

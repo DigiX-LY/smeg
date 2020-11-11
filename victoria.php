@@ -48,22 +48,29 @@
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
-        <div class="col-sm-7">
-         
+        <div class="col-sm-5">
+          <ul class="breadcrumbAes">
+            <li><a href="index.php">الرئيسية</a></li>
+            <li>خطوط جمالية</li>
+            <li class="active">فيكتوريا</li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="header_content padding">
+    <div class="aesHeader padding">
       <div class="row">
-        <div class="col-md-12 text-center">
-           <h2 class="heading_space uppercase"></h2>
-           <h3 class="content_space"></h3>
+        <div class="col-md-5">
+          <h4>خـــط</h4>
+          <h1>فيكتوريا</h1>
+          <h3>حب التفاصيل وشغف بالتقاليد.
+          </h3>
+          <a href="" class="prodLink">مشاهدة المنتجات</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<!-- Page header end -->
 
 <!--Page Nav-->
 <section class="PageNav">

@@ -2,7 +2,7 @@
 
 .loader{
 	position: fixed;
-	background:#fff;
+	background:rgb(0, 0, 0);
 	z-index:11000;
 	height:100%;
 	width:100%;
@@ -21,13 +21,13 @@
   margin-left:-20px;
   top:50%;
   
-  -webkit-animation: sk-rotate 2.0s infinite linear;
-  animation: sk-rotate 2.0s infinite linear;
+  -webkit-animation: sk-rotate 1.0s infinite linear;
+  animation: sk-rotate 1.0s infinite linear;
 }
 
 .dot1, .dot2 {
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -38,11 +38,11 @@
   animation: sk-bounce 2.0s infinite ease-in-out;
 }
 .dot1{
-	background-color: #000;
+	background-color: rgb(255, 255, 255);
 }	
 .dot2 {
   top: auto;
-  background-color: #8E8E8E;
+  background-color: #ffffff;
   bottom: 0;
   -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s;

@@ -157,19 +157,19 @@
 <!-- fridge demo end -->
 
 <!--Services (Gurantee section)-->
-    
-<div data-aos="fade-right" data-aos-easing="linear">
     <section class="servicesSection">
       <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-              <div class="design_img">
-                <img src="images/services.png" alt="desing Product" width="100%">
+              <div data-aos="fade-right"  data-aos-duration="2000">
+                <div class="design_img img-hover-zoom">
+                  <img src="images/services.png" alt="desing Product" width="100%">
+                </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="descrp">
-                  <div data-aos="zoom-in" data-aos-duration="2000"><span class="subheader"> خدماتنا </span>
+                  <div data-aos="fade-left" data-aos-duration="2000"><span class="subheader"> خدماتنا </span>
                     <p>خدمات الصيانة مع الضمانة
                       الصيانة الفورية لجميع منتجات سميج مع نخبة مختارة من الفنيين المتخصصين المدربين على الصيانة مع الخدمة المميزة التي تهدف لارضاء زبائننا، للإبلاغ عن أي أعطال إتصلوا بالقسم التقني.
                       <br><br><br>
@@ -183,7 +183,6 @@
             </div>  
            </div>
         </div>
-      </div>
     </section>
   <!-- </div> -->
 

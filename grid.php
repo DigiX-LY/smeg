@@ -50,28 +50,27 @@
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
-        <div class="col-sm-7">
-          <ul class="breadcrumb">
-            <li><a href="index.html">الرئيسية</a></li>
+        <div class="col-sm-5">
+          <ul class="breadcrumbAes">
+            <li><a href="index.php">الرئيسية</a></li>
             <li>منتجات</li>
-            <li class="active">منتجات رئيسية</li>
+            <li class="active">منتجات رئيسية  </li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="header_content padding">
+    <div class="aesHeader padding">
       <div class="row">
-        <div class="col-md-12 text-center">
-           <h2 class="heading_space uppercase">creative design<strong>lighting furniture</strong></h2>
-           <h3 class="content_space">Typi non habent claritatem insitam.</h3>
+        <div class="col-md-5">
+          <h1>الأجهزة المنزلية الرئيسية</h1>
+          <h3>المنتجات التي تعبر عن "صنع في إيطاليا" من خلال الجمع بين التصميم والأداء والاهتمام بالتفاصيل بشكل مثالي.
+          </h3>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-<!--Page Nav-->
+<!-- Page header end -->
 
 
 <section class="grid padding">

@@ -1177,11 +1177,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	margin-top: 30px;
 	padding-top: 30px;
 }
-.servicesSection .container-fluid{
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
 
-}
 /* ------------------  CONTACT US m.y------------------ */
 #contact{
 	margin: 10% 10% 10% 10%;
@@ -2121,7 +2117,7 @@ form.newsletter .input-group-addon:hover{
 	margin-left: 10px;
 }
 
-.aesHeader h4,.aesHeader h3, .aesHeader h1{
+.aesHeader *{
 	direction: rtl;
 	color:white;
 	text-align: right;
@@ -2135,6 +2131,35 @@ form.newsletter .input-group-addon:hover{
 	margin-right: 0;
 	margin-left: 10px;
 }
+/*generalization end*/
+
+/*color for aes lines with white backgrounds */
+.inverter *{
+	color: rgb(53, 53, 53);
+}
+.inverter .breadcrumbAes > li + li::before {
+    padding: 0 5px;
+    color: rgb(0, 0, 0);
+    content: "/\00a0";
+}
+.inverter li{
+	color: rgb(53, 53, 53);}
+.inverter h4::before{
+	border-color: black;
+}
+.inverter .prodLink::before{
+	border-color: black;
+}
+.inverter .prodLink{
+	color: rgb(53, 53, 53);
+}
+.inverter .prodLink:hover{
+	color: rgb(53, 53, 53);
+}
+.customstyleFont{
+	font-family: 'Goldman', cursive;
+}
+
 
 /*end */
 .col-sm-7{float: right;
@@ -3024,7 +3049,10 @@ a.prodLink:hover{color: white;}
 .fridgeDemoHover:hover .img-hover-zoom img {
 	transform: scale(1.04);
   }
-
+.img-hover-zoom img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+  }
 
 /*image slider pictures for multiple pages*/
 .majorBG{
