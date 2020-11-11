@@ -3112,8 +3112,11 @@ a.prodLink:hover{color: white;}
 	height: 650px;
 }
 
-
-
+/* filter box segment */
+.aesCheckBox{
+	font-weight: normal;
+	cursor: pointer;
+}
 
 /*Responsive Layout*/
 @media screen and (max-width:1199px){

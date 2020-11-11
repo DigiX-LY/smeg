@@ -79,7 +79,7 @@
     <div class="container-fluid allProductsListBG">
         <div class="container allProductsList" style="direction: rtl;">
             <div class="row productsContent">
-                <div class="col-sm-2">
+                <div class="col-sm-2-fluid">
                         <h1 class="filterTitle">الفلاتر</h1>
                         <div class="filters" id="product_filters">
                                     <div class="filters__item">
@@ -93,55 +93,55 @@
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_2" type="checkbox" name="Classica" value="NEW_AESTHETICS_2" data-filter="NEW_AESTHETICS" data-filtervalue="2" id="Classica">
 
-                                                        <label class="form-check-label" for="Classica">كلاسيكا</label>
+                                                        <label class="aesCheckBox" for="Classica">كلاسيكا</label>
                                                     </div>
                                                     <div class="form-check">
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_3" type="checkbox" name="Coloniale" value="NEW_AESTHETICS_3" data-filter="NEW_AESTHETICS" data-filtervalue="3" id="Coloniale">
 
-                                                        <label class="form-check-label" for="Coloniale">كولونيال</label>
+                                                        <label class="aesCheckBox" for="Coloniale">كولونيال</label>
                                                     </div>
                                                     <div class="form-check">
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_4" type="checkbox" name="Contemporanea" value="NEW_AESTHETICS_4" data-filter="NEW_AESTHETICS" data-filtervalue="4" id="Contemporanea">
 
-                                                        <label class="form-check-label" for="Contemporanea">Contemporanea</label>
+                                                        <label class="aesCheckBox" for="Contemporanea">معاصر</label>
                                                     </div>
                                                     <div class="form-check">
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_5" type="checkbox" name="Cortina" value="NEW_AESTHETICS_5" data-filter="NEW_AESTHETICS" data-filtervalue="5" id="Cortina">
 
-                                                        <label class="form-check-label" for="Cortina">Cortina</label>
+                                                        <label class="aesCheckBox" for="Cortina">كورتينا</label>
                                                     </div>
                                                     <div class="form-check">
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_6" type="checkbox" name="Dolce Stil Novo" value="NEW_AESTHETICS_6" data-filter="NEW_AESTHETICS" data-filtervalue="6" id="Dolce Stil Novo">
 
-                                                        <label class="form-check-label" for="Dolce Stil Novo">Dolce Stil Novo</label>
+                                                        <label class="aesCheckBox" for="Dolce Stil Novo">دولتشي ستيل نوفو</label>
                                                     </div>
                                                     <div class="form-check">
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_7" type="checkbox" name="Linea" value="NEW_AESTHETICS_7" data-filter="NEW_AESTHETICS" data-filtervalue="7" id="Linea">
 
-                                                        <label class="form-check-label" for="Linea">Linea</label>
+                                                        <label class="aesCheckBox" for="Linea">لينيا</label>
                                                     </div>
                                                     <div class="form-check">
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_9" type="checkbox" name="Piano Design" value="NEW_AESTHETICS_9" data-filter="NEW_AESTHETICS" data-filtervalue="9" id="Piano Design">
 
-                                                        <label class="form-check-label" for="Piano Design">Piano Design</label>
+                                                        <label class="aesCheckBox" for="Piano Design">تصميم البيانو</label>
                                                     </div>
                                                     <div class="form-check">
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_11" type="checkbox" name="Selezione" value="NEW_AESTHETICS_11" data-filter="NEW_AESTHETICS" data-filtervalue="11" id="Selezione">
 
-                                                        <label class="form-check-label" for="Selezione">Selezione</label>
+                                                        <label class="aesCheckBox" for="Selezione">اختياري</label>
                                                     </div>
                                                     <div class="form-check">
 
                                                         <input class="filter-checkbox NEW_AESTHETICS_12" type="checkbox" name="Victoria" value="NEW_AESTHETICS_12" data-filter="NEW_AESTHETICS" data-filtervalue="12" id="Victoria">
 
-                                                        <label class="form-check-label" for="Victoria">Victoria</label>
+                                                        <label class="aesCheckBox" for="Victoria">فيكتوريا</label>
                                                     </div>
                                         </div>
                                     </div>
