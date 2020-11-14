@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/vendor/themify-icons.css">
     <link rel="stylesheet" href="assets/css/vendor/cryptocurrency-icons.css">
-    <link rel="stylesheet" href="../css/dinfont.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet"> 
 
 
     <!-- Plugins CSS -->
