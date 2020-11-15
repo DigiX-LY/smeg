@@ -67,6 +67,17 @@
           <h3>استحضار أجواء الأيام الماضية.
           </h3>
           <a href="" class="prodLink">مشاهدة المنتجات</a>
+          <!-- scroll animation -->
+          <div class="center">
+            <label style="font-size: 16px;">
+            مرر لأسفل
+            </label>
+            <div class="scrollCont" style="height: 60px;overflow: hidden;width: 40px;">
+              <div class="scroll">
+              </div>
+            </div>
+          </div>
+          <!-- scroll anim end -->
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <div class="flexDropDown">
-                    <div class="appliances">
+                    <div class="appliances majorAppl">
                       <a href="grid.php"><span class="productLabel">منتجات رئيسية</span></a>
                       <ul>
                         <!-- do fetching for categories from database with MAIN cats id and give the link to them here -->
@@ -41,7 +41,7 @@
                         <?php } ?>
                       </ul>
                     </div>
-                    <div class="appliances">
+                    <div class="appliances smallAppl">
                       <a href="grid2.php"><span class="productLabel">منتجات صغيرة</span></a>
                       <ul>
                         <!-- fetching small products -->
@@ -62,7 +62,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <div class="flexDropDown">
-                    <div class="appliances">
+                    <div class="appliances aesLinesList">
                       <span class="productLabel">إكتشف خطوط تصنيع سميج الجمالية</span>
                       <ul>
                         <a href="classica.php"><li>كلاسيكا</li></a>

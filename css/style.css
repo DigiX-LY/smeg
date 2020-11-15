@@ -669,7 +669,6 @@ header nav.navbar.bootsnav ul.nav > li > a:hover, header nav.navbar.bootsnav ul.
 
 /*dropdown*/
 .dropdown-menu{
-	width: 500px;
 	text-align: right;
 	direction: rtl;
 }
@@ -681,15 +680,18 @@ header nav.navbar.bootsnav ul.nav > li > a:hover, header nav.navbar.bootsnav ul.
 }
 .appliances ul li{
 	padding: 10px;
-	margin-right: 50px;
+	margin-right: 20px;
 	padding-top: 0;
 	border-right: 1px solid white;
 }
 .appliances ul{
 	margin-top: 30px;
 	margin-bottom: 20px;
-	column-count: 3;
+	column-count: 2;
 	direction: rtl;
+}
+.aesLinesList ul{
+	column-count:3 ;
 }
 .appliances{
 	width: 50%;
@@ -702,6 +704,9 @@ header nav.navbar.bootsnav ul.nav > li > a:hover, header nav.navbar.bootsnav ul.
 }
 .appliances a span:hover{
 	color: rgb(0, 153, 180);
+}
+.smallAppl{
+	padding-left: 70px;
 }
 .productLabel{
 	font-weight: bolder;
@@ -2159,6 +2164,50 @@ form.newsletter .input-group-addon:hover{
 .customstyleFont{
 	font-family: 'Goldman', cursive;
 }
+
+/*aesethetic line scroll animation */
+.center{
+    margin-top: 10%;
+}
+.scroll{
+    width: 2px;
+    background-color: white;
+    animation: scroll cubic-bezier(.76,0,.3,1) infinite forwards;
+    animation-duration: 2.2s;
+}
+@keyframes scroll{
+    0%{
+        
+    }
+    1%{height: 5px;}
+    5%{
+		height: 7px;
+    }
+    10%{
+        height: 10px;margin-top: 0;
+    }
+    15%{
+        height: 14px;
+    }
+    35%{
+        height: 60px;
+    }
+    40%{
+        height: 60px;
+    }
+    50%{
+        margin-top: 0;
+    }
+    100%{
+        margin-top: 60px;
+        height: 60px;
+    }
+}
+
+
+
+
+
 
 
 /*end */
