@@ -22,9 +22,9 @@ if($stmt = $pdo->prepare($sql))
     //bind parameters for the query execution 
     $prod_param = trim($_POST['prod_name']);
     $linename_param = $arAesth;
-    $category_param = 19;  //MANUAL SET FIELD for what type of products you're trying to input
+    $category_param = 20;  //MANUAL SET FIELD for what type of products you're trying to input
     $color_param = $arColor;
-    $imgurl_param = "images/products/hoods/".$prod_param.".jpg";
+    $imgurl_param = "images/products/builtindrawers/".$prod_param.".jpg";
 
     $stmt->execute();
 
