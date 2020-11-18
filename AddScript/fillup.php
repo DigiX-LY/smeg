@@ -22,9 +22,9 @@ if($stmt = $pdo->prepare($sql))
     //bind parameters for the query execution 
     $prod_param = trim($_POST['prod_name']);
     $linename_param = $arAesth;
-    $category_param = 20;  //MANUAL SET FIELD for what type of products you're trying to input
+    $category_param = 7;  //MANUAL SET FIELD for what type of products you're trying to input
     $color_param = $arColor;
-    $imgurl_param = "images/products/builtindrawers/".$prod_param.".jpg";
+    $imgurl_param = "images/products/refrigerators/".$prod_param.".jpg";
 
     $stmt->execute();
 
@@ -74,6 +74,7 @@ function translate($toTranslate)
         case 'Selezione': return 9; break;
         case 'Victoria': return 10; break;
         case 'Cortina': return 11; break;
+        case 'Universale': return 12; break;
 
 
         default: '???';

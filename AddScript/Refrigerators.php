@@ -17630,7 +17630,7 @@ str = str.substring(str.indexOf(":") + 1);*/
         x = slice.split('|');
         category = x[0];
         line = x[1];
-        color = x[4];
+        color = x[5];
 
 
         console.log(
