@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2020 at 03:41 PM
+-- Generation Time: Nov 19, 2020 at 11:48 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -1506,7 +1506,92 @@ INSERT INTO `products` (`product_id`, `name`, `line_id`, `sub_cat_id`, `color`, 
 (2563, 'CX68MDS8', 7, 24, 'الفولاذ المقاوم للصدأ', 'images/products/cookers/CX68MDS8.jpg'),
 (2564, 'CX68CM8', 7, 24, 'الفولاذ المقاوم للصدأ', 'images/products/cookers/CX68CM8.jpg'),
 (2565, 'CX68M8-1', 7, 24, 'الفولاذ المقاوم للصدأ', 'images/products/cookers/CX68M8-1.jpg'),
-(2566, 'CX68MF8-2', 7, 24, 'الفولاذ المقاوم للصدأ', 'images/products/cookers/CX68MF8-2.jpg');
+(2566, 'CX68MF8-2', 7, 24, 'الفولاذ المقاوم للصدأ', 'images/products/cookers/CX68MF8-2.jpg'),
+(2567, 'KLF03WHMEU', 8, 25, 'أبيض', 'images/products/kettles/KLF03WHMEU.jpg'),
+(2568, 'KLF03BLMEU', 8, 25, 'أسود', 'images/products/kettles/KLF03BLMEU.jpg'),
+(2569, 'KLF03CHMEU', 8, 25, 'ذهبي', 'images/products/kettles/KLF03CHMEU.jpg'),
+(2570, 'KLF03BLEU', 8, 25, 'أسود', 'images/products/kettles/KLF03BLEU.jpg'),
+(2571, 'KLF03PGEU', 8, 25, 'أخضر فاتح', 'images/products/kettles/KLF03PGEU.jpg'),
+(2572, 'KLF03RDEU', 8, 25, 'أحمر', 'images/products/kettles/KLF03RDEU.jpg'),
+(2573, 'KLF03PKEU', 8, 25, 'وردي', 'images/products/kettles/KLF03PKEU.jpg'),
+(2574, 'KLF03PBEU', 8, 25, 'أزرق فاتح', 'images/products/kettles/KLF03PBEU.jpg'),
+(2575, 'KLF03CREU', 8, 25, 'لون كريمي', 'images/products/kettles/KLF03CREU.jpg'),
+(2576, 'KLF03SSEU', 8, 25, 'الفولاذ المقاوم للصدأ', 'images/products/kettles/KLF03SSEU.jpg'),
+(2577, 'KLF03GOEU', 8, 25, 'ذهبي', 'images/products/kettles/KLF03GOEU.jpg'),
+(2578, 'KLF03WHEU', 8, 25, 'أبيض', 'images/products/kettles/KLF03WHEU.jpg'),
+(2579, 'KLF03RGEU', 8, 25, 'ذهب وردي', 'images/products/kettles/KLF03RGEU.jpg'),
+(2580, 'KLF04BLEU', 8, 25, 'أسود', 'images/products/kettles/KLF04BLEU.jpg'),
+(2581, 'KLF04CREU', 8, 25, 'لون كريمي', 'images/products/kettles/KLF04CREU.jpg'),
+(2582, 'KLF04PBEU', 8, 25, 'أزرق فاتح', 'images/products/kettles/KLF04PBEU.jpg'),
+(2583, 'KLF04PKEU', 8, 25, 'وردي', 'images/products/kettles/KLF04PKEU.jpg'),
+(2584, 'KLF04PGEU', 8, 25, 'أخضر فاتح', 'images/products/kettles/KLF04PGEU.jpg'),
+(2585, 'KLF04WHEU', 8, 25, 'أبيض', 'images/products/kettles/KLF04WHEU.jpg'),
+(2586, 'KLF04RDEU', 8, 25, 'أحمر', 'images/products/kettles/KLF04RDEU.jpg'),
+(2587, 'KLF04SSEU', 8, 25, 'الفولاذ المقاوم للصدأ', 'images/products/kettles/KLF04SSEU.jpg'),
+(2588, 'MFF01BLEU', 8, 12, 'أسود', 'images/products/MilkFrothers/MFF01BLEU.jpg'),
+(2589, 'MFF01PBEU', 8, 12, 'أزرق فاتح', 'images/products/MilkFrothers/MFF01PBEU.jpg'),
+(2590, 'MFF01CREU', 8, 12, 'لون كريمي', 'images/products/MilkFrothers/MFF01CREU.jpg'),
+(2591, 'MFF01PKEU', 8, 12, 'وردي', 'images/products/MilkFrothers/MFF01PKEU.jpg'),
+(2592, 'MFF01RDEU', 8, 12, 'أحمر', 'images/products/MilkFrothers/MFF01RDEU.jpg'),
+(2593, 'MFF01WHEU', 8, 12, 'أبيض', 'images/products/MilkFrothers/MFF01WHEU.jpg'),
+(2594, 'BLF01BLEU', 8, 3, 'أسود', 'images/products/allblenders/BLF01BLEU.jpg'),
+(2595, 'BLF01PKEU', 8, 3, 'وردي', 'images/products/allblenders/BLF01PKEU.jpg'),
+(2596, 'BLF01CREU', 8, 3, 'لون كريمي', 'images/products/allblenders/BLF01CREU.jpg'),
+(2597, 'BLF01PGEU', 8, 3, 'أخضر فاتح', 'images/products/allblenders/BLF01PGEU.jpg'),
+(2598, 'BLF01WHEU', 8, 3, 'أبيض', 'images/products/allblenders/BLF01WHEU.jpg'),
+(2599, 'BLF01PBEU', 8, 3, 'أزرق فاتح', 'images/products/allblenders/BLF01PBEU.jpg'),
+(2600, 'BLF01RDEU', 8, 3, 'أحمر', 'images/products/allblenders/BLF01RDEU.jpg'),
+(2601, 'BLF01SVEU', 8, 3, 'فضي', 'images/products/allblenders/BLF01SVEU.jpg'),
+(2602, 'HBF01BLEU', 8, 3, 'أسود', 'images/products/allblenders/HBF01BLEU.jpg'),
+(2603, 'HBF02CREU', 8, 3, 'لون كريمي', 'images/products/allblenders/HBF02CREU.jpg'),
+(2604, 'HBF01CREU', 8, 3, 'لون كريمي', 'images/products/allblenders/HBF01CREU.jpg'),
+(2605, 'HBF02BLEU', 8, 3, 'أسود', 'images/products/allblenders/HBF02BLEU.jpg'),
+(2606, 'HBF02PBEU', 8, 3, 'أزرق فاتح', 'images/products/allblenders/HBF02PBEU.jpg'),
+(2607, 'HBF01PBEU', 8, 3, 'أزرق فاتح', 'images/products/allblenders/HBF01PBEU.jpg'),
+(2608, 'HBF02RDEU', 8, 3, 'أحمر', 'images/products/allblenders/HBF02RDEU.jpg'),
+(2609, 'HBF01RDEU', 8, 3, 'أحمر', 'images/products/allblenders/HBF01RDEU.jpg'),
+(2610, 'SMF02BLEU', 8, 11, 'أسود', 'images/products/mixers/SMF02BLEU.jpg'),
+(2611, 'SMF02CREU', 8, 11, 'لون كريمي', 'images/products/mixers/SMF02CREU.jpg'),
+(2612, 'SMF02PBEU', 8, 11, 'أزرق فاتح', 'images/products/mixers/SMF02PBEU.jpg'),
+(2613, 'SMF02PGEU', 8, 11, 'أخضر فاتح', 'images/products/mixers/SMF02PGEU.jpg'),
+(2614, 'SMF03BLEU', 8, 11, 'أسود', 'images/products/mixers/SMF03BLEU.jpg'),
+(2615, 'SMF02SVEU', 8, 11, 'فضي', 'images/products/mixers/SMF02SVEU.jpg'),
+(2616, 'SMF03RDEU', 8, 11, 'أحمر', 'images/products/mixers/SMF03RDEU.jpg'),
+(2617, 'SMF03CREU', 8, 11, 'لون كريمي', 'images/products/mixers/SMF03CREU.jpg'),
+(2618, 'SMF13WHEU', 8, 11, 'أبيض', 'images/products/mixers/SMF13WHEU.jpg'),
+(2619, 'SMF02PKEU', 8, 11, 'وردي', 'images/products/mixers/SMF02PKEU.jpg'),
+(2620, 'SMF02RDEU', 8, 11, 'أحمر', 'images/products/mixers/SMF02RDEU.jpg'),
+(2621, 'DCF02BLEU', 8, 26, 'أسود', 'images/products/allsmallCoffeeMachines/DCF02BLEU.jpg'),
+(2622, 'DCF02PGEU', 8, 26, 'أخضر فاتح', 'images/products/allsmallCoffeeMachines/DCF02PGEU.jpg'),
+(2623, 'DCF02SSEU', 8, 26, 'الفولاذ المقاوم للصدأ', 'images/products/allsmallCoffeeMachines/DCF02SSEU.jpg'),
+(2624, 'DCF02PBEU', 8, 26, 'أزرق فاتح', 'images/products/allsmallCoffeeMachines/DCF02PBEU.jpg'),
+(2625, 'DCF02RDEU', 8, 26, 'أحمر', 'images/products/allsmallCoffeeMachines/DCF02RDEU.jpg'),
+(2626, 'DCF02CREU', 8, 26, 'لون كريمي', 'images/products/allsmallCoffeeMachines/DCF02CREU.jpg'),
+(2627, 'DCF02WHEU', 8, 26, 'أبيض', 'images/products/allsmallCoffeeMachines/DCF02WHEU.jpg'),
+(2628, 'ECF01BLEU', 8, 26, 'أسود', 'images/products/allsmallCoffeeMachines/ECF01BLEU.jpg'),
+(2629, 'ECF01PBEU', 8, 26, 'أزرق فاتح', 'images/products/allsmallCoffeeMachines/ECF01PBEU.jpg'),
+(2630, 'ECF01CREU', 8, 26, 'لون كريمي', 'images/products/allsmallCoffeeMachines/ECF01CREU.jpg'),
+(2631, 'ECF01PGEU', 8, 26, 'أخضر فاتح', 'images/products/allsmallCoffeeMachines/ECF01PGEU.jpg'),
+(2632, 'ECF01PKEU', 8, 26, 'وردي', 'images/products/allsmallCoffeeMachines/ECF01PKEU.jpg'),
+(2633, 'ECF01RDEU', 8, 26, 'أحمر', 'images/products/allsmallCoffeeMachines/ECF01RDEU.jpg'),
+(2634, 'ECF01WHEU', 8, 26, 'أبيض', 'images/products/allsmallCoffeeMachines/ECF01WHEU.jpg'),
+(2635, 'CGF01BLEU', 8, 26, 'أسود', 'images/products/allsmallCoffeeMachines/CGF01BLEU.jpg'),
+(2636, 'CGF01WHEU', 8, 26, 'أبيض', 'images/products/allsmallCoffeeMachines/CGF01WHEU.jpg'),
+(2637, 'CGF01CREU', 8, 26, 'لون كريمي', 'images/products/allsmallCoffeeMachines/CGF01CREU.jpg'),
+(2638, 'CGF01PGEU', 8, 26, 'أخضر فاتح', 'images/products/allsmallCoffeeMachines/CGF01PGEU.jpg'),
+(2639, 'CGF01PBEU', 8, 26, 'أزرق فاتح', 'images/products/allsmallCoffeeMachines/CGF01PBEU.jpg'),
+(2640, 'CGF01RDEU', 8, 26, 'أحمر', 'images/products/allsmallCoffeeMachines/CGF01RDEU.jpg'),
+(2641, 'CJF01BLEU', 8, 27, 'أسود', 'images/products/juicers/CJF01BLEU.jpg'),
+(2642, 'CJF01CREU', 8, 27, 'لون كريمي', 'images/products/juicers/CJF01CREU.jpg'),
+(2643, 'CJF01PBEU', 8, 27, 'أزرق فاتح', 'images/products/juicers/CJF01PBEU.jpg'),
+(2644, 'CJF01PGEU', 8, 27, 'أخضر فاتح', 'images/products/juicers/CJF01PGEU.jpg'),
+(2645, 'CJF01RDEU', 8, 27, 'أحمر', 'images/products/juicers/CJF01RDEU.jpg'),
+(2646, 'CJF01PKEU', 8, 27, 'وردي', 'images/products/juicers/CJF01PKEU.jpg'),
+(2647, 'CJF01WHEU', 8, 27, 'أبيض', 'images/products/juicers/CJF01WHEU.jpg'),
+(2648, 'SJF01BLEU', 8, 27, 'أسود', 'images/products/juicers/SJF01BLEU.jpg'),
+(2649, 'SJF01PBEU', 8, 27, 'أزرق فاتح', 'images/products/juicers/SJF01PBEU.jpg'),
+(2650, 'SJF01CREU', 8, 27, 'لون كريمي', 'images/products/juicers/SJF01CREU.jpg'),
+(2651, 'SJF01RDEU', 8, 27, 'أحمر', 'images/products/juicers/SJF01RDEU.jpg');
 
 -- --------------------------------------------------------
 
@@ -1529,22 +1614,23 @@ CREATE TABLE `sub_cat` (
 INSERT INTO `sub_cat` (`main_cat_id`, `name`, `en_name`, `cat_desc`, `sub_cat_id`) VALUES
 (1, 'أفران', 'oven', 'تقدم Smeg مجموعة واسعة من الأفران المدمجة ، المصممة والمنتجة في إيطاليا ، مع العديد من الوظائف المثالية لأي نوع من المأكولات ، من البيتزا إلى الحلويات الأكثر دقة. تختلف في الحجم والتشطيب ، وهي متوفرة بثمانية أشكال جمالية حصرية يمكن تنسيقها مع أجهزة Smeg المدمجة الأخرى: المواقد ، والشفاطات ، وآلات القهوة ، والأدراج ، و المبردات.', 1),
 (1, 'غسالات ملابس', 'washer', 'تقدم Smeg مجموعة واسعة من الغسالات القائمة بذاتها والمدمجة.', 2),
-(2, 'الخلاطات', 'blenders', 'تمزج خلاطات Smeg بشكل مثالي بين المكونات المختلفة القوام إلى الكمال لترافقك طوال اليوم.', 3),
+(2, 'خلاطات مستقلة و يدوية', 'blenders', 'تمزج خلاطات Smeg بشكل مثالي بين المكونات المختلفة القوام إلى الكمال لترافقك طوال اليوم.', 3),
 (1, 'أفران الميكروويف', 'microwave-oven', 'تتوفر أفران الميكروويف Smeg في عدد من التصميمات المختلفة التي تم إنشاؤها للحفاظ على المبادئ الجمالية لمجموعة المنتجات.', 4),
 (1, 'ماكينات صنع القهوة', 'coffee-machines', 'يمكن لآلة صنع القهوة المدمجة Smeg ، في الواقع ، استخدام كل من البن المطحون وأقراص القهوة ، مما يسمح لعشاق القهوة الإيطالية باختيار التحميص المفضل لديهم والحصول على طعم ورائحة شريط الإسبريسو الحقيقيين.', 5),
 (1, 'غسالات أطباق', 'dishwashers', 'تعتبر غسالات الأطباق القائمة بذاتها أو المدمجة من Smeg الطريقة المثالية لإكمال مطبخك بأناقة.', 6),
 (1, 'ثلاجات', 'refrigerators', 'تقدم Smeg مجموعة مذهلة من الثلاجات ، مصممة لتبدو رائعة وتحافظ على طعامك طازجًا ومشروباتك باردة.', 7),
 (2, 'محمصات التوست', 'toasters', 'تجمع محمصة Smeg بين بيئة العمل والوظائف والتوازن الجمالي. الإفطار أو الغداء أو الغداء أو الوجبة الخفيفة - عندما تقع في حب محمصة SMEG 50\'s Style ، ستجد كل الأعذار المتاحة لاستخدامها.', 8),
-(2, 'غلايات', 'kettles', 'تتميز غلايات Smeg بالسرعة والأمان والموثوقية ، وهي توفر هيكلًا من الفولاذ المقاوم للصدأ ، وسعة كبيرة تبلغ 1.7 لترًا وقاعدة لاسلكية مما يجعلها أكثر عملية وعملية حيث يمكن إعادة وضعها حسب الرغبة.', 9),
-(2, 'الخلاطات اليدوية', 'hand-blenders', 'صُمم الخلاط اليدوي Smeg ليكون متينًا وعمليًا ومفيدًا بمقبضه العملي المريح والمقاوم للانزلاق ، وهو جهاز منزلي لا غنى عنه للطهي بسرعة وذكاء', 10),
-(2, 'خلاطات بقاعدة', 'stand-mixers', 'خلاطات ستاند Smeg ، التي تتميز بخطوط منحنية وألوان نابضة بالحياة تعكس روحك الإبداعية وشغفك بالطهي ، هي حليفك المثالي في المطبخ.', 11),
-(2, 'آلات رغوة الحليب', 'milk-frothers', 'يعتبر جهاز إزباد الحليب Smeg\'s مثاليًا للكابتشينو واللاتيه ماكياتو والأبيض المسطح بالإضافة إلى تحضير المشروبات الفورية مثل الشوكولاتة الساخنة.', 12),
+(2, 'عجانات', 'mixers', 'عجانات Smeg، التي تتميز بخطوط منحنية وألوان نابضة بالحياة تعكس روحك الإبداعية وشغفك بالطهي، هي حليفك المثالي في المطبخ.', 11),
+(2, 'أجهزة رغوة الحليب', 'milk-frothers', 'يعتبر جهاز إزباد الحليب Smeg\'s مثاليًا للكابتشينو واللاتيه ماكياتو والأبيض المسطح بالإضافة إلى تحضير المشروبات الفورية مثل الشوكولاتة الساخنة.', 12),
 (1, 'مجمدات', 'freezers', 'طورت Smeg مجموعة واسعة من المجمدات ، مدمجة أو طرز قائمة بذاتها، بتصميم معاصر، وأدراج صلبة وسعة كبيرة.', 18),
 (1, 'شفاطات', 'hoods', 'تعكس شفاطات Smeg أناقة وأسلوب المطبخ من حولها لأنها تجمع بين جودة التصميم وأفضل المواد.', 19),
 (1, 'درج مدمج', 'Built-in-drawers', 'أدراج Smeg ذكية وفعالة ومتعددة الأغراض. تم تصميم أدراج Smeg المدمجة بشكل مثالي وفقًا لمتطلباتك، وهي الإضافة المثالية لأجهزة Smeg المدمجة.', 20),
 (1, 'أحواض الغسيل', 'sinks', 'أحواض Smeg لديها أفضل تجهيزات المطبخ من حيث الأناقة. مدمج في مطبخك، يصبح الحوض جزءًا لا يتجزأ من مساحة العمل حيث تمتزج الوظائف مع جماليات التصميم التي لا تخطئها العين.', 21),
 (1, 'مواقد', 'hobs', 'تجمع مواقد Smeg بين المواد عالية الجودة والتكنولوجيا المتطورة. متوفر بأشكال وأحجام مختلفة وطرق طهي مختلفة لتتناسب مع جماليات فرنك.', 23),
-(1, 'أفران مع موقد', 'cookers', 'مستوحى من أفران الطهي التي يستخدمها أعظم الطهاة في العالم.', 24);
+(1, 'أفران مع موقد', 'cookers', 'مستوحى من أفران الطهي التي يستخدمها أعظم الطهاة في العالم.', 24),
+(2, 'كاتل', 'kettles', 'غلايات Smeg سريعة وآمنة و يمكن الإعتماد عليها، وهي توفر هيكلًا من الفولاذ المقاوم للصدأ، وسعة كبيرة تبلغ 1.7 لترًا وقاعدة لاسلكية تجعلها أكثر عملية حيث يمكن إعادة وضعها حسب الرغبة.', 25),
+(2, 'طاحنات وماكينات القهوة', 'coffee-grinders', 'اكتشف ماكينات القهوة المحلية الصغيرة التي تمنحك نتائج احترافية كل صباح. تساعدك مجموعة ماكينات صنع القهوة Smeg في الحصول على أفضل مشروب في كل مرة. و تتيح لك مطحنة Smeg للقهوة الحصول على الطحن المثالي لآلات الإسبريسو وأواني موقد الموكا وآلات صنع القهوة الأمريكية والمكابس الفرنسية.', 26),
+(2, 'عصارات', 'juicers', 'تنتج عصارات Smeg عصائر فواكه وخضروات بأعلى جودة من حيث الفوائد الغذائية. تتميزعصارات Smeg بخطوط رائعة ومتعرجة ومتوفرة في مجموعة متنوعة من الألوان.', 27);
 
 --
 -- Indexes for dumped tables
@@ -1597,7 +1683,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `aes_lines`
 --
 ALTER TABLE `aes_lines`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `main_cat`
@@ -1609,13 +1695,13 @@ ALTER TABLE `main_cat`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2567;
+  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2652;
 
 --
 -- AUTO_INCREMENT for table `sub_cat`
 --
 ALTER TABLE `sub_cat`
-  MODIFY `sub_cat_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `sub_cat_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Constraints for dumped tables
