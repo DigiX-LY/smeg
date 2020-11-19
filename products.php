@@ -17,7 +17,7 @@
 <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
 <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
-<!-- <link rel="stylesheet" type="text/css" href="css/loader.css"> reput later -->
+<link rel="stylesheet" type="text/css" href="css/loader.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
 <link rel="stylesheet" type="text/css" href="css/settings.css">
 <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet"> 
