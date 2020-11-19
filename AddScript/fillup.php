@@ -22,9 +22,9 @@ if($stmt = $pdo->prepare($sql))
     //bind parameters for the query execution 
     $prod_param = trim($_POST['prod_name']);
     $linename_param = $arAesth;
-    $category_param = 28;  //MANUAL SET FIELD for what type of products you're trying to input
+    $category_param = 29;  //MANUAL SET FIELD for what type of products you're trying to input
     $color_param = $arColor;
-    $imgurl_param = "images/products/taps/".$prod_param.".jpg";
+    $imgurl_param = "images/products/major-accessories/".$prod_param.".jpg";
 
     $stmt->execute();
 
@@ -63,6 +63,7 @@ function translate($toTranslate)
         case 'Taupe': return 'رمادي داكن'; break;
         case 'Yellow': return 'أصفر'; break;
         case 'Aluminium': return 'ألمنيوم'; break;
+        case 'NoColor': return '';break;
 
         //aesthetic lines
         case 'Dolce Stil Novo': return 1; break;
