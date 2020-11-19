@@ -22,9 +22,9 @@ if($stmt = $pdo->prepare($sql))
     //bind parameters for the query execution 
     $prod_param = trim($_POST['prod_name']);
     $linename_param = $arAesth;
-    $category_param = 27;  //MANUAL SET FIELD for what type of products you're trying to input
+    $category_param = 28;  //MANUAL SET FIELD for what type of products you're trying to input
     $color_param = $arColor;
-    $imgurl_param = "images/products/juicers/".$prod_param.".jpg";
+    $imgurl_param = "images/products/taps/".$prod_param.".jpg";
 
     $stmt->execute();
 
@@ -43,6 +43,7 @@ function translate($toTranslate)
         case 'Cream': return 'لون كريمي'; break;
         case 'Oats': return 'لون الشوفان'; break;
         case 'Old Brass': return 'نحاس قديم'; break;
+        case 'Brass': return 'نحاسي'; break;
         case 'Silver': return 'فضي'; break;
         case 'Stainless steel': return 'الفولاذ المقاوم للصدأ'; break;
         case 'White': return 'أبيض'; break;
@@ -61,6 +62,7 @@ function translate($toTranslate)
         case 'Ruby Red': return 'أحمر ياقوتي'; break;
         case 'Taupe': return 'رمادي داكن'; break;
         case 'Yellow': return 'أصفر'; break;
+        case 'Aluminium': return 'ألمنيوم'; break;
 
         //aesthetic lines
         case 'Dolce Stil Novo': return 1; break;
@@ -76,7 +78,7 @@ function translate($toTranslate)
         case 'Cortina': return 11; break;
         case 'Universale': return 12; break;
         case 'Free-standing': return 13; break;
-
+        case 'kill': return 15;break;
 
         default: '???';
     }

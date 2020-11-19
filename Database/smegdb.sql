@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 19, 2020 at 11:48 AM
+-- Generation Time: Nov 19, 2020 at 01:13 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -69,7 +69,8 @@ INSERT INTO `aes_lines` (`id`, `name`) VALUES
 (10, 'فيكتوريا'),
 (11, 'كورتينا'),
 (12, 'عالمي'),
-(13, 'مستقلة');
+(13, 'مستقلة'),
+(15, '');
 
 -- --------------------------------------------------------
 
@@ -1591,7 +1592,87 @@ INSERT INTO `products` (`product_id`, `name`, `line_id`, `sub_cat_id`, `color`, 
 (2648, 'SJF01BLEU', 8, 27, 'أسود', 'images/products/juicers/SJF01BLEU.jpg'),
 (2649, 'SJF01PBEU', 8, 27, 'أزرق فاتح', 'images/products/juicers/SJF01PBEU.jpg'),
 (2650, 'SJF01CREU', 8, 27, 'لون كريمي', 'images/products/juicers/SJF01CREU.jpg'),
-(2651, 'SJF01RDEU', 8, 27, 'أحمر', 'images/products/juicers/SJF01RDEU.jpg');
+(2651, 'SJF01RDEU', 8, 27, 'أحمر', 'images/products/juicers/SJF01RDEU.jpg'),
+(2653, 'MT5CR', 15, 28, 'كروم', 'images/products/taps/MT5CR.jpg'),
+(2654, 'M16CSP', 15, 28, 'كروم', 'images/products/taps/M16CSP.jpg'),
+(2655, 'M16CR', 15, 28, 'كروم', 'images/products/taps/M16CR.jpg'),
+(2656, 'MC18AL', 15, 28, 'ألمنيوم', 'images/products/taps/MC18AL.jpg'),
+(2657, 'MC18P', 15, 28, 'لون كريمي', 'images/products/taps/MC18P.jpg'),
+(2658, 'MC18A', 15, 28, 'لون فحم', 'images/products/taps/MC18A.jpg'),
+(2659, 'MC18AV', 15, 28, 'لون الشوفان', 'images/products/taps/MC18AV.jpg'),
+(2660, 'MC18CR', 15, 28, 'كروم', 'images/products/taps/MC18CR.jpg'),
+(2661, 'MAP99CR', 15, 28, 'كروم', 'images/products/taps/MAP99CR.jpg'),
+(2662, 'MC18B', 15, 28, 'أبيض', 'images/products/taps/MC18B.jpg'),
+(2663, 'MC18N', 15, 28, 'أسود', 'images/products/taps/MC18N.jpg'),
+(2664, 'MCG5CR', 15, 28, 'كروم', 'images/products/taps/MCG5CR.jpg'),
+(2665, 'MCG6DCR', 15, 28, 'كروم', 'images/products/taps/MCG6DCR.jpg'),
+(2666, 'MCO23-CR', 15, 28, 'كروم', 'images/products/taps/MCO23-CR.jpg'),
+(2667, 'MD10A2', 15, 28, 'لون فحم', 'images/products/taps/MD10A2.jpg'),
+(2668, 'MD10AV2', 15, 28, 'لون الشوفان', 'images/products/taps/MD10AV2.jpg'),
+(2669, 'MD10CR2', 15, 28, 'كروم', 'images/products/taps/MD10CR2.jpg'),
+(2670, 'MD12-CR', 15, 28, 'كروم', 'images/products/taps/MD12-CR.jpg'),
+(2671, 'MD10P2', 15, 28, 'لون كريمي', 'images/products/taps/MD10P2.jpg'),
+(2672, 'MD13CR2', 15, 28, 'كروم', 'images/products/taps/MD13CR2.jpg'),
+(2673, 'MD14CR', 15, 28, 'كروم', 'images/products/taps/MD14CR.jpg'),
+(2674, 'MD14CSP', 15, 28, 'كروم', 'images/products/taps/MD14CSP.jpg'),
+(2675, 'MD3', 15, 28, 'كروم', 'images/products/taps/MD3.jpg'),
+(2676, 'MDF50BL', 15, 28, 'أسود', 'images/products/taps/MDF50BL.jpg'),
+(2677, 'MDF50PG', 15, 28, 'أخضر فاتح', 'images/products/taps/MDF50PG.jpg'),
+(2678, 'MDF50CR', 15, 28, 'لون كريمي', 'images/products/taps/MDF50CR.jpg'),
+(2679, 'MDF50PB', 15, 28, 'أزرق فاتح', 'images/products/taps/MDF50PB.jpg'),
+(2680, 'MDF50SS', 15, 28, 'كروم', 'images/products/taps/MDF50SS.jpg'),
+(2681, 'MDF50RD', 15, 28, 'أحمر', 'images/products/taps/MDF50RD.jpg'),
+(2682, 'MDF50WH', 15, 28, 'أبيض', 'images/products/taps/MDF50WH.jpg'),
+(2683, 'MDQ5-CR', 15, 28, 'كروم', 'images/products/taps/MDQ5-CR.jpg'),
+(2684, 'MDQ5-CSP', 15, 28, 'كروم', 'images/products/taps/MDQ5-CSP.jpg'),
+(2685, 'ME5CR2', 15, 28, 'كروم', 'images/products/taps/ME5CR2.jpg'),
+(2686, 'MF11A2', 15, 28, 'لون فحم', 'images/products/taps/MF11A2.jpg'),
+(2687, 'MF11AV2', 15, 28, 'لون الشوفان', 'images/products/taps/MF11AV2.jpg'),
+(2688, 'MF11CR2', 15, 28, 'كروم', 'images/products/taps/MF11CR2.jpg'),
+(2689, 'MF22CR2', 15, 28, 'كروم', 'images/products/taps/MF22CR2.jpg'),
+(2690, 'MF11P2', 15, 28, 'لون كريمي', 'images/products/taps/MF11P2.jpg'),
+(2691, 'MF22CSP2', 15, 28, 'كروم', 'images/products/taps/MF22CSP2.jpg'),
+(2692, 'MF2CR', 15, 28, 'كروم', 'images/products/taps/MF2CR.jpg'),
+(2693, 'MF4CR', 15, 28, 'كروم', 'images/products/taps/MF4CR.jpg'),
+(2694, 'MF8A2', 15, 28, 'لون فحم', 'images/products/taps/MF8A2.jpg'),
+(2695, 'MF8CR', 15, 28, 'كروم', 'images/products/taps/MF8CR.jpg'),
+(2696, 'MF8P2', 15, 28, 'لون كريمي', 'images/products/taps/MF8P2.jpg'),
+(2697, 'MF8AV2', 15, 28, 'لون الشوفان', 'images/products/taps/MF8AV2.jpg'),
+(2698, 'MF8RA2', 15, 28, 'نحاسي', 'images/products/taps/MF8RA2.jpg'),
+(2699, 'MFM2B', 15, 28, 'أبيض', 'images/products/taps/MFM2B.jpg'),
+(2700, 'MFM2N', 15, 28, 'أسود', 'images/products/taps/MFM2N.jpg'),
+(2701, 'MFQ6-CR', 15, 28, 'كروم', 'images/products/taps/MFQ6-CR.jpg'),
+(2702, 'MFQ8-CSP', 15, 28, 'كروم', 'images/products/taps/MFQ8-CSP.jpg'),
+(2703, 'MG1CR', 15, 28, 'كروم', 'images/products/taps/MG1CR.jpg'),
+(2704, 'MI3CR', 15, 28, 'كروم', 'images/products/taps/MI3CR.jpg'),
+(2705, 'MI4CR', 15, 28, 'كروم', 'images/products/taps/MI4CR.jpg'),
+(2706, 'MFQ8-CR', 15, 28, 'كروم', 'images/products/taps/MFQ8-CR.jpg'),
+(2707, 'MI1SS', 15, 28, 'الفولاذ المقاوم للصدأ', 'images/products/taps/MI1SS.jpg'),
+(2708, 'MID1CR', 15, 28, 'كروم', 'images/products/taps/MID1CR.jpg'),
+(2709, 'MI1CR', 15, 28, 'كروم', 'images/products/taps/MI1CR.jpg'),
+(2710, 'MI4SS', 15, 28, 'الفولاذ المقاوم للصدأ', 'images/products/taps/MI4SS.jpg'),
+(2711, 'MID2N', 15, 28, 'أسود', 'images/products/taps/MID2N.jpg'),
+(2712, 'MID1SS', 15, 28, 'الفولاذ المقاوم للصدأ', 'images/products/taps/MID1SS.jpg'),
+(2713, 'MID2CR', 15, 28, 'كروم', 'images/products/taps/MID2CR.jpg'),
+(2714, 'MIDR55CR', 15, 28, 'كروم', 'images/products/taps/MIDR55CR.jpg'),
+(2715, 'MID9CR', 15, 28, 'كروم', 'images/products/taps/MID9CR.jpg'),
+(2716, 'MIDR7CR-2', 15, 28, 'كروم', 'images/products/taps/MIDR7CR-2.jpg'),
+(2717, 'MID5CR', 15, 28, 'كروم', 'images/products/taps/MID5CR.jpg'),
+(2718, 'MIR6CR-2', 15, 28, 'كروم', 'images/products/taps/MIR6CR-2.jpg'),
+(2719, 'MIDR7O-2', 15, 28, 'نحاسي', 'images/products/taps/MIDR7O-2.jpg'),
+(2720, 'MIDR7RA-2', 15, 28, 'نحاسي', 'images/products/taps/MIDR7RA-2.jpg'),
+(2721, 'MIR6O-2', 15, 28, 'نحاسي', 'images/products/taps/MIR6O-2.jpg'),
+(2722, 'MIR6RA-2', 15, 28, 'نحاسي', 'images/products/taps/MIR6RA-2.jpg'),
+(2723, 'MIR8O', 15, 28, 'نحاسي', 'images/products/taps/MIR8O.jpg'),
+(2724, 'MIR8CR', 15, 28, 'كروم', 'images/products/taps/MIR8CR.jpg'),
+(2725, 'MIR8RA', 15, 28, 'نحاسي', 'images/products/taps/MIR8RA.jpg'),
+(2726, 'MRMG3CR', 15, 28, 'كروم', 'images/products/taps/MRMG3CR.jpg'),
+(2727, 'MMN24-CR', 15, 28, 'كروم', 'images/products/taps/MMN24-CR.jpg'),
+(2728, 'MRMG4DCR', 15, 28, 'كروم', 'images/products/taps/MRMG4DCR.jpg'),
+(2729, 'MTD5CR', 15, 28, 'كروم', 'images/products/taps/MTD5CR.jpg'),
+(2730, 'MM21-CR', 15, 28, 'كروم', 'images/products/taps/MM21-CR.jpg'),
+(2731, 'MT0', 15, 28, 'كروم', 'images/products/taps/MT0.jpg'),
+(2732, 'MTS15-CR', 15, 28, 'كروم', 'images/products/taps/MTS15-CR.jpg');
 
 -- --------------------------------------------------------
 
@@ -1630,7 +1711,8 @@ INSERT INTO `sub_cat` (`main_cat_id`, `name`, `en_name`, `cat_desc`, `sub_cat_id
 (1, 'أفران مع موقد', 'cookers', 'مستوحى من أفران الطهي التي يستخدمها أعظم الطهاة في العالم.', 24),
 (2, 'كاتل', 'kettles', 'غلايات Smeg سريعة وآمنة و يمكن الإعتماد عليها، وهي توفر هيكلًا من الفولاذ المقاوم للصدأ، وسعة كبيرة تبلغ 1.7 لترًا وقاعدة لاسلكية تجعلها أكثر عملية حيث يمكن إعادة وضعها حسب الرغبة.', 25),
 (2, 'طاحنات وماكينات القهوة', 'coffee-grinders', 'اكتشف ماكينات القهوة المحلية الصغيرة التي تمنحك نتائج احترافية كل صباح. تساعدك مجموعة ماكينات صنع القهوة Smeg في الحصول على أفضل مشروب في كل مرة. و تتيح لك مطحنة Smeg للقهوة الحصول على الطحن المثالي لآلات الإسبريسو وأواني موقد الموكا وآلات صنع القهوة الأمريكية والمكابس الفرنسية.', 26),
-(2, 'عصارات', 'juicers', 'تنتج عصارات Smeg عصائر فواكه وخضروات بأعلى جودة من حيث الفوائد الغذائية. تتميزعصارات Smeg بخطوط رائعة ومتعرجة ومتوفرة في مجموعة متنوعة من الألوان.', 27);
+(2, 'عصارات', 'juicers', 'تنتج عصارات Smeg عصائر فواكه وخضروات بأعلى جودة من حيث الفوائد الغذائية. تتميزعصارات Smeg بخطوط رائعة ومتعرجة ومتوفرة في مجموعة متنوعة من الألوان.', 27),
+(1, 'صنابير مياه', 'taps', 'تقدم Smeg مجموعة متنوعة من الصنابير ذات التصميم المريح والوظائف المتقدمة والتشطيبات الفائقة.', 28);
 
 --
 -- Indexes for dumped tables
@@ -1683,7 +1765,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `aes_lines`
 --
 ALTER TABLE `aes_lines`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `main_cat`
@@ -1695,13 +1777,13 @@ ALTER TABLE `main_cat`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2652;
+  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2733;
 
 --
 -- AUTO_INCREMENT for table `sub_cat`
 --
 ALTER TABLE `sub_cat`
-  MODIFY `sub_cat_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `sub_cat_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- Constraints for dumped tables
