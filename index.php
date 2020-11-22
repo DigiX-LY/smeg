@@ -79,7 +79,7 @@
                   منتجات صغيرة
                 </h2>
                 <div class="insideGridBox">
-                  <img src="images/small_main.png" alt="Product" width="500">
+                  <img src="images/small_main.png" alt="Product">
                 </div>
               </div>
             </a>
@@ -91,7 +91,7 @@
                   منتجات رئيسية
                 </h2>
                 <div class="insideGridBox">
-                  <img src="images/major_main.png" alt="Product" width="500">
+                  <img src="images/major_main.png" alt="Product">
                 </div>
               </div>
             </a>
@@ -188,7 +188,7 @@
 
     <!--Contact us-->
       <section dir="rtl" id="contact" class="tm-bg-color-5 tm-mb-3 ">
-        <h2 dir="rtl" class="tm-text-white tm-contact-title" style="font-size: 40px; color: white;">تواصل معنا</h2>
+        <h2 dir="rtl" class="tm-text-white tm-contact-title">تواصل معنا</h2>
         <div class="tm-bg-color-white tm-contact-main contactUS">
             <!-- cityX -->
               <div class="contactBorder">

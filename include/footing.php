@@ -6,10 +6,8 @@
         <div class="col-sm-4">
           <p>&copy;All Rights Reserved To <a href="#.">Almotamiza Co.</a> 2020.</p>
         </div>
-        <div class="col-sm-4">
-          <img src="logo/Smeg-Logo-06.svg" style="
-            padding-top: 5%;
-            margin-left: 30%;" width="50%" height="50%" alt="">
+        <div class="col-sm-4 smegFooterParent">
+          <img src="logo/Smeg-Logo-06.png" class="smegFooter" alt="smeg logo">
         </div>
         <div class="col-sm-4">
           <ul class="social">

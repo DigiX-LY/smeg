@@ -998,6 +998,9 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 .insideGridBox:hover{
 	margin-top: 30px;
 }
+.insideGridBox img{
+	width: 500px;
+}
 .blacksection{
 	margin:0;
 	color:white;
@@ -1190,6 +1193,8 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 .tm-contact-title{
 	text-align: right;
 	padding-right: 5%;
+	color: white;
+	font-size: 40px;
 }
 .contactUS{
 	display: flex;
@@ -2337,6 +2342,7 @@ form.newsletter .input-group-addon:hover{
 
 /* ------------------ Product Grids  ------------------ */
 
+/*GRID1 MAJOR PRODUCTS */
 
 
 
@@ -2853,6 +2859,15 @@ footer.plain_footer{
 	background:url(../images/footer-plan.jpg) no-repeat;
 	background-size:cover;
 }
+.smegFooterParent{
+	display: flex;
+	justify-content: center;
+}
+.smegFooter{
+	padding-top: 5%;
+	width: 50% ;
+	height:50%;
+}
 .footer_panel h4{
 	text-transform:uppercase;
 }
@@ -3157,7 +3172,7 @@ a.prodLink:hover{color: white;}
 /*all sharing the same property*/ /*add all bg here later*/
 .majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG,.cortinaBG,.lineaBG,.dolceBG,.fifstyBG,.pianoBG,.portofinoBG,.selezBG,.contempBG{
 	background-position:center center;
-	background-size:cover;
+	background-size: cover;
 	height: 650px;
 }
 
@@ -3166,7 +3181,7 @@ a.prodLink:hover{color: white;}
 	font-weight: normal;
 	cursor: pointer;
 }
-
+/*ReLes*/
 /*Responsive Layout*/
 @media screen and (max-width:1199px){
 	/*Owl Slider*/
@@ -3176,30 +3191,85 @@ a.prodLink:hover{color: white;}
    #fourCol-slider .owl-next{
 		right:0;
   }
+  .tabContent{
+	  margin: 0;
+	  margin-top: 20px;
+	  text-align: right;
+  }
+  .contactContentFlex {
+	  flex-direction: column;
+  }
+  .contactContentFlex .descrp{
+	  padding: 10px;
+	  text-align: center;
+  }
+  .sendMessage{
+	  display: none;
+  }
+}
+@media screen and (max-width:1052px){
+	.videoHeader{
+		font-size: 30px;
+	}
+	#contact{
+		margin: 0;
+		margin-top: 90px;
+	}
+	.contactForm{
+		margin: 0px;
+		border: none;
+	}
 }
 @media screen and (max-width:1024px){
 	#parallax2, #testinomialBg{
 		background-position:center center !important;
 	}
+	
+	
 }
 @media screen and (max-width:991px){
-	.contactUS{
-		flex-direction: column;
-		align-items: center;
+	.grid_box {
+		height: auto;
 	}
-	.contactUS form{
-		margin-top: 10%;
+	.grid_box .productsHeader {
+		margin-top: 100px;
 	}
-  header nav.navbar.bootsnav ul.nav > li > a {
-  padding:10px;
-  
- }
+	.img-hover-zoom {
+		height: 100%;
+	}
+	.fridgeDesc{
+		padding: 0;
+		padding-right: 30px;
+	}
+
+
+	.aesHeader .row .col-md-5{
+		padding-right: 50%;
+	}
+
+
  .contactInfo{
-	flex-direction: column;
+	flex-direction: row;
  }
- .numbers{
+ .numbers,.emails{
 	 padding-bottom: 10px;
  }
+#contact{
+	margin: 0;
+	margin-top: 90px;
+}
+
+
+
+#navbar-menu{
+	float: right;
+}
+	
+header nav.navbar.bootsnav ul.nav > li > a {
+	padding:10px;
+	
+   }
+
  header nav.navbar.bootsnav ul.nav > li > a,  
  nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a, 
  nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a{
@@ -3247,8 +3317,49 @@ a.prodLink:hover{color: white;}
 }
 }
 
+@media screen and (max-width:880px){
+	.contactInfo{
+		flex-direction: column;
+	 }
+	 .cityTabs{
+		 flex-direction: column;
+		 align-items: center;
+	 }
+	 .cityButton {
+		 margin: 5px;
+		 width: 100%;
+	 }
 
+
+}
 @media screen and (max-width:767px){
+
+	.product_wrap .product_desc p {
+		font-size: 40px;
+	}
+	.smegFooter{
+		width: 30%;
+		height: 40%;
+	}
+	.tm-contact-title{
+		font-size: 35px;
+	}
+	.subheader{
+		font-size: 30px;
+	}
+	.videoSubText{
+		padding-right: 30px;
+	}
+	.prodLink{
+		margin-right: 0;
+	}
+	.subheader{
+		font-size: 34px;
+	}
+	.contactForm{
+		padding: 0;
+		width: 100%;
+	}
 	h2 {
 	  font-size: 22px;
 	}
@@ -3318,6 +3429,13 @@ a.prodLink:hover{color: white;}
 
 
 @media screen and (max-width:480px){
+
+	.aesHeader .row .col-md-5{
+		padding-right: 20px;
+	}
+	.insideGridBox img{
+		width: 100%;
+	}
 	.borderRight{
 		border: none;
 	}

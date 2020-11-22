@@ -93,9 +93,6 @@
           </div>
           <div class="product_desc">
            <a href="products.php?category=oven"><p class="title"> أفران </p></a>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
         </div>
       </div>
@@ -108,9 +105,6 @@
           </div>
           <div class="product_desc">
            <a href="products.php?category=microwave-oven"><p class="title"> أفران مايكرويف </p></a>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
         </div>
       </div>
@@ -123,9 +117,6 @@
           </div>
           <div class="product_desc">
            <p class="title"> شفاطة هواء </p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
         </div>
       </div>
@@ -138,9 +129,6 @@
           </div>
           <div class="product_desc">
            <a href="products.php?category=coffee-machines"><p class="title"> ماكينات القهوة المدمجة </p></a>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
         </div>
       </div>
@@ -153,9 +141,6 @@
           </div>
           <div class="product_desc">
            <p class="title"> مجففات مدمجة </p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
         </div>
       </div>
@@ -168,9 +153,6 @@
           </div>
           <div class="product_desc">
            <p class="title"> غاز </p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
         </div>
       </div>
@@ -183,9 +165,6 @@
           </div>
           <div class="product_desc">
            <p class="title"> فرن مع غاز </p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
         </div>
       </div>
@@ -198,9 +177,6 @@
           </div>
           <div class="product_desc">
            <p class="title"> شفاطة هواء </p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@
 
 
 <!--Page Header-->
-<section class="header_layout2 padding classicaBG">
+<section class="header_layout2 padding classicaBG img-fluid">
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
