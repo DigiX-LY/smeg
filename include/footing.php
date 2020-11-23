@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <p>&copy;All Rights Reserved To <a href="#.">Almotamiza Co.</a> 2020.</p>
+          <p>&copy;جميع الحقوق محفوظة لـ <a href="#.">شركة المتميزة</a> 2020</p>
         </div>
         <div class="col-sm-4 smegFooterParent">
           <img src="logo/Smeg-Logo-06.png" class="smegFooter" alt="smeg logo">

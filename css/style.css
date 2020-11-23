@@ -166,7 +166,7 @@ h5{
 	font-size:14px;
 }
 p, .seller-slider .media-body .media-heading{
-	color:#606060;
+	color:#a9a9a9;
 }
 .padding{
 	padding:90px 0;
@@ -784,7 +784,7 @@ nav.navbar.bootsnav .navbar-toggle, nav.navbar.bootsnav .navbar-toggle:hover, na
 	background:transparent !important;
 }
 nav.navbar.bootsnav li.dropdown.on > .dropdown-toggle{
-	color: #437c8a;
+	color: #A78466;
 	border-bottom: 1px solid white;
 }
 nav.navbar.bootsnav .navbar-toggle {
@@ -2098,7 +2098,7 @@ form.newsletter .input-group-addon:hover{
 	color:white;
 }
 .breadcrumbAes > .active {
-	color:#437c8a;
+	color:#A78466;
 }
 .breadcrumbAes > li + li::before {
     padding: 0 5px;
@@ -3166,11 +3166,13 @@ a.prodLink:hover{color: white;}
 .contempBG{
 	background: url(../images/contemp_bgc.jpg) no-repeat;
 }
-
+.aboutBG{
+	background: url(../images/aboutbanner.jpg) no-repeat;
+}
 
 
 /*all sharing the same property*/ /*add all bg here later*/
-.majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG,.cortinaBG,.lineaBG,.dolceBG,.fifstyBG,.pianoBG,.portofinoBG,.selezBG,.contempBG{
+.majorBG,.smallBG,.classicaBG,.victoriaBG,.colonialBG,.cortinaBG,.lineaBG,.dolceBG,.fifstyBG,.pianoBG,.portofinoBG,.selezBG,.contempBG,.aboutBG	{
 	background-position:center center;
 	background-size: cover;
 	height: 650px;

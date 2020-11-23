@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Major appliances</title>
+<title>Smeg Libya | About Us</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -41,8 +41,119 @@
 <!-- header start-->
 <?php include('include/heading.php');?>
 <!-- header end -->
+<section class="header_layout2 padding aboutBG">
+  <div class="container">
+    <div class="container">      <!-- edit out later -->
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="breadcrumbAes">
+            <li><a href="index.php">الرئيسية</a></li>
+            <li class="active">عن المتميزة الدولية  </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="aesHeader padding">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>نطمــح إلى تحسيـــن نــمط حياة الأفراد ــــــ</h1>
+          <h3 style="text-align:justify;">المتميزة  الدولية هي شركة ليبية رائدة في مجال إستيراد الأجهزة الكهرومنزلية بكافة أنواعها ، تساهم شركة المتميزة الدولية منذ تأسيسها عام 2000 في تغطية متطلبات السوق الليبي وتحرص على تزويده بمختلف الأصناف المطابقة لمواصفات ومعايير الجودة العالمية مع المحافظة على الأسعار المناسبة لكسب رضى العملاء والمستهلكين.
+          </h3>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+  
+</section>
+<br>
+<div class="container" dir="rtl">
+  <div class="row">
+      <div class="col-sm-12">
+        <ul class="breadcrumbAes">
+          <br><br>
+          <li><h1> الوكيل الحصري لعلامة SMEG الإيطالية </h1></li><br><br>
+        </ul>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-9" style="text-align:justify;color: #6f6f6f;font-size: 14px; line-height:23px;">
+        <br> <p>
+        سميج هي شركة إيطالية تأسست عام 1948 مختصة في تصميم وصناعة الأجهزة الكهرومنزلية. اشتهرت  SMEG بدمجها للتكنولوجيا الحديثة والتصاميم الفريدة حيث نظمت الشركة العديد من التعاونات مع شركات التصميم الأخرى الرائدة في هذا المجال. تملك الشركة فروع في جميع العالم أما المقر الرئيسي لها يقع في غستالا، إيطاليا، Smeg Libya هو أحد الوكلاء التابعيين لشركة سميج الإيطالية. </p>
+      </div>
+      <br><br>
+      <div class="col-sm-3">
+        <img src="logo/Smeg-Logo-06.svg">
+      </div>
+  </div>
 
 
+  
+  <div class="row">
+      <div class="col-sm-12" style="text-align:justify;color: #6f6f6f;font-size: 14px; line-height:23px;">
+        <br> <p>
+        أسباب نجاح علامة "سميج"  التجارية هو جمالها الذي يعبر عن أصولها الإيطالية الفعلية والحقيقة، تهدف "سميج"  إلى تحديد الخصائص المميزة للتصميم الإيطالي، مثل الأناقة والابتكار والأصالة وجودة الأجهزة.  " سميج " قادرة على تشكيل الاتجاهات والأذواق وإقامة علاقة مع المستخدم الذي يتجاوز مجرد الشواغل العملية. فقد شرعت الشركة في مشاريع مع كبار المصممين والمهندسين المعماريين وبرامج التنمية الداخلية التي تقيم الأذواق الحالية واتجاهات السوق لهدف التحسين المستمر، لأكثر من 65 عاما حتى الآن يُنظر إلي أجهزة سميج أنها الأفضل باعتبارها توفر حلول مميزة وأنيقة لمطالب المعيشة المعاصرة.
+      </div>
+      <br><br>
+  </div>
+
+  <div class="row">
+  <ul class="list-unstyled" style="color: #a9a9a9; text-align:center;font-size: 14px; line-height:23px;">
+  <br>
+  <li class="media col-lg-4" >
+    <img src="logo/value.svg" class="mr-3" height="120" >
+    <div class="media-body">
+      <br><h2 class="mt-0 mb-1" style="color: #a9a9a9; text-align:center;">إلتزامنا</h2><br>
+      إستجابة لأذواق المستهلكين والمنافسة المتزايدة في السوق الليبي تلتزم شركة المتميزة الدولية بالمحافظة على أعلى المعايير مع توظيف أفضل المواهب في هذا المجال مع الحرص على الالتزام باستيراد وتوزيع منتجات ذات جودة عالية.    </div>
+  </li>
+  <br><br><br>
+  <li class="media col-lg-4">
+    <img src="logo/creativity.svg" class="mr-3" height="120">
+    <div class="media-body">
+      <br><h2 class="mt-0 mb-1" style="color: #a9a9a9; text-align:center;">رؤيتنا</h2><br>
+      نسعى إلى أن نكون أكبر شركة رائدة في إستيراد الأجهزة الكهرومنزلية وتوزيعها إلى تخطي الحدود من خلال إستكشاف منتجات مبتكرة وذات قيمة مضافة من علامات تجارية مرموقة لتلبية احتياجات المستهلكين المتغيرة.    </div>
+  </li>
+  <br><br><br>
+  <li class="media col-lg-4">
+    <img src="logo/envelope.svg" class="mr-3" height="120">
+    <div class="media-body">
+      <br><h2 class="mt-0 mb-1" style="color: #a9a9a9; text-align:center;" >رسالتنا</h2><br>
+      نرغب في رفع مستوى الجودة في سوق الأجهزة الكهرومنزلية الليبي كما نتمسك بالتنوع والشغف من خلال توفير جودة عالية عبر مجموعة كبيرة من المنتجات، نوزعها انحاء البلاد مما يثبت المعرفة والخبرة الواسعتيين اللتي تتمتع بهما الشركة    </div>
+  </li>
+</ul>
+</div>
+
+</div>
+
+<br><img src="images/disegnosede_smeg.jpg" ><br>
+
+<section>
+
+<div class="container videoContParent fridgeDemoHover">
+  <div class="row" >
+      <div class="col-md-6 ">
+        <div class="img-hover-zoom">
+          <img  class = "img-responsive" width = "100%" src="images\smegstore.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <h4 class="videoHeader">
+        قيمنا ومبدائنا :
+        </h4>
+        <h3 style="color: #a9a9a9; text-align:justiy; font-size: 15px; line-height:23px; direction: rtl;"><br><br>
+        - النزاهة والصدق: تقوم ثقافة عملنا على الأخلاقيات العالية والتي تنعكس في سير العمل والتعامل مع الموظفين والعملاء والشركاء في مختلف الأسواق .
+       <br><br>  - شغف التقدم: لا يرتبط عمل المتميزة الدولية بتقديم منتجات كهرومنزلية فحسب بل هو أيضاً عبارة عن إبتكار أفكار والفوز بالسوق وخدمات متجددة.
+       <br><br> - رضا عملائنا: للحفاظ على رضى العملاء وسعادتهم تسعى شركة المتميزة الدولية من خلال إلتزامها بأعلى مستوى من الإبتكار والتميز في هذا المجال.
+       <br><br> - رفاهية المجتمع: نطمح لتحسين نمط حياة الأفراد والمجتمعات من خلال توزيع نطاق الحصول على منتجات العلامات التجارية المعروفة عالمياً.
+        </h3>
+        
+      </div>
+      
+  </div>
+</div>
+</section>
 
 
 <!-- ------------=========CONTENTS HERE=========------------ -->
@@ -55,8 +166,6 @@
 <!-- footing start-->
 <?php include('include/footing.php');?>
 <!-- footing end -->
-
-
 
 
 <script src="js/jquery-2.2.3.js"></script>

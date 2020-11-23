@@ -54,7 +54,7 @@
           <ul class="breadcrumbAes">
             <li><a href="index.php">الرئيسية</a></li>
             <li>خطوط جمالية</li>
-            <li class="active">ستايل الـ50s</li>
+            <li>ستايل الـ50s</li>
           </ul>
         </div>
       </div>
