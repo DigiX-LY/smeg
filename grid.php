@@ -78,106 +78,176 @@
     <div class="row">
       <div class="col-sm-8">
       </div>
-      <div class="col-sm-4 text-right">
-      </div>
     </div> 
     <!-- grid navigation END-->
     <!-- GRID CONTENTS -->
     <div class="row shop-grid grid-view">
-      <div class="col-md-3 col-sm-6">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
-          <div class="image">
-            <a class="fancybox" href="images/major1.jpg">
-              <img src="images/major1.jpg" alt="Product" class="img-responsive">
-            </a>
-          </div>
-          <div class="product_desc">
-           <a href="products.php?category=oven"><p class="title"> أفران </p></a>
-          </div>
+          <a href="products.php?category=major-accessories">
+            <div class="image">
+                <img src="images/majoraccess.jpg" alt="Product" class="img-responsive">
+            </div>
+            <div class="product_desc">
+             <p class="title">  ملحقات </p>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+          <a href="products.php?category=oven">
+            <div class="image">
+                <img src="images/major1.jpg" alt="Product" class="img-responsive">
+            </div>
+            <div class="product_desc">
+             <p class="title"> أفران </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=microwave-oven">
           <div class="image">
-            <a class="fancybox" href="images/major2.jpg">
               <img src="images/major2.jpg" alt="Product" class="img-responsive">
-            </a>
           </div>
           <div class="product_desc">
-           <a href="products.php?category=microwave-oven"><p class="title"> أفران مايكرويف </p></a>
+           <p class="title"> أفران الميكروويف </p>
           </div>
+          </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+        <a href="products.php?category=hoods">
           <div class="image">
-            <a class="fancybox" href="images/major3.jpg">
             <img src="images/major3.jpg" alt="Product" class="img-responsive">
-            </a>
           </div>
           <div class="product_desc">
-           <p class="title"> شفاطة هواء </p>
+           <p class="title"> شفاطات </p>
           </div>
+        </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+        <a href="products.php?category=coffee-machines">
           <div class="image">
-            <a class="fancybox" href="images/major4.jpg">
             <img src="images/major4.jpg" alt="Product" class="img-responsive">
-            </a>
           </div>
           <div class="product_desc">
-           <a href="products.php?category=coffee-machines"><p class="title"> ماكينات القهوة المدمجة </p></a>
+           <p class="title">  ماكينات صنع القهوة </p>
           </div>
+          </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+          <a href="products.php?category=hobs">
           <div class="image">
-            <a class="fancybox" href="images/major5.jpg">
-            <img src="images/major5.jpg" alt="Product" class="img-responsive">
-            </a>
-          </div>
-          <div class="product_desc">
-           <p class="title"> مجففات مدمجة </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product_wrap heading_space">
-          <div class="image">
-            <a class="fancybox" href="images/major6.jpg">
             <img src="images/major6.jpg" alt="Product" class="img-responsive">
-            </a>
           </div>
           <div class="product_desc">
-           <p class="title"> غاز </p>
+           <p class="title"> مواقد </p>
           </div>
+          </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+        <a href="products.php?category=cookers">
           <div class="image">
-            <a class="fancybox" href="images/major7.jpg">
             <img src="images/major7.jpg" alt="Product" class="img-responsive">
-            </a>
           </div>
           <div class="product_desc">
-           <p class="title"> فرن مع غاز </p>
+           <p class="title"> أفران مع موقد </p>
           </div>
+        </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+        <a href="products.php?category=freezers">
           <div class="image">
-            <a class="fancybox" href="images/major8.jpg">
             <img src="images/major8.jpg" alt="Product" class="img-responsive">
-            </a>
           </div>
           <div class="product_desc">
-           <p class="title"> شفاطة هواء </p>
+           <p class="title"> مجمدات </p>
           </div>
+        </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=refrigerators">
+          <div class="image">
+            <img src="images/major9.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title"> ثلاجات </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=washer">
+          <div class="image">
+            <img src="images/major10.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title">  غسالات ملابس </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=Built-in-drawers">
+          <div class="image">
+            <img src="images/major11.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title">  درج مدمج </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=Built-in-drawers">
+          <div class="image">
+            <img src="images/major12.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title">   غسالات أطباق </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=sinks">
+          <div class="image">
+            <img src="images/major13.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title">   أحواض الغسيل </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=taps">
+          <div class="image">
+            <img src="images/major14.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title">   صنابير مياه </p>
+          </div>
+        </a>
         </div>
       </div>
       <!-- GRID END -->

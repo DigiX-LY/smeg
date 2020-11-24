@@ -126,7 +126,13 @@
 
 </div>
 
-<br><img src="images/disegnosede_smeg.jpg" ><br>
+<br>
+<div class="container-fluid">
+  
+    <img src="images/disegnosede_smeg.jpg" width="100%">
+
+</div>
+<br>
 
 <section>
 

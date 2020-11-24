@@ -700,10 +700,10 @@ header nav.navbar.bootsnav ul.nav > li > a:hover, header nav.navbar.bootsnav ul.
 	border-right: 1px solid white;
 	padding-right: 50px;
 }
-.appliances ul a li:hover{color: #437c8a;
+.appliances ul a li:hover{color: #A78466;
 }
 .appliances a span:hover{
-	color: rgb(0, 153, 180);
+	color: #be9673;
 }
 .smallAppl{
 	padding-left: 70px;
@@ -1576,7 +1576,7 @@ input[type="checkbox"] {
 	margin-bottom:0;
 	direction: rtl;
 	color:inherit;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: bold;
 }
 .product_wrap .product_desc .price{
@@ -2243,7 +2243,10 @@ form.newsletter .input-group-addon:hover{
 .list-view .col-md-3, .list-view .col-md-4{
     width: 100%;
 }
-
+/* the category block for each category in the grid */
+.catBlock{
+	padding: 10px;
+}
 .list-view .product_wrap .image, .list-view .product_wrap .product_desc{
 	display:table-cell;
 	vertical-align:middle;

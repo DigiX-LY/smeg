@@ -85,124 +85,100 @@
     <!-- grid navigation END-->
     <!-- GRID CONTENTS -->
     <div class="row shop-grid grid-view">
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
-          <div class="image">
-            <a class="fancybox" href="images/grinders.jpg">
-            <img src="images/grinders.jpg" alt="Product" class="img-responsive">
-            </a>
-          </div>
-          <div class="product_desc">
-           <p class="title"> مطاحن القهوة  </p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
-          </div>
+          <a href="products.php?category=small-accessories">
+            <div class="image">
+                <img src="images/smallaccess.jpg" alt="Product" class="img-responsive">
+            </div>
+            <div class="product_desc">
+             <p class="title">  ملحقات </p>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
-          <div class="image">
-            <a class="fancybox" href="images/mach.jpg">
-            <img src="images/mach.jpg" alt="Product" class="img-responsive">
-            </a>
-          </div>
-          <div class="product_desc">
-           <p class="title"> مكاينات قهوة</p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
-          </div>
+          <a href="products.php?category=coffee-grinders">
+            <div class="image">
+                <img src="images/grinders.jpg" alt="Product" class="img-responsive">
+            </div>
+            <div class="product_desc">
+             <p class="title"> طاحنات القهوة </p>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+        <a href="products.php?category=toasters">
           <div class="image">
-            <a class="fancybox" href="images/blenders.jpg">
-            <img src="images/blenders.jpg" alt="Product" class="img-responsive">
-            </a>
+              <img src="images/toaster.jpg" alt="Product" class="img-responsive">
           </div>
           <div class="product_desc">
-           <a href="products.php?category=hand-blenders"><p class="title"> خلاطات يدوية </p></a>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
+           <p class="title"> محمصات التوست </p>
           </div>
+          </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+        <a href="products.php?category=kettles">
           <div class="image">
-            <a class="fancybox" href="images/bigblenders.jpg">
-            <img src="images/bigblenders.jpg" alt="Product" class="img-responsive">
-            </a>
-          </div>
-          <div class="product_desc">
-           <a href="products.php?category=blenders"><p class="title"> خلاطات </p></a>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product_wrap heading_space">
-          <div class="image">
-            <a class="fancybox" href="images/milk.jpg">
-            <img src="images/milk.jpg" alt="Product" class="img-responsive">
-            </a>
-          </div>
-          <div class="product_desc">
-           <a href="products.php?category=milk-frothers"><p class="title"> آلات رغوة الحليب  </p></a>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product_wrap heading_space">
-          <div class="image">
-            <a class="fancybox" href="images/toaster.jpg">
-            <img src="images/toaster.jpg" alt="Product" class="img-responsive">
-            </a>
-          </div>
-          <div class="product_desc">
-           <a href="products.php?category=toasters"><p class="title"> محمصات </p></a>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product_wrap heading_space">
-          <div class="image">
-            <a class="fancybox" href="images/mixer.jpg">
-            <img src="images/mixer.jpg" alt="Product" class="img-responsive">
-            </a>
-          </div>
-          <div class="product_desc">
-           <p class="title"> عجانات </p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product_wrap heading_space">
-          <div class="image">
-            <a class="fancybox" href="images/kettles.jpg">
             <img src="images/kettles.jpg" alt="Product" class="img-responsive">
-            </a>
           </div>
           <div class="product_desc">
            <p class="title"> كاتل </p>
-           <div class="list_content">
-               <h4 class="bottom30">Sacrificial Chair Design </h4>
-           </div>
           </div>
+        </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+          <a href="products.php?category=milk-frothers">
+          <div class="image">
+            <img src="images/milk.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title">  أجهزة رغوة الحليب </p>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=mixers">
+          <div class="image">
+            <img src="images/mixer.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title"> عجانات </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=juicers">
+          <div class="image">
+            <img src="images/juicers.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title">  عصارات </p>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
+        <a href="products.php?category=blenders">
+          <div class="image">
+            <img src="images/blenders.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title"> خلاطات </p>
+          </div>
+        </a>
         </div>
       </div>
       <!-- GRID END -->

@@ -107,7 +107,7 @@
     <div class="container-fluid videoContParent">
       <div class="row" >
           <div class="col-md-8 smegVideoContainer">
-            <iframe class="smegVideo" src="https://www.youtube.com/embed/GIdOlKh16Rc"> <!--?autoplay=1&mute=1 for autoplaying-->
+            <iframe class="smegVideo" src="https://www.youtube.com/embed/GIdOlKh16Rc?autoplay=1"> <!--?autoplay=1&mute=1 for autoplaying-->
             </iframe>
           </div>
           <div class="col-md-4 videoSubText">
@@ -117,7 +117,7 @@
             <h6 class="videoDesc">
               مطحنة القهوة CGF01 هي الأداة المثالية لطحن عالي الجودة ، دون التضحية بالعملية والأناقة.
             </h6>
-            <a href="products.php?category=coffee-machines" class="prodLink">
+            <a href="products.php?category=coffee-grinders" class="prodLink">
               مشاهدة المنتجات
             </a>
           </div>
