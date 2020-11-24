@@ -995,7 +995,10 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	margin-top: 10%;
 	transition: .5s ease-in-out;
 }
-.insideGridBox:hover{
+/* .insideGridBox:hover{
+	margin-top: 30px;
+} */
+.blacksection .row .col-md-6:hover .insideGridBox{
 	margin-top: 30px;
 }
 .insideGridBox img{
@@ -1020,7 +1023,7 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	background:black;
 	margin-top:30px;
 	position:relative;
-	min-height:659px; /*m.yousef black section content height*/
+	min-height:700px; /*m.yousef black section content height*/
 	width: auto;
 	display:block;
 	height:auto;
@@ -3211,8 +3214,14 @@ a.prodLink:hover{color: white;}
   .sendMessage{
 	  display: none;
   }
+  .product_wrap .product_desc p {
+	font-size: 40px;
+}
 }
 @media screen and (max-width:1052px){
+	.product_wrap .product_desc p {
+		font-size: 40px;
+	}
 	.videoHeader{
 		font-size: 30px;
 	}
@@ -3226,6 +3235,9 @@ a.prodLink:hover{color: white;}
 	}
 }
 @media screen and (max-width:1024px){
+	.product_wrap .product_desc p {
+		font-size: 40px;
+	}
 	#parallax2, #testinomialBg{
 		background-position:center center !important;
 	}
@@ -3233,6 +3245,18 @@ a.prodLink:hover{color: white;}
 	
 }
 @media screen and (max-width:991px){
+	.smallBG{
+	background:url(../images/small_bannerMobile.gif) no-repeat;
+	background-position:center center;
+	background-size: cover;
+	height: 100%;
+	}
+	.aesHeader .row .col-md-5{
+		padding-bottom: 40%;
+	}
+	.product_wrap .product_desc p {
+		font-size: 35px;
+	}
 	.grid_box {
 		height: auto;
 	}
@@ -3248,9 +3272,7 @@ a.prodLink:hover{color: white;}
 	}
 
 
-	.aesHeader .row .col-md-5{
-		padding-right: 50%;
-	}
+	
 
 
  .contactInfo{
@@ -3340,7 +3362,7 @@ header nav.navbar.bootsnav ul.nav > li > a {
 @media screen and (max-width:767px){
 
 	.product_wrap .product_desc p {
-		font-size: 40px;
+		font-size: 25px;
 	}
 	.smegFooter{
 		width: 30%;
@@ -3434,9 +3456,8 @@ header nav.navbar.bootsnav ul.nav > li > a {
 
 
 @media screen and (max-width:480px){
-
-	.aesHeader .row .col-md-5{
-		padding-right: 20px;
+	.product_wrap .product_desc p {
+		font-size: 15px;
 	}
 	.insideGridBox img{
 		width: 100%;

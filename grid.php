@@ -216,7 +216,7 @@
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
-        <a href="products.php?category=Built-in-drawers">
+        <a href="products.php?category=dishwashers">
           <div class="image">
             <img src="images/major12.jpg" alt="Product" class="img-responsive">
           </div>

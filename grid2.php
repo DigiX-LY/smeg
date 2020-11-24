@@ -48,7 +48,7 @@
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-12 col-md-5">
           <ul class="breadcrumbAes inverter">
             <li><a href="index.php">الرئيسية</a></li>
             <li>منتجات</li>
@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-md-5 inverter">
           <h1>الأجهزة المنزلية الصغيرة</h1>
-          <h3>الرموز الجديدة للفضاء المنزلي
+          <h3>الرموز الجديدة للفضاء المنزلي.
 
           </h3>
         </div>
@@ -135,6 +135,18 @@
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
         <div class="product_wrap heading_space">
+        <a href="products.php?category=juicers">
+          <div class="image">
+            <img src="images/juicers.jpg" alt="Product" class="img-responsive">
+          </div>
+          <div class="product_desc">
+           <p class="title">  عصارات </p>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
+        <div class="product_wrap heading_space">
           <a href="products.php?category=milk-frothers">
           <div class="image">
             <img src="images/milk.jpg" alt="Product" class="img-responsive">
@@ -155,18 +167,6 @@
            <p class="title"> عجانات </p>
           </div>
         </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
-        <div class="product_wrap heading_space">
-        <a href="products.php?category=juicers">
-          <div class="image">
-            <img src="images/juicers.jpg" alt="Product" class="img-responsive">
-          </div>
-          <div class="product_desc">
-           <p class="title">  عصارات </p>
-          </div>
-          </a>
         </div>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 catBlock">
