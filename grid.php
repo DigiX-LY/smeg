@@ -50,7 +50,7 @@
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-12 col-md-5">
           <ul class="breadcrumbAes">
             <li><a href="index.php">الرئيسية</a></li>
             <li>منتجات</li>
@@ -62,8 +62,8 @@
     <div class="aesHeader padding">
       <div class="row">
         <div class="col-md-5">
-          <h1>الأجهزة المنزلية الرئيسية</h1>
-          <h3>المنتجات التي تعبر عن "صنع في إيطاليا" من خلال الجمع بين التصميم والأداء والاهتمام بالتفاصيل بشكل مثالي.
+          <h1 id="textAppear">الأجهزة المنزلية الرئيسية</h1>
+          <h3 id="textAppearSub">المنتجات التي تعبر عن "صنع في إيطاليا" من خلال الجمع بين التصميم والأداء والاهتمام بالتفاصيل بشكل مثالي.
           </h3>
         </div>
       </div>
