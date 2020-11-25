@@ -50,7 +50,7 @@
   <div class="container">
     <div class="container">      <!-- edit out later -->
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-12 col-md-5">
           <ul class="breadcrumbAes inverter">
             <li><a href="index.php">الرئيسية</a></li>
             <li>خطوط جمالية</li>
