@@ -80,7 +80,7 @@
     <div class="container-fluid allProductsListBG">
         <div class="container allProductsList" style="direction: rtl;">
             <div class="row productsContent">
-                <div class="col-sm-2-fluid">
+                <div class="col-sm-2-fluid col-md-2-fluid col-xs-2-fluid ">
                         <h1 class="filterTitle">الفلاتر</h1>
                         <div class="filters" id="product_filters">
                                     <div class="filters__item">
