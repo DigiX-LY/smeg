@@ -700,10 +700,14 @@ header nav.navbar.bootsnav ul.nav > li > a:hover, header nav.navbar.bootsnav ul.
 	border-right: 1px solid white;
 	padding-right: 50px;
 }
-.appliances ul a li:hover{color: #A78466;
+.appliances ul a li{
+	color: #cccccc;
+}
+.appliances ul a li:hover{
+	color: white;
 }
 .appliances a span:hover{
-	color: #be9673;
+	border-bottom: 1px solid white;
 }
 .smallAppl{
 	padding-left: 70px;
@@ -784,7 +788,7 @@ nav.navbar.bootsnav .navbar-toggle, nav.navbar.bootsnav .navbar-toggle:hover, na
 	background:transparent !important;
 }
 nav.navbar.bootsnav li.dropdown.on > .dropdown-toggle{
-	color: #A78466;
+	color: white;
 	border-bottom: 1px solid white;
 }
 nav.navbar.bootsnav .navbar-toggle {
@@ -2113,7 +2117,7 @@ form.newsletter .input-group-addon:hover{
 	color:white;
 }
 .breadcrumbAes > .active {
-	color:#A78466;
+	color:  #b6b6b6;
 }
 .breadcrumbAes > li + li::before {
     padding: 0 5px;
@@ -3266,13 +3270,13 @@ a.prodLink:hover{color: white;}
 
 	/*aesthetic line mobile backgrounds*/
 	#textAppear{
-		background-color: #4e3b2c;
+		background-color: #222222;
 		border-radius: 50px 0 0 2px;
 		padding: 10px;
 	}
 	#textAppearSub{
 		padding: 10px;
-		background-color: #533b28;
+		background-color: #444444;
 		border-radius: 50px 0 0 2px;
 	}
 	
@@ -3559,6 +3563,9 @@ header nav.navbar.bootsnav ul.nav > li > a {
 
 }
 @media screen and (max-width:527px){
+	.grid_box{
+		min-height: 0;
+	}
 	.firstPara {
 		font-size: 16px;
 	}

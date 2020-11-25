@@ -11,9 +11,9 @@
         </div>
         <div class="col-sm-4">
           <ul class="social">
-            <li><a href="#" class="fbHover"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/smeglibya/" class="fbHover"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#" class="twitterHover"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" class="instaHover"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://instagram.com/smeg.libya" class="instaHover"><i class="fa fa-instagram"></i></a></li>
             <li><a href="#" class="linkedHover"><i class="fa fa-linkedin"></i></a></li>
           </ul>
         </div>

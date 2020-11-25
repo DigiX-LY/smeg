@@ -95,9 +95,7 @@
         </p>
     </div>
     <div class="flexPictureHead">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
-        <img src="images/blog1.jpg" alt="">
+        <img src="images/aeslines/selez/selez.jpg">
     </div>
     
 <div class="container descContainerBS">
