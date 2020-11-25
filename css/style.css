@@ -1569,7 +1569,7 @@ input[type="checkbox"] {
 }
 .product_wrap .product_desc{
 	text-align: center;
-	padding:20px 10px 20px 20px;
+	padding:10px;
 	position:relative;
 }
 .product_wrap .product_desc p, .product_wrap .product_desc apan{
@@ -3494,6 +3494,15 @@ header nav.navbar.bootsnav ul.nav > li > a {
 	}
 
 }
+@media screen and (max-width:527px){
+	.product_wrap .product_desc{
+		padding: 10px;
+	}
+	.product_wrap .product_desc p{
+		font-size: 20px;
+	}
+}
+
 
 @media screen and (max-width:480px){
 	.aesHeader h1 {
@@ -3541,5 +3550,13 @@ header nav.navbar.bootsnav ul.nav > li > a {
 	.descrp{
 		padding: 0;
 		padding-top: 30px;
+	}
+}
+@media screen and (max-width: 347px){
+	.product_wrap .product_desc{
+		padding: 5px;
+	}
+	.product_wrap .product_desc p{
+		font-size: 12px;
 	}
 }
