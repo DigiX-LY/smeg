@@ -20,11 +20,11 @@
           <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav navbar-right flexnav" data-in="fadeIn" data-out="fadeOut"> <!--m.yousef flexnav added to display menu in arabic-->
               <li class="dropdown active"> <!--m.yousef language changes-->
-                <a href="index.php" class="dropdown-toggle" data-toggle="dropdown"> الرئيسية
+                <a href="index.php"> الرئيسية
                 </a>
               </li>
               <li class="dropdown">
-                <a href="#." class="dropdown-toggle" data-toggle="dropdown">المنتجات
+                <a href="#."  class="dropdown-toggle" data-toggle="dropdown">المنتجات
                 </a>
                 <ul class="dropdown-menu">
                   <div class="flexDropDown">
@@ -57,13 +57,13 @@
                   </div>
                 </ul>
               </li>
-              <li class="dropdown megamenu-fw">
+              <li  class="dropdown megamenu-fw">
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown"> خطوط جمالية
                 </a>
                 <ul class="dropdown-menu">
                   <div class="flexDropDown">
                     <div class="appliances aesLinesList">
-                      <span class="productLabel">إكتشف خطوط تصنيع سميج الجمالية</span>
+                      <span class="productLabel" id="smegAesTitle">إكتشف خطوط تصنيع سميج الجمالية</span>
                       <ul>
                         <a href="classica.php"><li>كلاسيكا</li></a>
                         <a href="colonial.php"><li>كولونيال</li></a>
@@ -82,7 +82,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="about.php" class="dropdown-toggle" data-toggle="dropdown"> عن الشركة
+                <a href="about.php"> عن الشركة
                 </a>
               </li>
             </ul>

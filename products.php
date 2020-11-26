@@ -122,9 +122,9 @@
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_7" type="checkbox" name="Linea" value="NEW_AESTHETICS_7" data-filter="NEW_AESTHETICS" data-filtervalue="7" id="Linea">
+                                                    <input class="filter-checkbox NEW_AESTHETICS_5" type="checkbox" name="style50s" value="NEW_AESTHETICS_5" data-filter="NEW_AESTHETICS" data-filtervalue="5" id="style50s">
 
-                                                        <label class="aesCheckBox" for="Linea">لينيا</label>
+                                                    <label class="aesCheckBox" for="style50s">ستايل الـ50s</label>
                                                     </div>
                                                     <div class="form-check">
 
@@ -140,10 +140,23 @@
                                                     </div>
                                                     <div class="form-check">
 
+                                                        <input class="filter-checkbox NEW_AESTHETICS_7" type="checkbox" name="Linea" value="NEW_AESTHETICS_7" data-filter="NEW_AESTHETICS" data-filtervalue="7" id="Linea">
+
+                                                        <label class="aesCheckBox" for="Linea">لينيا</label>
+                                                    </div>
+                                                    <div class="form-check">
+
                                                         <input class="filter-checkbox NEW_AESTHETICS_12" type="checkbox" name="Victoria" value="NEW_AESTHETICS_12" data-filter="NEW_AESTHETICS" data-filtervalue="12" id="Victoria">
 
                                                         <label class="aesCheckBox" for="Victoria">فيكتوريا</label>
                                                     </div>
+                                                    <div class="form-check">
+
+                                                        <input class="filter-checkbox NEW_AESTHETICS_5" type="checkbox" name="Portofino" value="NEW_AESTHETICS_5" data-filter="NEW_AESTHETICS" data-filtervalue="5" id="Portofino">
+
+                                                        <label class="aesCheckBox" for="Portofino">بورتوفينو</label>
+                                                    </div>
+                                                    
                                         </div>
                                     </div>
                         </div>

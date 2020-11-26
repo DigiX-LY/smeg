@@ -679,9 +679,9 @@ header nav.navbar.bootsnav ul.nav > li > a:hover, header nav.navbar.bootsnav ul.
 	background-color: black;
 }
 .appliances ul li{
-	padding: 10px;
+	list-style-type: none;
+	padding: 5px;
 	margin-right: 20px;
-	padding-top: 0;
 	border-right: 1px solid white;
 }
 .appliances ul{
@@ -3295,7 +3295,72 @@ a.prodLink:hover{color: white;}
 	
 	
 }
+
+@media screen and (max-width:992px){
+	/*responsive navbar */
+	/* nav navbar-nav navbar-right flexnav */
+	
+	header nav.navbar.bootsnav ul.nav > li > a {
+		font-size: 22px;
+	}
+	.flexDropDown{
+		margin-top: 10px;
+	}
+	.productLabel::before{
+		content: "-";
+	}
+	.productLabel{
+		font-size: 17px;
+		font-weight: 600;
+	}
+	.appliances{
+		width: unset;
+		height: unset;
+		padding: 0;
+		margin: 0;
+		border: none;
+		text-align: right;
+	}
+	.appliances ul {
+		margin: 0;
+		column-count: 1;
+	}
+	.appliances ul li {
+		border: none;
+		margin: 0;
+	}
+	.appliances ul{
+		margin: 0;
+	}
+	.flexnav {
+		overflow: scroll;
+		display: block;
+		direction: rtl;
+	}
+	.flexDropDown {
+		background-color: unset;
+		display: block;
+	}
+	.dropdown-menu li {
+		background-color: unset;
+	}
+	#smegAesTitle{
+		display: none;
+	}
+
+	.navbar-collapse {
+		text-align: right;
+		width: 100%;
+	}
+	nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu {
+		padding: 0;
+	}
+
+
+
 @media screen and (max-width:991px){
+
+
 	.firstPara {
 		width: 80%;
 		font-size: 14px;
@@ -3435,7 +3500,6 @@ header nav.navbar.bootsnav ul.nav > li > a {
   }
   nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li > a{
 	 border-color: #363636;
-	 padding:5px 0;
 	 font-size:12px;
   }
   nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title{
@@ -3490,6 +3554,11 @@ header nav.navbar.bootsnav ul.nav > li > a {
 
 }
 @media screen and (max-width:767px){
+	.navbar-default > .container{
+		margin: 0!important;
+	}
+
+	
 	.blackSection {border: none;}
 	/*aes lines reponsive layout*/
 	.center{
@@ -3596,14 +3665,30 @@ header nav.navbar.bootsnav ul.nav > li > a {
 	.contactUS{
 		border: none;
 	}
+	
+	.aboutPage h1{
+		font-size: 30px;
+	}
+	.aboutPage h3{
+		font-size: 15px;
+	}
   
 }
 @media screen and (max-width:654px){
+	.navbar-default > .container{
+		margin: 0!important;
+	}
 	.listItem {
 		width: 50%;
 	}
 	.aesHeader h1 {
 		font-size: 44px;
+	}
+	.aboutPage h1{
+		font-size: 30px;
+	}
+	.aboutPage h3{
+		font-size: 15px;
 	}
 
 }
@@ -3648,6 +3733,9 @@ header nav.navbar.bootsnav ul.nav > li > a {
 
 
 @media screen and (max-width:480px){
+	.blackSectionTitle {
+		font-size: 30px;
+	}
 	.blackSectionDesc {
 		font-size: 12px;
 	}
