@@ -2992,6 +2992,20 @@ footer.plain_footer{
 	color: #04669A;
 }
 
+/* product filter bgc */
+.filters{
+	background-color: #f8f8f8;
+}
+
+
+/* end */
+
+
+
+
+
+
+
 /*CLASSICA classes*/
 
 .headerProduct{
@@ -3209,8 +3223,18 @@ a.prodLink:hover{color: white;}
 /*Responsive Layout*/
 @media screen and (max-width:1199px){
 
+	.filters__item__header {
+		font-size: 24px;
+	}
+
+	.listItem{
+		width: 30%;
+	}
+	.productsContent{
+		flex-direction: column;
+	}
 	.aesCheckBox{
-		font-size: 14px;
+		font-size: 20px;
 	}
 	/*Owl Slider*/
    #fourCol-slider .owl-prev{
@@ -3239,6 +3263,7 @@ a.prodLink:hover{color: white;}
 }
 }
 @media screen and (max-width:1052px){
+	
 	.aesHeader h1 {
 		font-size: 50px;
 	}
@@ -3271,9 +3296,19 @@ a.prodLink:hover{color: white;}
 	
 }
 @media screen and (max-width:991px){
+	.firstPara {
+		width: 80%;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	/*product responsive*/
 
+	.listItem {
+		width: 50%;
+	}
+	/* end */
 
-
+	
 	/*aesthetic line mobile backgrounds*/
 	#textAppear{
 		background-color: #222222;
@@ -3455,6 +3490,7 @@ header nav.navbar.bootsnav ul.nav > li > a {
 
 }
 @media screen and (max-width:767px){
+	.blackSection {border: none;}
 	/*aes lines reponsive layout*/
 	.center{
 		margin-top: 5%;
@@ -3563,12 +3599,21 @@ header nav.navbar.bootsnav ul.nav > li > a {
   
 }
 @media screen and (max-width:654px){
+	.listItem {
+		width: 50%;
+	}
 	.aesHeader h1 {
 		font-size: 44px;
 	}
 
 }
 @media screen and (max-width:527px){
+	.blackSectionDesc {
+		font-size: 14px;
+	}
+	.listItem {
+		width: 100%;
+	}
 	.breadcrumb > li{
 		font-size: 14px;
 	}
@@ -3603,6 +3648,9 @@ header nav.navbar.bootsnav ul.nav > li > a {
 
 
 @media screen and (max-width:480px){
+	.blackSectionDesc {
+		font-size: 12px;
+	}
 	.breadcrumb > li{
 		font-size: 10px;
 	}

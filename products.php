@@ -80,7 +80,7 @@
     <div class="container-fluid allProductsListBG">
         <div class="container allProductsList" style="direction: rtl;">
             <div class="row productsContent">
-                <div class="col-sm-2-fluid col-md-2-fluid col-xs-2-fluid ">
+                <div class="col-sm-12 col-md-3-fluid col-xl-3 col-lg-3 col-3 ">
                         <h1 class="filterTitle">الفلاتر</h1>
                         <div class="filters" id="product_filters">
                                     <div class="filters__item">
@@ -148,7 +148,7 @@
                                     </div>
                         </div>
                 </div>
-                <div class="col-sm-10 " id="product-list-container">
+                <div class="col-sm-4-fluid col-md-9-fluid col-xl-9 col-lg-9 col-9 " id="product-list-container">
                     <div class="row products-list">
                         <?php
                             $sql = "SELECT products.img_url'url', products.name'prod_name', sub_cat.name'cat_name', aes_lines.name'aes_name', products.color'color'\n"
