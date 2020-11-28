@@ -5,7 +5,7 @@
           <!-- Start Header Navigation -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-              <i class="fa fa-bars">
+              <i class="fa fa-bars burgermenu">
               </i>
             </button>
             <a class="navbar-brand" href="index.php">

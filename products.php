@@ -189,8 +189,8 @@
                                                     </div>
                                                     <div class="Productname"><?php echo $product['prod_name'];?></div>
                                                     <div class="product-preview__description">
-                                                    <?php echo $product['cat_name'];?> |
-                                                    <?php echo $product['aes_name'];?> |
+                                                    <?php echo $product['cat_name'];?> ،
+                                                    <?php echo $product['aes_name'];?> ،
                                                     <?php echo $product['color'];?>
                                                     
                                                     </div>
