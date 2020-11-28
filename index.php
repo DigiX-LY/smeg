@@ -1,5 +1,19 @@
 <?php include 'include/DBconnection.php'; ?>
+<?php
+  
+  /* sending email 
+  if(isset($_POST["SendEmail"])){
+    $to = "info@smeglibya.ly";
+    $subject = "Contact Email";
+    $from = $_POST['email'];
+    $msg = $_POST['message'];
+    $senderName = trim($_POST['senderName']);
+    $headers = "From: $senderName";
+    mail($to,$subject,$msg,$headers);
+  }
+  */
 
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -306,19 +320,19 @@
                   </div>
                 </div>
                 <div class="contact-form-outer">
-                    <form id="contact-form" action="" method="POST" class="tm-bg-color-6 tm-contact-form contactForm">
+                    <form id="contact-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="tm-bg-color-6 tm-contact-form contactForm">
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="اسمك" required="" />
+                            <input type="text" name="senderName" id="senderName" class="form-control" placeholder="اسمك" required="" />
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="بريد الإلكتروني" required="" />
+                            <input type="email" name="email" id="email" class="form-control" placeholder="بريد الإلكتروني" required="" />
                         </div>
                         <div class="form-group">
-                            <textarea rows="4" name="message"  class="form-control" placeholder="رسالتك..."
+                            <textarea rows="4" name="message" id="message" class="form-control" placeholder="رسالتك..."
                                 required=""></textarea>
                         </div>
                         <div style="text-align: center;">
-                            <button type="submit" class="ml-auto tm-btn tm-btn-3">
+                            <button type="submit" id="SendEmail" name="SendEmail" class="ml-auto tm-btn tm-btn-3">
                                 إرسال
                             </button>
                         </div>

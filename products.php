@@ -1,6 +1,6 @@
 <?php
     include 'include/DBconnection.php';
-    $sql = "SELECT name,cat_desc FROM sub_cat where en_name ='". trim($_GET['category'])."'"; 
+    $sql = "SELECT main_cat_id'maincat',name,cat_desc FROM sub_cat where en_name ='". trim($_GET['category'])."'"; 
         foreach($pdo->query($sql) as $row){}
 ?>
 <!doctype html>
@@ -56,7 +56,7 @@
             <ul class="breadcrumb">
               <li><a href="index.php">الرئيسية</a></li>
               <li>منتجات</li>
-              <li>منتجات رئيسية</li>
+              <li><?php  switch($row['maincat']){case 1: echo 'منتجات رئيسية'; break; case 2: echo 'منتجات صغيرة';} ?></li>
               <li class="active"><?php echo isset($row)?$row['name']:"خطاً"; ?></li>
             </ul>
           </div>
@@ -92,67 +92,67 @@
 
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_2" type="checkbox" name="Classica" value="NEW_AESTHETICS_2" data-filter="NEW_AESTHETICS" data-filtervalue="2" id="Classica">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(7):removeSelected(7);" class="filter-checkbox" type="checkbox" id="Classica">
 
                                                         <label class="aesCheckBox" for="Classica">كلاسيكا</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_3" type="checkbox" name="Coloniale" value="NEW_AESTHETICS_3" data-filter="NEW_AESTHETICS" data-filtervalue="3" id="Coloniale">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(3):removeSelected(3);" class="filter-checkbox" type="checkbox" id="Coloniale">
 
                                                         <label class="aesCheckBox" for="Coloniale">كولونيال</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_4" type="checkbox" name="Contemporanea" value="NEW_AESTHETICS_4" data-filter="NEW_AESTHETICS" data-filtervalue="4" id="Contemporanea">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(6):removeSelected(6);" class="filter-checkbox" type="checkbox" id="Contemporanea">
 
                                                         <label class="aesCheckBox" for="Contemporanea">معاصر</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_5" type="checkbox" name="Cortina" value="NEW_AESTHETICS_5" data-filter="NEW_AESTHETICS" data-filtervalue="5" id="Cortina">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(11):removeSelected(11);" class="filter-checkbox" type="checkbox"  id="Cortina">
 
                                                         <label class="aesCheckBox" for="Cortina">كورتينا</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_6" type="checkbox" name="Dolce Stil Novo" value="NEW_AESTHETICS_6" data-filter="NEW_AESTHETICS" data-filtervalue="6" id="Dolce Stil Novo">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(1):removeSelected(1);" class="filter-checkbox" type="checkbox" id="Dolce Stil Novo">
 
                                                         <label class="aesCheckBox" for="Dolce Stil Novo">دولتشي ستيل نوفو</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                    <input class="filter-checkbox NEW_AESTHETICS_5" type="checkbox" name="style50s" value="NEW_AESTHETICS_5" data-filter="NEW_AESTHETICS" data-filtervalue="5" id="style50s">
+                                                    <input onclick="($(this).prop('checked'))?addSelected(8):removeSelected(8);" class="filter-checkbox" type="checkbox" id="style50s">
 
                                                     <label class="aesCheckBox" for="style50s">ستايل الـ50s</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_9" type="checkbox" name="Piano Design" value="NEW_AESTHETICS_9" data-filter="NEW_AESTHETICS" data-filtervalue="9" id="Piano Design">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(4):removeSelected(4);" class="filter-checkbox" type="checkbox" id="Piano Design">
 
                                                         <label class="aesCheckBox" for="Piano Design">تصميم البيانو</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_11" type="checkbox" name="Selezione" value="NEW_AESTHETICS_11" data-filter="NEW_AESTHETICS" data-filtervalue="11" id="Selezione">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(9):removeSelected(9);" class="filter-checkbox" type="checkbox" id="Selezione">
 
                                                         <label class="aesCheckBox" for="Selezione">اختياري</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_7" type="checkbox" name="Linea" value="NEW_AESTHETICS_7" data-filter="NEW_AESTHETICS" data-filtervalue="7" id="Linea">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(5):removeSelected(5);" class="filter-checkbox" type="checkbox" id="Linea">
 
                                                         <label class="aesCheckBox" for="Linea">لينيا</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_12" type="checkbox" name="Victoria" value="NEW_AESTHETICS_12" data-filter="NEW_AESTHETICS" data-filtervalue="12" id="Victoria">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(10):removeSelected(10);" class="filter-checkbox" type="checkbox" id="Victoria">
 
                                                         <label class="aesCheckBox" for="Victoria">فيكتوريا</label>
                                                     </div>
                                                     <div class="form-check">
 
-                                                        <input class="filter-checkbox NEW_AESTHETICS_5" type="checkbox" name="Portofino" value="NEW_AESTHETICS_5" data-filter="NEW_AESTHETICS" data-filtervalue="5" id="Portofino">
+                                                        <input onclick="($(this).prop('checked'))?addSelected(2):removeSelected(2);" class="filter-checkbox" type="checkbox" id="Portofino">
 
                                                         <label class="aesCheckBox" for="Portofino">بورتوفينو</label>
                                                     </div>
@@ -162,9 +162,9 @@
                         </div>
                 </div>
                 <div class="col-sm-4-fluid col-md-9-fluid col-xl-9 col-lg-9 col-9 " id="product-list-container">
-                    <div class="row products-list">
+                    <div class="row products-list filter-lines">
                         <?php
-                            $sql = "SELECT products.img_url'url', products.name'prod_name', sub_cat.name'cat_name', aes_lines.name'aes_name', products.color'color'\n"
+                            $sql = "SELECT products.img_url'url', products.name'prod_name', sub_cat.name'cat_name', aes_lines.name'aes_name', products.color'color', aes_lines.id'line_id'  \n"
 
                             . "FROM products\n"
                         
@@ -181,7 +181,7 @@
                                 if($stmt->execute()){
                                     if($row = $stmt->fetchAll()){
                                         foreach($row as $product){?>
-                                        <div id="<?php echo $product['prod_name'];?>" class="listItem col-12 col-sm-6 col-lg-4 product-preview">
+                                        <div id="<?php echo $product['line_id'];?>" class="listItem col-12 col-sm-6 col-lg-4 product-preview">
                                             <div class="product-content">
                                                 <a href="https://www.smeg.com/products/<?php echo $product['prod_name'];?>">
                                                     <div class="product-preview__gallery">
@@ -246,6 +246,28 @@
 <script src="js/jquery.final-countdown.js"></script>
 
 <script src="js/functions.js"></script>
+<script>
+    let selectedLines = [];
+    function addSelected(line){
+        
+        selectedLines.push(line);
+        $('.filter-lines').children().hide();
+        for(var i=0; i<=selectedLines.length; i++)
+        {
+            $(".filter-lines").children('#'+selectedLines[i]).show();
+        }
+
+    }
+    function removeSelected(line){
+        // delete elements based on the line clicked
+        selectedLines.splice(selectedLines.indexOf(line),1);
+        $('.filter-lines').children('#'+line).hide();
+        if(selectedLines.length == 0 )
+        {
+            $('.filter-lines').children().show();
+        }
+    }
+</script>
 
 
 </body>
