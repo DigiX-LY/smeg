@@ -185,7 +185,7 @@
                                             <div class="product-content">
                                                 <a href="https://www.smeg.com/products/<?php echo $product['prod_name'];?>">
                                                     <div class="product-preview__gallery">
-                                                        <img src="<?php echo $product['url'];?>" alt="product picture" style="width:100%">
+                                                        <img loading="lazy" src="<?php echo $product['url'];?>" alt="product picture" style="width:100%">
                                                     </div>
                                                     <div class="Productname"><?php echo $product['prod_name'];?></div>
                                                     <div class="product-preview__description">
