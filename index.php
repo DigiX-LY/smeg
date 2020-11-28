@@ -93,7 +93,7 @@
                   منتجات صغيرة
                 </h2>
                 <div class="insideGridBox">
-                  <img src="images/small_main.png" alt="Product">
+                  <img loading="lazy" src="images/small_main.png" alt="Product">
                 </div>
               </div>
             </a>
@@ -105,7 +105,7 @@
                   منتجات رئيسية
                 </h2>
                 <div class="insideGridBox">
-                  <img src="images/major_main.png" alt="Product">
+                  <img loading="lazy" src="images/major_main.png" alt="Product">
                 </div>
               </div>
             </a>
@@ -121,7 +121,7 @@
     <div class="container-fluid videoContParent">
       <div class="row" >
           <div class="col-md-8 smegVideoContainer">
-            <iframe class="smegVideo" src="https://www.youtube.com/embed/GIdOlKh16Rc?autoplay=1"> <!--?autoplay=1&mute=1 for autoplaying-->
+            <iframe loading="lazy" class="smegVideo" src="https://www.youtube.com/embed/GIdOlKh16Rc?autoplay=1"> <!--?autoplay=1&mute=1 for autoplaying-->
             </iframe>
           </div>
           <div class="col-md-4 videoSubText">
@@ -148,7 +148,7 @@
   <div class="row" >
       <div class="col-md-8 ">
         <div class="img-hover-zoom">
-          <img  class = "img-responsive" width = "100%" src="images\fridgesBG.jpg" alt="">
+          <img loading="lazy" class = "img-responsive" width = "100%" src="images\fridgesBG.jpg" alt="">
         </div>
       </div>
       <div class="col-md-4 fridgeDesc">
@@ -177,7 +177,7 @@
             <div class="col-md-6">
               <div data-aos="fade-right"  data-aos-duration="2000">
                 <div class="design_img img-hover-zoom">
-                  <img src="images/services.png" alt="desing Product" width="100%">
+                  <img loading="lazy" src="images/services.png" alt="desing Product" width="100%">
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@
                       <br>
                       tech@almotamiza.ly
                     </p>
-                    <img src="logo/mechanical-gears-.png" alt="gears">
+                    <img loading="lazy" src="logo/mechanical-gears-.png" alt="gears">
                   </div>
                 </div>
             </div>  
@@ -201,7 +201,7 @@
   <!-- </div> -->
 
     <!--Contact us-->
-      <section dir="rtl" id="contact" class="tm-bg-color-5 tm-mb-3 ">
+      <section loading="lazy" dir="rtl" id="contact" class="tm-bg-color-5 tm-mb-3 ">
         <h2 dir="rtl" class="tm-text-white tm-contact-title">تواصل معنا</h2>
         <div class="tm-bg-color-white tm-contact-main contactUS">
             <!-- cityX -->
@@ -216,7 +216,7 @@
                         <div class="contactInfo">
                           <div class="numbers">
                              <div class="contactLabel">
-                              <img src="logo/call.png" class="contactIcon" width="24px" height="24px" alt="">
+                              <img loading="lazy" src="logo/call.png" class="contactIcon" width="24px" height="24px" alt="">
                               <h2>الأرقام</h2>
                             </div> 
                               <div class="borderRight">
@@ -228,7 +228,7 @@
                           </div>
                           <div class="emails">
                             <div class="contactLabel">
-                              <img src="logo/email.png" class="contactIcon" width="24px" height="24px" alt="">
+                              <img loading="lazy" src="logo/email.png" class="contactIcon" width="24px" height="24px" alt="">
                             <h2>البريد الالكتروني</h2>
                             </div>
                             <div class="borderRight">
@@ -240,7 +240,7 @@
                           </div>
                           <div class="location">
                             <div class="contactLabel">
-                              <img src="logo/pin.png" class="contactIcon" width="24px" height="24px" alt="">
+                              <img loading="lazy" src="logo/pin.png" class="contactIcon" width="24px" height="24px" alt="">
                             <h2>وصف الموقع</h2>
                             </div>
                             <div class="borderRight">
@@ -252,7 +252,7 @@
                         </div>
                         <div class="map-outer ">  
                           <div class="gmap-canvas">
-                              <iframe id="gmap-canvas"
+                              <iframe loading="lazy" id="gmap-canvas"
                                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.2474330569516!2d13.122321384731283!3d32.86517218679223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8eddd31064341%3A0xc28ab06d774719b5!2ssmeg.libya!5e0!3m2!1sar!2sly!4v1601375839884!5m2!1sar!2sly"
                                   frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                               </iframe>
@@ -265,7 +265,7 @@
                       <div class="contactInfo">
                         <div class="numbers">
                            <div class="contactLabel">
-                            <img src="logo/call.png" class="contactIcon" width="24px" height="24px" alt="">
+                            <img loading="lazy" src="logo/call.png" class="contactIcon" width="24px" height="24px" alt="">
                             <h2>الأرقام</h2>
                           </div> 
                             <div class="borderRight">
@@ -277,7 +277,7 @@
                         </div>
                         <div class="emails">
                           <div class="contactLabel">
-                            <img src="logo/email.png" class="contactIcon" width="24px" height="24px" alt="">
+                            <img loading="lazy" src="logo/email.png" class="contactIcon" width="24px" height="24px" alt="">
                           <h2>البريد الالكتروني</h2>
                           </div>
                           <div class="borderRight">
@@ -289,7 +289,7 @@
                         </div>
                         <div class="location">
                           <div class="contactLabel">
-                            <img src="logo/pin.png" class="contactIcon" width="24px" height="24px" alt="">
+                            <img loading="lazy" src="logo/pin.png" class="contactIcon" width="24px" height="24px" alt="">
                           <h2>وصف الموقع</h2>
                           </div>
                           <div class="borderRight">
@@ -301,7 +301,7 @@
                       </div>
                       <div class="map-outer ">  
                         <div class="gmap-canvas">
-                            <iframe id="gmap-canvas"
+                            <iframe loading="lazy" id="gmap-canvas"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.2474330569516!2d13.122321384731283!3d32.86517218679223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8eddd31064341%3A0xc28ab06d774719b5!2ssmeg.libya!5e0!3m2!1sar!2sly!4v1601375839884!5m2!1sar!2sly"
                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                             </iframe>
@@ -310,13 +310,13 @@
                     </div>
                   </div>
               </div>
-            <div class="contactFormFlex">
+            <div loading="lazy" class="contactFormFlex">
               <span class="subheader">أرسل رسالة</span>
               <div class="contactContentFlex">
                 <div class="descrp">
                   نحن دائما على استعداد لتزويدك بأعلى مستوى من الدعم. العلاقة بيننا وبين كل عميل مهمة للغاية بالنسبة لنا، لذلك يمكنك ملئ النموذج الخاص بالتواصل وسوف نقوم بالاتصال بك في أقرب وقت.
                   <div class="sendMessage">
-                    <img src="logo/send-message.png" alt="">
+                    <img loading="lazy" src="logo/send-message.png" alt="">
                   </div>
                 </div>
                 <div class="contact-form-outer">
