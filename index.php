@@ -1,7 +1,6 @@
 <?php include 'include/DBconnection.php'; ?>
 <?php
   
-  /* sending email 
   if(isset($_POST["SendEmail"])){
     $to = "info@smeglibya.ly";
     $subject = "Contact Email";
@@ -11,7 +10,6 @@
     $headers = "From: $senderName";
     mail($to,$subject,$msg,$headers);
   }
-  */
 
 ?>
 <!doctype html>
@@ -22,15 +20,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Smeg Libya
     </title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/animate.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
-    <link rel="stylesheet" type="text/css" href="css/settings.css">
-    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/settings.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">  <!--font's here-->
     <link rel="shortcut icon" href="logo/faviconsmeg.png">
+    
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+
+
+
     <!-- animation on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -67,16 +70,15 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="images/slider.jpg">
-          
+          <img src="images/slider1.jpg">
         </div>
     
         <div class="item">
-          <img src="images/slider.jpg">
+          <img src="images/slider2.jpg">
         </div>
     
         <div class="item">
-          <img src="images/slider.jpg">
+          <img src="images/slider3.jpg">
         </div>
       </div>
     </div>
@@ -177,7 +179,7 @@
             <div class="col-md-6">
               <div data-aos="fade-right"  data-aos-duration="2000">
                 <div class="design_img img-hover-zoom">
-                  <img loading="lazy" src="images/services.png" alt="desing Product" width="100%">
+                  <img loading="lazy" src="images/services.jpg" alt="desing Product" width="100%">
                 </div>
               </div>
             </div>
@@ -187,7 +189,7 @@
                     <p>خدمات الصيانة مع الضمانة
                       الصيانة الفورية لجميع منتجات سميج مع نخبة مختارة من الفنيين المتخصصين المدربين على الصيانة مع الخدمة المميزة التي تهدف لارضاء زبائننا، للإبلاغ عن أي أعطال إتصلوا بالقسم التقني.
                       <br><br><br>
-                      Tel: 21 478 1861
+                      Tel: 0918884889
                       <br>
                       tech@almotamiza.ly
                     </p>
@@ -221,7 +223,7 @@
                             </div> 
                               <div class="borderRight">
                               <ul>
-                                <li>+218 91 313 9615</li>
+                                <li>+218 91 866 6698</li>
                                 <li>+218 92 613 9615</li>
                               </ul>
                               </div>
@@ -350,7 +352,7 @@
     
 
 
-
+<!-- tabs -->
     <script>
       function openCity(evt, cityName) {
         var i, tabcontent, tablinks;
@@ -367,6 +369,10 @@
       }
       document.getElementById("defaultOpen").click(); /*default click on tripoli*/
       </script>
+
+
+
+
     <script src="js/jquery-2.2.3.js">
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U">
@@ -377,7 +383,10 @@
     </script>
     <script src="js/bootsnav.js">
     </script>
-    <script src="js/jquery.parallax-1.1.3.js">
+
+
+
+    <!-- <script src="js/jquery.parallax-1.1.3.js">
     </script>
     <script src="js/jquery.appear.js">
     </script>
@@ -390,7 +399,10 @@
     <script src="js/jquery.themepunch.tools.min.js">
     </script>
     <script src="js/jquery.themepunch.revolution.min.js">
-    </script>
+    </script> -->
+
+<!-- 
+
     <script src="js/revolution.extension.layeranimation.min.js">
     </script>
     <script src="js/revolution.extension.navigation.min.js">
@@ -404,9 +416,15 @@
     <script src="js/kinetic.js">
     </script>
     <script src="js/jquery.final-countdown.js">
-    </script>
+    </script> -->
+
+    
     <script src="js/functions.js">
     </script>
+
+
+
+
     <!-- animate on scroll library  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

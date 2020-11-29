@@ -10,17 +10,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <title>Smeg Libya | Major appliances | <?php echo $_GET['category'];?></title>
+
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
-<link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css">
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
-<link rel="stylesheet" type="text/css" href="css/loader.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
-<link rel="stylesheet" type="text/css" href="css/settings.css">
-<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet"> 
+<link rel="shortcut icon" href="logo/faviconsmeg.png">
+<link rel="stylesheet" type="text/css" href="css/loader.css">
+
+
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -230,44 +230,9 @@
 <script src="js/jquery-2.2.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootsnav.js"></script>
-<script src="js/jquery.parallax-1.1.3.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.cubeportfolio.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/jquery.themepunch.tools.min.js"></script>
-<script src="js/jquery.themepunch.revolution.min.js"></script>
-<script src="js/revolution.extension.layeranimation.min.js"></script>
-<script src="js/revolution.extension.navigation.min.js"></script>
-<script src="js/revolution.extension.parallax.min.js"></script>
-<script src="js/revolution.extension.slideanims.min.js"></script>
-<script src="js/revolution.extension.video.min.js"></script>
-<script src="js/kinetic.js"></script>
-<script src="js/jquery.final-countdown.js"></script>
 
 <script src="js/functions.js"></script>
-<script>
-    let selectedLines = [];
-    function addSelected(line){
-        
-        selectedLines.push(line);
-        $('.filter-lines').children().hide();
-        for(var i=0; i<=selectedLines.length; i++)
-        {
-            $(".filter-lines").children('#'+selectedLines[i]).show();
-        }
-
-    }
-    function removeSelected(line){
-        // delete elements based on the line clicked
-        selectedLines.splice(selectedLines.indexOf(line),1);
-        $('.filter-lines').children('#'+line).hide();
-        if(selectedLines.length == 0 )
-        {
-            $('.filter-lines').children().show();
-        }
-    }
-</script>
+<script src="js/filterScript.js"></script>
 
 
 </body>
