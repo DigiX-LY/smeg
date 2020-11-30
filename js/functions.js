@@ -2,6 +2,9 @@
 //Window Loaded Handler
   $(window).load(function() {'use strict';
 	$(".loader").fadeOut("slow");
+	$(".smegVideo").attr("src","https://www.youtube.com/embed/GIdOlKh16Rc?autoplay=1");
+	$(".tripMap").attr("src","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.2474330569516!2d13.122321384731283!3d32.86517218679223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8eddd31064341%3A0xc28ab06d774719b5!2ssmeg.libya!5e0!3m2!1sar!2sly!4v1601375839884!5m2!1sar!2sly");
+	$(".misuMap").attr("src","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.2474330569516!2d13.122321384731283!3d32.86517218679223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8eddd31064341%3A0xc28ab06d774719b5!2ssmeg.libya!5e0!3m2!1sar!2sly!4v1601375839884!5m2!1sar!2sly");
   });
   
 
