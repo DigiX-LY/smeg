@@ -61,7 +61,7 @@
           <h1>اختياري</h1>
           <h3>خطوط نظيفة ومربعة تعبر عن الأسلوب الأساسي لتصميم اختياري.
           </h3>
-          <a href="" class="prodLink">مشاهدة المنتجات</a>
+          <a href="products.php?category=oven" class="prodLink">مشاهدة المنتجات</a>
           <!-- scroll animation -->
           <div class="center">
             <label style="font-size: 16px;">

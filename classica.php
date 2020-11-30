@@ -61,7 +61,7 @@
           <h1>كلاسيكا</h1>
           <h3>بواسطة Guido Canali Studio. الأحجام المدمجة والأشكال النظيفة تساوي التصميم الأنيق والأساسي.
           </h3>
-          <a href="" class="prodLink">مشاهدة المنتجات</a>
+          <a href="products.php?category=oven" class="prodLink">مشاهدة المنتجات</a>
           <!-- scroll animation -->
           <div class="center">
             <label style="font-size: 16px;">

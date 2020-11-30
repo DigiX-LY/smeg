@@ -63,7 +63,7 @@
           بواسطة Renzo Design studio. إعادة تعريف العمارة.
           
           </h3>
-          <a href="" class="prodLink">مشاهدة المنتجات</a>
+          <a href="products.php?category=hobs" class="prodLink">مشاهدة المنتجات</a>
         </div>
       </div>
     </div>

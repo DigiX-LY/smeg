@@ -64,7 +64,7 @@
           بواسطة Renzo Design studio. إعادة تعريف العمارة.
           
           </h3>
-          <a href="" class="prodLink">مشاهدة المنتجات</a>
+          <a href="products.php?category=refrigerators" class="prodLink">مشاهدة المنتجات</a>
           <!-- scroll animation -->
           <div class="center">
             <label style="font-size: 16px;">
