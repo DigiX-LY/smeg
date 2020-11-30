@@ -123,7 +123,7 @@
     <div class="container-fluid videoContParent">
       <div class="row" >
           <div class="col-md-8 smegVideoContainer">
-            <iframe loading="lazy" class="smegVideo" src=""> 
+            <iframe loading="lazy" class="smegVideo" alt="Youtube video Loading..." src=""> 
             </iframe>
           </div>
           <div class="col-md-4 videoSubText">
