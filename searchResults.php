@@ -1,5 +1,6 @@
 <?php
     include 'include/DBconnection.php';
+    $keyword = $_GET['keyword'];
     $sql = "SELECT main_cat_id'maincat',name,cat_desc FROM sub_cat where en_name ='". trim($_GET['category'])."'"; 
         foreach($pdo->query($sql) as $row){}
 ?>
@@ -9,11 +10,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Smeg Libya | Major appliances | <?php echo $_GET['category'];?></title>
+<title>Smeg Libya | Search Results </title>
 
 <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css?rnd=132">
+    <link rel="stylesheet" type="text/css" href="css/style.css?rnd=132">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
@@ -54,24 +55,21 @@
           <div class="col-sm-7">
             <ul class="breadcrumb">
               <li><a href="index.php">الرئيسية</a></li>
-              <li>منتجات</li>
-              <li><?php  switch($row['maincat']){case 1: echo 'منتجات رئيسية'; break; case 2: echo 'منتجات صغيرة';} ?></li>
-              <li class="active"><?php echo isset($row)?$row['name']:"خطاً"; ?></li>
+              <li> نتائج البحث لـ</li>
             </ul>
           </div>
         </div>
       </div>
       </div>
-    </div>
 </section>
 <!-- black section -->
 <section>
     <div class="container blackSection">
         <h1 class="blackSectionTitle">
         <?php
-            echo isset($row)?$row['name']:"المنتج غير متوفر";
-         ?></h1>
-        <h6 class="blackSectionDesc"> <?php echo isset($row)?$row['cat_desc']:""; ?></h6>
+            echo $keyword;
+         ?>
+         </h1>
     </div>
 </section>
 <!-- products section -->
@@ -171,7 +169,10 @@
                         
                             . "INNER JOIN aes_lines ON products.line_id = aes_lines.id\n"
 
-                            . "WHERE sub_cat.en_name = :subcat ";
+                            . "WHERE (products.name) like UPPER('%". $keyword . "%')\n"
+                            . " OR (aes_lines.name) like ('%". $keyword . "%')\n"
+                            . " OR (products.color) like ('%". $keyword . "%')\n"
+                            . "OR (sub_cat.name) like ('%". $keyword . "%') ";
 
                             if($stmt = $pdo->prepare($sql))
                             {
@@ -182,7 +183,7 @@
                                         foreach($row as $product){?>
                                         <div id="<?php echo $product['line_id'];?>" class="listItem col-12 col-sm-6 col-lg-4 product-preview">
                                             <div class="product-content">
-                                                <a href="https://www.smeg.com/it/prodotti/<?php echo $product['prod_name'];?>">
+                                                <a href="https://www.smeg.com/products/<?php echo $product['prod_name'];?>">
                                                     <div class="product-preview__gallery">
                                                         <img loading="lazy" src="<?php echo $product['url'];?>" alt="product picture" style="width:100%">
                                                     </div>
@@ -207,7 +208,7 @@
                                         margin-right:auto;
                                         margin-left:auto;
                                         margin-top:5%;
-                                        '> لا يوجد منتجات حالياً  </h1>";
+                                        '> لا يوجد منتجات بهذا الوصف </h1>";
                                     }
                                 }
                             }

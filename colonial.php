@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?rnd=132">
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
 <link rel="stylesheet" type="text/css" href="css/loader.css">
 
@@ -61,7 +61,7 @@
           <h4>خـــط</h4>
           <h1>كولونيال</h1>
           <h3>فرصة لإعادة إحياء الدفء والحميمية لمطابخ الماضي.</h3>
-          <a href="products.php?category=oven" class="prodLink">مشاهدة المنتجات</a>
+          <a href="http://smeg.ly/searchResults.php?keyword=كولونيال" class="prodLink">مشاهدة المنتجات</a>
           <!-- scroll animation -->
           <div class="center">
             <label style="font-size: 16px;">

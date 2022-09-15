@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?rnd=132">
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
 <link rel="stylesheet" type="text/css" href="css/loader.css">
 
@@ -59,7 +59,7 @@
           <h1>فيكتوريا</h1>
           <h3>حب التفاصيل وشغف بالتقاليد.
           </h3>
-          <a href="products.php?category=cookers" class="prodLink">مشاهدة المنتجات</a>
+          <a href="searchResults.php?keyword=فيكتوريا" class="prodLink">مشاهدة المنتجات</a>
           <!-- scroll animation -->
           <div class="center">
             <label style="font-size: 16px;">

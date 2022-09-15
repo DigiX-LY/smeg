@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?rnd=132">
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
 <link rel="stylesheet" type="text/css" href="css/loader.css">
 
@@ -62,7 +62,7 @@
           <h3>تندمج الوظيفة في الجمالية التي يتحول فيها الظلام إلى نور. مواد نبيلة وسطح أحادي اللون وزخارف من النحاس والفولاذ المقاوم للصدأ تعود كفكرة سائدة للمجموعة بأكملها.
             
           </h3>
-          <a href="products.php?category=hobs" class="prodLink">مشاهدة المنتجات</a>
+          <a href="searchResults.php?keyword=دولتشي+ستيل+نوفو" class="prodLink">مشاهدة المنتجات</a>
         </div>
       </div>
     </div>

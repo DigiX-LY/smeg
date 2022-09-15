@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?rnd=132">
 <link rel="shortcut icon" href="logo/faviconsmeg.png">
 <link rel="stylesheet" type="text/css" href="css/loader.css">
 
@@ -61,7 +61,7 @@
           <h1>اختياري</h1>
           <h3>خطوط نظيفة ومربعة تعبر عن الأسلوب الأساسي لتصميم اختياري.
           </h3>
-          <a href="products.php?category=oven" class="prodLink">مشاهدة المنتجات</a>
+          <a href="searchResults.php?keyword=اختياري" class="prodLink">مشاهدة المنتجات</a>
           <!-- scroll animation -->
           <div class="center">
             <label style="font-size: 16px;">
